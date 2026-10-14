@@ -166,6 +166,7 @@ em{font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:-.0
 /* work */
 .showreel{position:relative;border-radius:26px;overflow:hidden;border:1px solid var(--line2);background:#000;aspect-ratio:16/9;margin-bottom:18px}
 .showreel video{width:100%;height:100%;object-fit:cover}
+@media(min-width:900px){.showreel{aspect-ratio:21/9}}
 .showreel .lbl{position:absolute;left:16px;top:16px;font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;background:rgba(12,11,10,.55);backdrop-filter:blur(8px);border:1px solid var(--line);border-radius:999px;padding:7px 11px;color:#fff}
 .grid-h{display:grid;gap:16px}
 @media(min-width:760px){.grid-h{grid-template-columns:repeat(3,1fr)}}
@@ -225,6 +226,7 @@ dialog.lb::backdrop{background:rgba(6,5,4,.92);backdrop-filter:blur(10px)}
 .wa-float svg{width:28px;height:28px;fill:#fff}
 @media(min-width:900px){.wa-float{display:none}}
 
+html.static .hero{min-height:880px}
 .reveal{opacity:0;transform:translateY(28px)}
 .reveal.in{opacity:1;transform:none}
 @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}}
@@ -503,8 +505,9 @@ let lang = (new URLSearchParams(location.search).get('lang') || (function(){try{
 if(!I18N[lang]) lang='es';
 const tr = k => (I18N[lang][k] ?? I18N.es[k] ?? k);
 const canHover = matchMedia('(hover:hover) and (pointer:fine)').matches;
-const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches || new URLSearchParams(location.search).has('static');
 let expanded=false;
+if(reduce) document.documentElement.classList.add('static');
 
 function esc(s){return String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))}
 function cardHTML(w){
