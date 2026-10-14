@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Acceler · Tu marketing, medido en ventas</title>
+<title>Acceler · Marketing con IA para marcas personales y empresas</title>
 <meta name="description" content="Anuncios de Meta, contenido orgánico y YouTube para marcas personales y empresas. Con 10.000 € en anuncios, IUVER Academy facturó 165.000 €. Más de dos años en el mercado. Escríbenos por WhatsApp.">
 <link rel="canonical" href="https://acceler-mkt.github.io/">
-<meta property="og:title" content="Acceler · Tu marketing, medido en ventas">
+<meta property="og:title" content="Acceler · Marketing con IA para marcas personales y empresas">
 <meta property="og:description" content="Con 10.000 € en anuncios, IUVER Academy facturó 165.000 €. Anuncios, contenido y YouTube para marcas personales y empresas.">
 <meta property="og:image" content="https://acceler-mkt.github.io/assets/posters/showreel.jpg">
 <meta property="og:type" content="website">
@@ -80,7 +80,7 @@ em{font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:-.0
  radial-gradient(40% 40% at 10% 15%,rgba(232,160,72,.16),transparent 60%),
  linear-gradient(180deg,rgba(12,11,10,.6) 0%,rgba(12,11,10,.35) 45%,rgba(12,11,10,.96) 100%)}
 .hero .wrap{position:relative;z-index:2;padding-bottom:clamp(24px,4vw,56px)}
-.hero h1{font-size:clamp(44px,7.4vw,112px);max-width:12ch;margin:22px 0 24px}
+.hero h1{font-size:clamp(38px,6vw,92px);max-width:17ch;margin:22px 0 24px}
 .hero .lead{max-width:54ch}
 .hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
 .hero-grid{display:grid;gap:28px}
@@ -265,8 +265,8 @@ html.static .hero{min-height:880px}
     <div class="hero-grid">
       <div>
         <span class="eyebrow" data-i18n="hero.eyebrow">Acceler · Marketing con IA · Más de 2 años con marcas personales y empresas</span>
-        <h1 id="heroTitle" data-i18n-html="hero.h1">Tu marketing, <em>medido en ventas.</em></h1>
-        <p class="lead" data-i18n-html="hero.lead">Anuncios de Meta, contenido orgánico y YouTube para marcas personales y empresas. <strong>Con 10.000 € en anuncios, IUVER Academy facturó 165.000 €.</strong> Eso es lo que medimos cada semana: lo que entra en caja.</p>
+        <h1 id="heroTitle" data-i18n-html="hero.h1">Esto es lo que medimos cada semana: <em>lo que entra en caja.</em></h1>
+        <p class="lead" data-i18n-html="hero.lead">Anuncios de Meta, contenido orgánico y YouTube para marcas personales y empresas. <strong>Con 10.000 € en anuncios, IUVER Academy facturó 165.000 €.</strong> Si tu marketing te da informes y no clientes, hablemos.</p>
         <div class="hero-cta">
           <a class="btn btn-wa wa-link" href="#" target="_blank" rel="noopener"><svg><use href="#wa"/></svg><span data-i18n="hero.cta1">Cuéntanos tu caso por WhatsApp</span></a>
           <a class="btn btn-ghost" href="#resultados" data-i18n="hero.cta2">Ver resultados</a>
@@ -466,8 +466,8 @@ const I18N = {
   es:{
     'nav.results':'Resultados','nav.services':'Qué hacemos','nav.work':'Trabajo','nav.contact':'Contacto','nav.cta':'Hablar por WhatsApp',
     'hero.eyebrow':'Acceler · Marketing con IA · Más de 2 años con marcas personales y empresas',
-    'hero.h1':'Tu marketing, <em>medido en ventas.</em>',
-    'hero.lead':'Anuncios de Meta, contenido orgánico y YouTube para marcas personales y empresas. <strong>Con 10.000 € en anuncios, IUVER Academy facturó 165.000 €.</strong> Eso es lo que medimos cada semana: lo que entra en caja.',
+    'hero.h1':'Esto es lo que medimos cada semana: <em>lo que entra en caja.</em>',
+    'hero.lead':'Anuncios de Meta, contenido orgánico y YouTube para marcas personales y empresas. <strong>Con 10.000 € en anuncios, IUVER Academy facturó 165.000 €.</strong> Si tu marketing te da informes y no clientes, hablemos.',
     'hero.cta1':'Cuéntanos tu caso por WhatsApp','hero.cta2':'Ver resultados',
     'proof.k':'Caso real · Meta Ads','proof.who':'<strong>IUVER Academy</strong> · máster de medicina estética. Inversión en anuncios y facturación generada.','proof.k2':'En el mercado','proof.v2':'+2 años','proof.k3':'Marcas',
     'wall.cap':'Con quién trabajamos y hemos trabajado',
@@ -484,8 +484,8 @@ const I18N = {
   en:{
     'nav.results':'Results','nav.services':'What we do','nav.work':'Work','nav.contact':'Contact','nav.cta':'Chat on WhatsApp',
     'hero.eyebrow':'Acceler · AI-driven marketing · 2+ years with personal brands and companies',
-    'hero.h1':'Your marketing, <em>measured in sales.</em>',
-    'hero.lead':'Meta ads, organic content and YouTube for personal brands and companies. <strong>With 10,000 € in ads, IUVER Academy billed 165,000 €.</strong> That is what we measure every week: what reaches the bank.',
+    'hero.h1':'This is what we measure every week: <em>what reaches the bank.</em>',
+    'hero.lead':'Meta ads, organic content and YouTube for personal brands and companies. <strong>With 10,000 € in ads, IUVER Academy billed 165,000 €.</strong> If your marketing gives you reports instead of clients, let’s talk.',
     'hero.cta1':'Tell us your case on WhatsApp','hero.cta2':'See results',
     'proof.k':'Real case · Meta Ads','proof.who':'<strong>IUVER Academy</strong> · aesthetic medicine master’s. Ad spend and revenue generated.','proof.k2':'In the market','proof.v2':'2+ years','proof.k3':'Brands',
     'wall.cap':'Who we work and have worked with',
@@ -539,7 +539,7 @@ function applyI18n(){
   document.getElementById('langBtn').textContent = lang==='es' ? 'EN' : 'ES';
   const wa = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(WA_TEXT[lang])}`;
   document.querySelectorAll('.wa-link').forEach(a=>a.href=wa);
-  document.title = lang==='es' ? 'Acceler · Tu marketing, medido en ventas' : 'Acceler · Your marketing, measured in sales';
+  document.title = lang==='es' ? 'Acceler · Marketing con IA para marcas personales y empresas' : 'Acceler · AI-driven marketing for personal brands and companies';
 }
 
 /* cards */
