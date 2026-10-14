@@ -1,0 +1,7 @@
+tools/reel_tmp/
+tools/*.log
+tools/posters_sheet.jpg
+tools/posters_fix.jpg
+tools/copy/
+.DS_Store
+Thumbs.db

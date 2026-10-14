@@ -1,0 +1,639 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Acceler · Tu marketing, medido en ventas</title>
+<meta name="description" content="Anuncios de Meta, contenido orgánico y YouTube para marcas personales y empresas. Con 10.000 € en anuncios, IUVER Academy facturó 165.000 €. Más de dos años en el mercado. Escríbenos por WhatsApp.">
+<link rel="canonical" href="https://acceler-mkt.github.io/">
+<meta property="og:title" content="Acceler · Tu marketing, medido en ventas">
+<meta property="og:description" content="Con 10.000 € en anuncios, IUVER Academy facturó 165.000 €. Anuncios, contenido y YouTube para marcas personales y empresas.">
+<meta property="og:image" content="https://acceler-mkt.github.io/assets/posters/showreel.jpg">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0c0b0a">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 136 136'%3E%3Ccircle cx='68' cy='68' r='60' fill='%237a2a2a'/%3E%3Ccircle cx='86' cy='50' r='48' fill='%23e8a048'/%3E%3Ccircle cx='78' cy='62' r='40' fill='%23c24a4a'/%3E%3Ccircle cx='88' cy='56' r='30' fill='%23de6262'/%3E%3Ccircle cx='95' cy='52' r='18' fill='%23f1b76f'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0c0b0a;--bg2:#141210;--bg3:#1b1917;--ink:#f6f5f4;--mute:#a39d94;--mute2:#6f6961;
+  --line:rgba(246,245,244,.12);--line2:rgba(246,245,244,.06);
+  --coral:#de6262;--amber:#e8a048;--gold:#f1b76f;--wine:#7a2a2a;
+  --cream:#f5f3f0;--inkd:#1b1a18;--greyw:#514c46;
+  --sans:"Geist",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --mono:"Geist Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  --serif:"Instrument Serif",Georgia,"Times New Roman",serif;
+  --gutter:clamp(16px,4vw,56px);--max:1320px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+html.lenis,html.lenis body{height:auto}
+.lenis.lenis-smooth{scroll-behavior:auto!important}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+img,video,svg{display:block;max-width:100%}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+::selection{background:var(--coral);color:#fff}
+.wrap{width:min(var(--max),100% - 2*var(--gutter));margin-inline:auto}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--coral);display:inline-flex;align-items:center;gap:10px}
+.eyebrow::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--coral);box-shadow:0 0 0 4px rgba(222,98,98,.18);flex:none}
+h1,h2,h3{font-weight:600;letter-spacing:-.035em;line-height:1.02}
+h2{font-size:clamp(34px,5vw,66px)}
+em{font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:-.01em}
+.lead{color:var(--mute);font-size:clamp(17px,1.4vw,20px);max-width:60ch;line-height:1.55}
+.lead strong{color:var(--ink);font-weight:500}
+.section{padding:clamp(72px,9vw,130px) 0;position:relative}
+.sec-head{display:grid;gap:20px;margin-bottom:clamp(32px,5vw,56px)}
+@media(min-width:900px){.sec-head{grid-template-columns:1.1fr .9fr;align-items:end}.sec-head .lead{justify-self:end;max-width:46ch}}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:10px;padding:16px 24px;border-radius:999px;font-weight:500;font-size:15px;letter-spacing:-.01em;transition:transform .35s cubic-bezier(.2,.8,.2,1),background .3s,color .3s,box-shadow .3s;white-space:nowrap}
+.btn svg{width:18px;height:18px;flex:none;fill:currentColor}
+.btn-wa{background:linear-gradient(135deg,var(--coral),#c24a4a 60%,var(--wine));color:#fff;box-shadow:0 10px 40px -12px rgba(222,98,98,.7)}
+.btn-wa:hover{transform:translateY(-2px);box-shadow:0 18px 50px -12px rgba(222,98,98,.85)}
+.btn-ghost{border:1px solid var(--line);color:var(--ink)}
+.btn-ghost:hover{background:rgba(246,245,244,.06);transform:translateY(-2px)}
+
+/* header */
+.hdr{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .4s,backdrop-filter .4s,border-color .4s;border-bottom:1px solid transparent}
+.hdr.scrolled{background:rgba(12,11,10,.72);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-color:var(--line2)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;height:72px;gap:20px}
+.logo{display:inline-flex;align-items:center;gap:10px;font-weight:700;letter-spacing:-.04em;font-size:22px;font-family:"Inter",var(--sans)}
+.logo svg{width:30px;height:30px}
+.logo b{color:var(--coral)}
+.nav{display:none;gap:30px;font-size:14px;color:var(--mute)}
+.nav a{transition:color .25s}.nav a:hover{color:var(--ink)}
+@media(min-width:900px){.nav{display:flex}}
+.hdr-right{display:flex;align-items:center;gap:10px}
+.lang{font-family:var(--mono);font-size:12px;letter-spacing:.1em;border:1px solid var(--line);border-radius:999px;padding:9px 12px;color:var(--mute);transition:.25s}
+.lang:hover{color:var(--ink);border-color:var(--ink)}
+.hdr .btn{padding:11px 18px;font-size:14px}
+@media(max-width:560px){.hdr .btn span{display:none}.hdr .btn{padding:11px 13px}}
+
+/* hero */
+.hero{position:relative;min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden;padding-top:110px}
+.hero-media{position:absolute;inset:0;z-index:0}
+.hero-media video,.hero-media img{width:100%;height:100%;object-fit:cover;opacity:.5;filter:blur(22px) saturate(1.25) brightness(.6);transform:scale(1.12)}
+.hero-media::after{content:"";position:absolute;inset:0;background:
+ radial-gradient(60% 55% at 85% 90%,rgba(222,98,98,.42),transparent 60%),
+ radial-gradient(40% 40% at 10% 15%,rgba(232,160,72,.16),transparent 60%),
+ linear-gradient(180deg,rgba(12,11,10,.6) 0%,rgba(12,11,10,.35) 45%,rgba(12,11,10,.96) 100%)}
+.hero .wrap{position:relative;z-index:2;padding-bottom:clamp(24px,4vw,56px)}
+.hero h1{font-size:clamp(44px,7.4vw,112px);max-width:12ch;margin:22px 0 24px}
+.hero .lead{max-width:54ch}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.hero-grid{display:grid;gap:28px}
+@media(min-width:1000px){.hero-grid{grid-template-columns:1.35fr .65fr;align-items:end}}
+.proof{display:grid;gap:12px;justify-self:end;width:100%;max-width:360px}
+.proof-card{border:1px solid var(--line);background:rgba(20,18,16,.6);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-radius:22px;padding:22px 22px 20px;position:relative;overflow:hidden}
+.proof-card::before{content:"";position:absolute;inset:auto -30% -50% auto;width:70%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(222,98,98,.35),transparent 65%);filter:blur(8px)}
+.proof-card>*{position:relative}
+.proof .k{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--mute)}
+.proof .row{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-top:8px}
+.proof .from{font-size:26px;font-weight:500;letter-spacing:-.03em;color:var(--mute)}
+.proof .arrow{color:var(--coral);font-size:20px}
+.proof .to{font-size:clamp(40px,3.6vw,54px);font-weight:600;letter-spacing:-.05em;line-height:1;background:linear-gradient(135deg,#fff,var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent}
+.proof .who{font-size:14px;color:var(--mute);margin-top:8px}
+.proof .who strong{color:var(--ink);font-weight:500}
+.proof .mini{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.proof .mini .proof-card{padding:16px 18px}
+.proof .mini .v{font-size:24px;font-weight:600;letter-spacing:-.04em;margin-top:4px}
+.giant{position:relative;z-index:1;font-weight:700;font-family:"Inter",var(--sans);letter-spacing:-.06em;line-height:.78;font-size:clamp(96px,22vw,340px);color:rgba(246,245,244,.06);user-select:none;pointer-events:none;white-space:nowrap;margin-bottom:-.12em;margin-left:-.03em}
+.giant b{color:rgba(222,98,98,.5)}
+
+/* wall of clients */
+.wall{padding:clamp(56px,7vw,90px) 0;border-top:1px solid var(--line2)}
+.wall .cap{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute2);text-align:center;margin-bottom:34px}
+.faces{display:flex;flex-wrap:wrap;justify-content:center;gap:22px 18px}
+.face{display:grid;justify-items:center;gap:10px;width:118px;text-align:center}
+.face img{width:84px;height:84px;border-radius:50%;object-fit:cover;border:2px solid rgba(246,245,244,.14);box-shadow:0 10px 30px -12px rgba(0,0,0,.8);transition:transform .5s cubic-bezier(.2,.8,.2,1),border-color .4s}
+.face:hover img{transform:translateY(-4px) scale(1.04);border-color:var(--coral)}
+.face .n{font-size:13px;font-weight:500;line-height:1.2}
+.face .r{font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;color:var(--mute);line-height:1.3}
+.logos{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:26px 44px;margin-top:40px;padding-top:36px;border-top:1px solid var(--line2)}
+.logos img{height:30px;width:auto;opacity:.78;transition:opacity .3s}
+.logos img:hover{opacity:1}
+.logos .wordmark{font-weight:600;letter-spacing:-.03em;font-size:22px;opacity:.85}
+@media(max-width:600px){.logos{gap:20px 26px}.logos img{height:24px}}
+
+/* pains */
+.pains{display:grid;gap:14px}
+@media(min-width:860px){.pains{grid-template-columns:repeat(3,1fr)}}
+.pain{border:1px solid var(--line2);background:var(--bg2);border-radius:22px;padding:28px 26px;display:grid;gap:12px;align-content:start;min-height:220px}
+.pain .x{font-family:var(--mono);font-size:12px;letter-spacing:.12em;color:var(--coral)}
+.pain h3{font-size:clamp(22px,2vw,26px);letter-spacing:-.03em;font-weight:500}
+.pain p{color:var(--mute);font-size:15px;line-height:1.55}
+.turn{margin-top:clamp(40px,5vw,64px);display:grid;gap:14px}
+@media(min-width:900px){.turn{grid-template-columns:1fr 1fr;gap:40px;align-items:start}}
+.turn h3{font-size:clamp(30px,3.6vw,48px);letter-spacing:-.04em;font-weight:600}
+.turn p{color:var(--mute);font-size:17px;line-height:1.6}
+
+/* services (light) */
+.light{background:var(--cream);color:var(--inkd)}
+.light .lead{color:var(--greyw)}.light .lead strong{color:var(--inkd)}
+.light .eyebrow{color:#c24a4a}.light .eyebrow::before{background:#c24a4a;box-shadow:0 0 0 4px rgba(194,74,74,.15)}
+.services{display:grid;gap:14px}
+@media(min-width:900px){.services{grid-template-columns:repeat(3,1fr)}}
+.service{background:#fff;border:1px solid rgba(27,26,24,.08);border-radius:24px;padding:30px 28px;display:grid;gap:14px;align-content:start;min-height:300px;transition:transform .5s cubic-bezier(.2,.8,.2,1),box-shadow .5s}
+.service:hover{transform:translateY(-4px);box-shadow:0 30px 60px -30px rgba(27,26,24,.3)}
+.service .num{font-family:var(--mono);font-size:12px;letter-spacing:.14em;color:#c24a4a}
+.service h3{font-size:clamp(24px,2.2vw,30px);letter-spacing:-.035em;font-weight:600}
+.service p{color:var(--greyw);font-size:15.5px;line-height:1.55}
+.service .tag{margin-top:auto;font-family:var(--mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--inkd);background:var(--cream);border-radius:999px;padding:8px 12px;justify-self:start}
+.system{margin-top:18px;background:var(--inkd);color:var(--ink);border-radius:24px;padding:clamp(26px,3.5vw,40px);display:grid;gap:16px;position:relative;overflow:hidden}
+.system::before{content:"";position:absolute;inset:auto -20% -60% auto;width:60%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(232,160,72,.4),rgba(222,98,98,.15) 45%,transparent 70%);filter:blur(10px)}
+.system>*{position:relative}
+@media(min-width:900px){.system{grid-template-columns:1fr 1.3fr;align-items:center;gap:40px}}
+.system h3{font-size:clamp(26px,3vw,40px);letter-spacing:-.04em}
+.system p{color:rgba(246,245,244,.78);font-size:16px;line-height:1.6}
+
+/* results */
+.cases{display:grid;gap:16px}
+@media(min-width:900px){.cases{grid-template-columns:repeat(3,1fr)}}
+.case{position:relative;background:var(--bg2);border:1px solid var(--line2);border-radius:26px;padding:32px 28px;display:grid;gap:14px;overflow:hidden;min-height:380px}
+.case::before{content:"";position:absolute;inset:auto -30% -40% auto;width:70%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(222,98,98,.4),rgba(232,160,72,.12) 45%,transparent 70%);filter:blur(10px)}
+.case:nth-child(2)::before{background:radial-gradient(circle,rgba(232,160,72,.4),rgba(222,98,98,.12) 45%,transparent 70%)}
+.case>*{position:relative}
+.case .head{display:flex;align-items:center;gap:12px}
+.case .head .av{width:44px;height:44px;border-radius:50%;object-fit:cover;border:1px solid var(--line)}
+.case .head .lg{height:26px;width:auto}
+.case .who{font-family:var(--mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold)}
+.case .big{font-size:clamp(32px,3vw,44px);font-weight:600;letter-spacing:-.045em;line-height:1.02}
+.case .big small{display:block;font-size:.5em;color:var(--mute);font-weight:500;letter-spacing:-.02em;margin-top:6px}
+.case p{color:rgba(246,245,244,.78);font-size:15px;line-height:1.55;margin-top:auto}
+
+/* work */
+.showreel{position:relative;border-radius:26px;overflow:hidden;border:1px solid var(--line2);background:#000;aspect-ratio:16/9;margin-bottom:18px}
+.showreel video{width:100%;height:100%;object-fit:cover}
+.showreel .lbl{position:absolute;left:16px;top:16px;font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;background:rgba(12,11,10,.55);backdrop-filter:blur(8px);border:1px solid var(--line);border-radius:999px;padding:7px 11px;color:#fff}
+.grid-h{display:grid;gap:16px}
+@media(min-width:760px){.grid-h{grid-template-columns:repeat(3,1fr)}}
+.grid-v{display:grid;gap:14px;grid-template-columns:repeat(2,1fr);margin-top:16px}
+@media(min-width:760px){.grid-v{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:1100px){.grid-v{grid-template-columns:repeat(5,1fr)}}
+.work{position:relative;border-radius:20px;overflow:hidden;background:var(--bg2);border:1px solid var(--line2);cursor:pointer;transform:translateZ(0);transition:transform .5s cubic-bezier(.2,.8,.2,1),border-color .4s}
+.work:hover{transform:translateY(-4px);border-color:rgba(246,245,244,.22)}
+.work .media{position:relative;aspect-ratio:16/9;background:#000;overflow:hidden}
+.grid-v .work .media{aspect-ratio:9/16}
+.work .media video,.work .media img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.8,.2,1)}
+.work .media video{position:absolute;inset:0;opacity:0;transition:opacity .35s}
+.work.playing .media video{opacity:1}
+.work:hover .media img{transform:scale(1.04)}
+.work .play{position:absolute;right:12px;top:12px;width:38px;height:38px;border-radius:50%;background:rgba(12,11,10,.55);backdrop-filter:blur(8px);display:grid;place-items:center;border:1px solid var(--line);transition:.3s}
+.work .play svg{width:13px;height:13px;fill:#fff;margin-left:2px}
+.work.playing .play{opacity:0}
+.work .tag{position:absolute;left:12px;top:12px;font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;background:rgba(12,11,10,.55);backdrop-filter:blur(8px);border:1px solid var(--line);border-radius:999px;padding:6px 10px;color:#fff}
+.work .info{padding:14px 16px 16px;display:grid;gap:5px}
+.work h3{font-size:16px;letter-spacing:-.02em;line-height:1.25;font-weight:500}
+.grid-v .work h3{font-size:14px}
+.work .m{font-family:var(--mono);font-size:11px;letter-spacing:.06em;color:var(--mute);text-transform:uppercase}
+.work[hidden]{display:none}
+.more{display:flex;justify-content:center;margin-top:28px}
+
+/* cta */
+.cta{position:relative;overflow:hidden;background:var(--bg)}
+.cta::before{content:"";position:absolute;inset:-20% -10% auto auto;width:60vw;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(222,98,98,.5),rgba(232,160,72,.2) 40%,transparent 65%);filter:blur(30px);pointer-events:none}
+.cta .box{position:relative;display:grid;gap:24px;max-width:900px}
+.cta h2{font-size:clamp(44px,7vw,108px);max-width:12ch}
+.cta .num{font-family:var(--mono);color:var(--mute);font-size:14px;letter-spacing:.08em}
+.cta-row{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.cta .fit{color:var(--mute2);font-size:14px;font-family:var(--mono);max-width:60ch;line-height:1.5}
+
+/* footer */
+.ftr{border-top:1px solid var(--line2);padding:36px 0;font-size:14px;color:var(--mute)}
+.ftr .wrap{display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between;align-items:center}
+
+/* lightbox */
+dialog.lb{border:0;padding:0;background:transparent;max-width:none;max-height:none;width:100vw;height:100vh;margin:0;inset:0;display:none}
+dialog.lb[open]{display:grid;place-items:center}
+dialog.lb::backdrop{background:rgba(6,5,4,.92);backdrop-filter:blur(10px)}
+.lb-in{position:relative;width:min(92vw,1100px);max-height:92vh;display:grid;gap:14px;justify-items:center}
+.lb-media{width:100%;max-height:78vh;display:grid;place-items:center}
+.lb-media video{max-height:78vh;max-width:100%;border-radius:16px;background:#000;box-shadow:0 40px 120px -40px rgba(0,0,0,.8)}
+.lb-media video.v{height:78vh;aspect-ratio:9/16}
+.lb-media video.h{width:min(92vw,1100px);aspect-ratio:16/9}
+.lb-cap{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center;justify-content:center;color:var(--mute);font-size:14px;text-align:center}
+.lb-cap strong{color:var(--ink);font-weight:500}
+.lb-cap a{color:var(--gold);border-bottom:1px solid rgba(241,183,111,.4)}
+.lb-close{position:fixed;top:18px;right:18px;width:46px;height:46px;border-radius:50%;background:rgba(246,245,244,.1);border:1px solid var(--line);display:grid;place-items:center;color:#fff;font-size:22px;z-index:5}
+.lb-close:hover{background:rgba(246,245,244,.2)}
+
+/* wa floating */
+.wa-float{position:fixed;right:18px;bottom:18px;z-index:40;width:56px;height:56px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 12px 30px -8px rgba(37,211,102,.6);transition:transform .3s}
+.wa-float:hover{transform:scale(1.06)}
+.wa-float svg{width:28px;height:28px;fill:#fff}
+@media(min-width:900px){.wa-float{display:none}}
+
+.reveal{opacity:0;transform:translateY(28px)}
+.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="wa" viewBox="0 0 24 24"><path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.5 4.1 1.6 5.9L.2 24l6.5-1.7a11.8 11.8 0 0 0 5.4 1.4c6.5 0 11.8-5.3 11.8-11.8 0-3.2-1.2-6.1-3.4-8.4ZM12.1 21.7c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.8 1 1-3.7-.2-.4a9.7 9.7 0 0 1-1.5-5.2c0-5.4 4.4-9.8 9.9-9.8 2.6 0 5.1 1 6.9 2.9a9.7 9.7 0 0 1 2.9 6.9c0 5.4-4.4 9.9-9.8 9.9Zm5.4-7.3c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1l-.9 1.2c-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4Z"/></symbol></svg>
+
+<header class="hdr" id="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Acceler">
+      <svg viewBox="0 0 136 136" aria-hidden="true"><circle cx="68" cy="68" r="60" fill="#7a2a2a"/><circle cx="86" cy="50" r="48" fill="#e8a048"/><circle cx="78" cy="62" r="40" fill="#c24a4a"/><circle cx="88" cy="56" r="30" fill="#de6262"/><circle cx="95" cy="52" r="18" fill="#f1b76f"/></svg>
+      <span>acceler<b>.</b></span>
+    </a>
+    <nav class="nav">
+      <a href="#resultados" data-i18n="nav.results">Resultados</a>
+      <a href="#servicios" data-i18n="nav.services">Qué hacemos</a>
+      <a href="#trabajo" data-i18n="nav.work">Trabajo</a>
+      <a href="#contacto" data-i18n="nav.contact">Contacto</a>
+    </nav>
+    <div class="hdr-right">
+      <button class="lang" id="langBtn" aria-label="Switch language">EN</button>
+      <a class="btn btn-wa wa-link" href="#" target="_blank" rel="noopener"><svg><use href="#wa"/></svg><span data-i18n="nav.cta">Hablar por WhatsApp</span></a>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-media">
+    <video id="heroVideo" autoplay muted loop playsinline preload="auto" poster="assets/posters/showreel.jpg">
+      <source src="assets/videos/showreel.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <span class="eyebrow" data-i18n="hero.eyebrow">Acceler · Marketing con IA · Más de 2 años con marcas personales y empresas</span>
+        <h1 id="heroTitle" data-i18n-html="hero.h1">Tu marketing, <em>medido en ventas.</em></h1>
+        <p class="lead" data-i18n-html="hero.lead">Anuncios de Meta, contenido orgánico y YouTube para marcas personales y empresas. <strong>Con 10.000 € en anuncios, IUVER Academy facturó 165.000 €.</strong> Eso es lo que medimos cada semana: lo que entra en caja.</p>
+        <div class="hero-cta">
+          <a class="btn btn-wa wa-link" href="#" target="_blank" rel="noopener"><svg><use href="#wa"/></svg><span data-i18n="hero.cta1">Cuéntanos tu caso por WhatsApp</span></a>
+          <a class="btn btn-ghost" href="#resultados" data-i18n="hero.cta2">Ver resultados</a>
+        </div>
+      </div>
+      <aside class="proof">
+        <div class="proof-card">
+          <div class="k" data-i18n="proof.k">Caso real · Meta Ads</div>
+          <div class="row"><span class="from">10.000 €</span><span class="arrow">→</span><span class="to">165.000 €</span></div>
+          <div class="who" data-i18n-html="proof.who"><strong>IUVER Academy</strong> · máster de medicina estética. Inversión en anuncios y facturación generada.</div>
+        </div>
+        <div class="mini">
+          <div class="proof-card"><div class="k" data-i18n="proof.k2">En el mercado</div><div class="v" data-i18n="proof.v2">+2 años</div></div>
+          <div class="proof-card"><div class="k" data-i18n="proof.k3">Marcas</div><div class="v">13</div></div>
+        </div>
+      </aside>
+    </div>
+  </div>
+  <div class="giant" aria-hidden="true">acceler<b>.</b></div>
+</section>
+
+<section class="wall" id="clientes">
+  <div class="wrap">
+    <div class="cap" data-i18n="wall.cap">Con quién trabajamos y hemos trabajado</div>
+    <div class="faces" id="faces"></div>
+    <div class="logos" id="logos">
+      <img src="assets/img/logo-iuver.png" alt="IUVER Academy" loading="lazy">
+      <img src="assets/img/logo-dna.png" alt="DNA Formación" loading="lazy">
+      <img src="assets/img/logo-fixcal.svg" alt="Fixcal" loading="lazy">
+      <img src="assets/img/logo-gla.png" alt="GLA Patrimonio" loading="lazy">
+      <img src="assets/img/logo-liberfy.png" alt="Liberfy" loading="lazy">
+      <img src="assets/img/logo-vas.png" alt="VAS" loading="lazy">
+      <span class="wordmark">ED Tu Hogar</span>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="dolor" style="padding-top:clamp(56px,7vw,96px)">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow" data-i18n="pain.eyebrow">¿Te suena?</span>
+        <h2 class="reveal" style="margin-top:18px" data-i18n-html="pain.h2">Inviertes en marketing y lo que recibes son <em>informes.</em></h2>
+      </div>
+    </div>
+    <div class="pains" id="pains"></div>
+    <div class="turn reveal">
+      <h3 data-i18n-html="turn.h3">Nosotros empezamos por <em>el final:</em> cuántos clientes te ha traído cada euro.</h3>
+      <p data-i18n="turn.p">Llevamos tu marketing completo y lo conectamos con tus ventas. Cada anuncio, cada reel y cada vídeo tiene un trabajo que hacer, y cada semana sabes cuál lo ha hecho y cuál se apaga. Sin reuniones de tres horas para cambiar un titular.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section light" id="servicios">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow" data-i18n="svc.eyebrow">Qué hacemos</span>
+        <h2 class="reveal" style="margin-top:18px" data-i18n-html="svc.h2">Tres frentes, <em>un solo objetivo.</em></h2>
+      </div>
+      <p class="lead reveal" data-i18n="svc.lead">Anuncios, contenido y YouTube trabajando juntos y producidos por nuestro propio sistema con IA. Por eso entregamos en días y no se nos acaban las ideas.</p>
+    </div>
+    <div class="services" id="services"></div>
+    <div class="system reveal">
+      <h3 data-i18n-html="sys.h3">Producimos con IA. <em>Decidimos</em> con criterio.</h3>
+      <p data-i18n="sys.p">Hemos construido nuestro propio estudio de producción con IA: anuncios, reels, carruseles y vídeos de YouTube salen de un sistema que conoce tu negocio, tu tono y lo que ya ha funcionado. La IA hace el volumen. Nosotros decidimos qué se publica, qué se escala y qué se mata.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="resultados">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow" data-i18n="res.eyebrow">Resultados</span>
+        <h2 class="reveal" style="margin-top:18px" data-i18n-html="res.h2">Lo que pasa cuando el marketing <em>se mide.</em></h2>
+      </div>
+    </div>
+    <div class="cases" id="cases"></div>
+  </div>
+</section>
+
+<section class="section" id="trabajo" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow" data-i18n="work.eyebrow">Trabajo</span>
+        <h2 class="reveal" style="margin-top:18px" data-i18n-html="work.h2">Así se ve <em>por fuera.</em></h2>
+      </div>
+      <p class="lead reveal" data-i18n="work.lead">Anuncios, reels, vídeos de YouTube y vídeos de venta. Pasa el ratón para verlos en movimiento y haz clic para oírlos.</p>
+    </div>
+    <div class="showreel reveal"><video autoplay muted loop playsinline preload="metadata" poster="assets/posters/showreel.jpg" src="assets/videos/showreel.mp4"></video><span class="lbl" data-i18n="work.reel">Showreel · 25 s</span></div>
+    <div class="grid-h" id="gridH"></div>
+    <div class="grid-v" id="gridV"></div>
+    <div class="more"><button class="btn btn-ghost" id="moreBtn" data-i18n="work.more">Ver más trabajos</button></div>
+  </div>
+</section>
+
+<section class="section cta" id="contacto">
+  <div class="wrap">
+    <div class="box">
+      <span class="eyebrow" data-i18n="cta.eyebrow">Contacto</span>
+      <h2 class="reveal" data-i18n-html="cta.h2">¿Hablamos de <em>tu caso?</em></h2>
+      <p class="lead reveal" data-i18n="cta.lead">Cuéntanos qué vendes y qué estás haciendo ahora. Te decimos por WhatsApp qué haríamos nosotros, en cuánto tiempo y cuánto cuesta.</p>
+      <div class="cta-row reveal">
+        <a class="btn btn-wa wa-link" href="#" target="_blank" rel="noopener" style="padding:20px 30px;font-size:17px"><svg><use href="#wa"/></svg><span data-i18n="cta.btn">Abrir WhatsApp</span></a>
+        <span class="num">+34 647 82 98 54</span>
+      </div>
+      <p class="fit reveal" data-i18n="cta.fit">Para marcas personales y empresas que ya facturan y quieren más clientes. Marketing completo o solo vídeo: dinos qué necesitas.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="ftr">
+  <div class="wrap">
+    <a class="logo" href="#top" style="font-size:18px"><svg viewBox="0 0 136 136" aria-hidden="true" style="width:22px;height:22px"><circle cx="68" cy="68" r="60" fill="#7a2a2a"/><circle cx="86" cy="50" r="48" fill="#e8a048"/><circle cx="78" cy="62" r="40" fill="#c24a4a"/><circle cx="88" cy="56" r="30" fill="#de6262"/><circle cx="95" cy="52" r="18" fill="#f1b76f"/></svg><span>acceler<b>.</b></span></a>
+    <span data-i18n="ftr.tag">Marketing con IA · Tenerife, España</span>
+    <span>© 2026 Acceler</span>
+  </div>
+</footer>
+
+<a class="wa-float wa-link" href="#" target="_blank" rel="noopener" aria-label="WhatsApp"><svg><use href="#wa"/></svg></a>
+
+<dialog class="lb" id="lb">
+  <button class="lb-close" id="lbClose" aria-label="Cerrar">×</button>
+  <div class="lb-in">
+    <div class="lb-media" id="lbMedia"></div>
+    <div class="lb-cap" id="lbCap"></div>
+  </div>
+</dialog>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/SplitText.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.4/dist/lenis.min.js"></script>
+<script>
+(function(){
+const WA_NUMBER = '34647829854';
+const WA_TEXT = {
+  es: 'Hola Alfonso, he visto la web de Acceler y quiero hablar de mi caso.',
+  en: 'Hi Alfonso, I saw the Acceler site and I would like to talk about my case.'
+};
+
+const FACES = [
+  {img:'f-miguel-sierra.jpg', n:'Miguel Sierra', r:{es:'Empresario · Fixcal',en:'Entrepreneur · Fixcal'}},
+  {img:'f-alex-mestres.jpg', n:'Álex Mestres', r:{es:'GLA Patrimonio',en:'GLA Patrimonio'}},
+  {img:'f-cesar-rivero.jpg', n:'César Rivero', r:{es:'Inversor inmobiliario',en:'Real estate investor'}},
+  {img:'f-pedro-redes.jpg', n:'Pedro Redes', r:{es:'Comunidad Estelar',en:'Comunidad Estelar'}},
+  {img:'f-angel-aparicio.jpg', n:'Ángel Aparicio', r:{es:'YouTube · IA',en:'YouTube · AI'}},
+  {img:'f-miguel-rms.jpg', n:'Miguel RMS', r:{es:'Marca personal',en:'Personal brand'}},
+  {img:'f-josep-baixas.jpg', n:'Josep Baixas', r:{es:'Coach de montaña',en:'Mountain coach'}}
+];
+
+const PAINS = [
+  {x:'01', h:{es:'Pagas anuncios y recibes gráficas.',en:'You pay for ads and get charts back.'}, p:{es:'Impresiones, alcance, clics. Y a final de mes nadie sabe decirte qué anuncio te ha traído un cliente y cuál lleva tres meses quemando presupuesto.',en:'Impressions, reach, clicks. At the end of the month nobody can tell you which ad brought a client and which one has been burning budget for three months.'}},
+  {x:'02', h:{es:'Publicas y no pasa nada.',en:'You post and nothing happens.'}, p:{es:'Reels que gustan a tus amigos y a tu madre. Ni una conversación, ni una llamada, ni un lead que venga de ahí.',en:'Reels your friends and your mum like. Not one conversation, not one call, not one lead coming from them.'}},
+  {x:'03', h:{es:'Cada pieza tarda semanas.',en:'Every piece takes weeks.'}, p:{es:'Un editor que entrega cuando puede, una agencia que necesita tres reuniones para cambiar un titular, y tú esperando con la grabación hecha.',en:'An editor who delivers when he can, an agency that needs three meetings to change a headline, and you waiting with the footage already shot.'}}
+];
+
+const SERVICES = [
+  {num:'01', h:{es:'Anuncios de Meta medidos hasta la venta',en:'Meta ads measured down to the sale'}, p:{es:'Creatividades nuevas cada semana con el contexto de tu negocio, campañas que se apagan o se escalan según lo que venden y un seguimiento que llega hasta la matrícula o el pedido.',en:'New creatives every week with your business context, campaigns that get paused or scaled by what they sell, and tracking that reaches the enrolment or the order.'}, tag:{es:'IUVER · DNA · ED Tu Hogar',en:'IUVER · DNA · ED Tu Hogar'}},
+  {num:'02', h:{es:'Contenido orgánico que abre conversaciones',en:'Organic content that opens conversations'}, p:{es:'Reels, carruseles y stories con estrategia detrás: hooks que paran el scroll, formatos probados en tu sector y una llamada a la acción en cada pieza.',en:'Reels, carousels and stories with a strategy behind them: hooks that stop the scroll, formats proven in your sector and a call to action in every piece.'}, tag:{es:'GLA · Liberfy · IUVER',en:'GLA · Liberfy · IUVER'}},
+  {num:'03', h:{es:'YouTube de principio a fin',en:'YouTube from start to finish'}, p:{es:'Estrategia del canal, guion, edición con motion graphics, miniatura y títulos que prometen algo. Dos vídeos a la semana para Miguel Sierra, con sus clips verticales incluidos.',en:'Channel strategy, script, editing with motion graphics, thumbnail and titles that make a promise. Two videos a week for Miguel Sierra, vertical clips included.'}, tag:{es:'Miguel Sierra · Fixcal',en:'Miguel Sierra · Fixcal'}}
+];
+
+const CASES = [
+  {logo:'logo-iuver.png', who:{es:'IUVER Academy · Meta Ads',en:'IUVER Academy · Meta Ads'}, big:{es:'10.000 € en anuncios, 165.000 € facturados.',en:'10,000 € in ads, 165,000 € in revenue.'}, small:{es:'Máster de medicina estética para médicos',en:'Aesthetic medicine master’s for doctors'},
+   p:{es:'Campañas de captación para un máster de 7.000 €: cada lead que entra ya es médico y ya ha respondido a lo que importa. Hoy llevamos también sus clases, sus reels y sus anuncios en vídeo.',en:'Lead campaigns for a 7,000 € master’s: every lead that comes in is already a doctor and has already answered what matters. Today we also run their classes, reels and video ads.'}},
+  {face:'f-miguel-sierra.jpg', who:{es:'Miguel Sierra · Fixcal',en:'Miguel Sierra · Fixcal'}, big:{es:'Años trabajando juntos, dos vídeos a la semana.',en:'Years working together, two videos a week.'}, small:{es:'Marca personal y asesoría fiscal',en:'Personal brand and tax advisory'},
+   p:{es:'Estrategia de YouTube, guiones, edición, miniaturas y clips para su marca personal, y los vídeos de venta de Fixcal. Un canal que publica cada semana sin que él toque un programa de edición.',en:'YouTube strategy, scripts, editing, thumbnails and clips for his personal brand, plus Fixcal’s sales videos. A channel that publishes every week without him touching an editing app.'}},
+  {face:'f-alex-mestres.jpg', who:{es:'GLA Patrimonio · Orgánico',en:'GLA Patrimonio · Organic'}, big:{es:'Un formato propio que ya sale cada semana.',en:'A format of their own, shipping every week.'}, small:{es:'Consultoría financiera independiente',en:'Independent financial advisory'},
+   p:{es:'Reels de Álex y Laura, carruseles y comunidad, pensados para que quien ve un reel pida una llamada. El formato está definido, probado y se repite sin volver a empezar.',en:'Reels for Álex and Laura, carousels and community, built so that someone who watches a reel asks for a call. The format is defined, tested and repeats without starting over.'}}
+];
+
+const WORKS = [
+  {id:'iuver-ad1', r:'v', type:{es:'Anuncio Meta',en:'Meta ad'}, client:'IUVER Academy', dur:'0:58', first:true, title:{es:'Máster de medicina estética',en:'Aesthetic medicine master’s'}},
+  {id:'gla-oro', r:'v', type:{es:'Reel',en:'Reel'}, client:'GLA Patrimonio', dur:'0:41', first:true, title:{es:'Si tienes oro, no hagas esto ahora',en:'If you own gold, don’t do this now'}},
+  {id:'iuver-pinchar', r:'v', type:{es:'Reel',en:'Reel'}, client:'IUVER Academy', dur:'0:33', first:true, title:{es:'Pinchar es lo fácil. Lo difícil es decidir',en:'Injecting is the easy part. Deciding is the hard one'}},
+  {id:'ms-clip-270k', r:'v', type:{es:'Clip YouTube',en:'YouTube clip'}, client:'Miguel Sierra', dur:'0:48', first:true, title:{es:'Misma venta, 270.000 € de diferencia',en:'Same sale, a 270,000 € difference'}},
+  {id:'gla-40k', r:'v', type:{es:'Reel',en:'Reel'}, client:'GLA Patrimonio', dur:'1:11', first:true, title:{es:'¿40.000 € parados? Hazte estas 3 preguntas',en:'40,000 € sitting idle? Ask yourself these 3 questions'}},
+  {id:'iuver-ad2', r:'v', type:{es:'Anuncio Meta',en:'Meta ad'}, client:'IUVER Academy', dur:'1:05', title:{es:'Dedicarte a la medicina estética',en:'A career in aesthetic medicine'}},
+  {id:'iuver-tiembla', r:'v', type:{es:'Reel',en:'Reel'}, client:'IUVER Academy', dur:'0:39', title:{es:'Si el médico tiembla, el paciente se va',en:'If the doctor trembles, the patient leaves'}},
+  {id:'iuver-vicente', r:'v', type:{es:'Reel',en:'Reel'}, client:'IUVER Academy', dur:'0:29', title:{es:'Ser un médico normal no basta',en:'Being an average doctor is not enough'}},
+  {id:'gla-herencia', r:'v', type:{es:'Reel',en:'Reel'}, client:'GLA Patrimonio', dur:'0:57', title:{es:'¿Has heredado? Lee esto antes de firmar',en:'Just inherited? Read this before you sign'}},
+  {id:'gla-resultados', r:'v', type:{es:'Reel',en:'Reel'}, client:'GLA Patrimonio', dur:'0:31', title:{es:'15.000 € en oro físico, un año después',en:'15,000 € in physical gold, one year later'}},
+
+  {id:'ms-holding', r:'h', type:{es:'YouTube',en:'YouTube'}, client:'Miguel Sierra', dur:'12:55', yt:'Kn4E_a7r0iQ', first:true, title:{es:'Holding y venta de empresa',en:'Holding structures and selling your company'}},
+  {id:'fixcal-seleccionarte', r:'h', type:{es:'Vídeo de venta',en:'Sales video'}, client:'Fixcal', dur:'7:30', first:true, title:{es:'He querido seleccionarte',en:'I wanted to pick you'}},
+  {id:'ms-3casos', r:'h', type:{es:'YouTube',en:'YouTube'}, client:'Miguel Sierra', dur:'24:29', yt:'Eox7QTPk-fA', first:true, title:{es:'Paco, Pedro y Miguel',en:'Paco, Pedro and Miguel'}},
+  {id:'ms-irpf', r:'h', type:{es:'YouTube',en:'YouTube'}, client:'Miguel Sierra', dur:'12:46', title:{es:'Progresividad en frío del IRPF',en:'Bracket creep in Spanish income tax'}},
+  {id:'ms-3errores', r:'h', type:{es:'YouTube',en:'YouTube'}, client:'Miguel Sierra', dur:'12:11', title:{es:'Los 3 errores al vender una sociedad',en:'3 mistakes when selling a company'}},
+  {id:'ms-fracasaste', r:'h', type:{es:'YouTube',en:'YouTube'}, client:'Miguel Sierra', dur:'8:52', title:{es:'Fracasaste antes de empezar',en:'You failed before you started'}},
+  {id:'iuver-clase', r:'h', type:{es:'Formación',en:'Training'}, client:'IUVER Academy', dur:'1:52', title:{es:'Clase 1.1 del máster',en:'Master’s class 1.1'}}
+];
+
+const I18N = {
+  es:{
+    'nav.results':'Resultados','nav.services':'Qué hacemos','nav.work':'Trabajo','nav.contact':'Contacto','nav.cta':'Hablar por WhatsApp',
+    'hero.eyebrow':'Acceler · Marketing con IA · Más de 2 años con marcas personales y empresas',
+    'hero.h1':'Tu marketing, <em>medido en ventas.</em>',
+    'hero.lead':'Anuncios de Meta, contenido orgánico y YouTube para marcas personales y empresas. <strong>Con 10.000 € en anuncios, IUVER Academy facturó 165.000 €.</strong> Eso es lo que medimos cada semana: lo que entra en caja.',
+    'hero.cta1':'Cuéntanos tu caso por WhatsApp','hero.cta2':'Ver resultados',
+    'proof.k':'Caso real · Meta Ads','proof.who':'<strong>IUVER Academy</strong> · máster de medicina estética. Inversión en anuncios y facturación generada.','proof.k2':'En el mercado','proof.v2':'+2 años','proof.k3':'Marcas',
+    'wall.cap':'Con quién trabajamos y hemos trabajado',
+    'pain.eyebrow':'¿Te suena?','pain.h2':'Inviertes en marketing y lo que recibes son <em>informes.</em>',
+    'turn.h3':'Nosotros empezamos por <em>el final:</em> cuántos clientes te ha traído cada euro.',
+    'turn.p':'Llevamos tu marketing completo y lo conectamos con tus ventas. Cada anuncio, cada reel y cada vídeo tiene un trabajo que hacer, y cada semana sabes cuál lo ha hecho y cuál se apaga. Sin reuniones de tres horas para cambiar un titular.',
+    'svc.eyebrow':'Qué hacemos','svc.h2':'Tres frentes, <em>un solo objetivo.</em>','svc.lead':'Anuncios, contenido y YouTube trabajando juntos y producidos por nuestro propio sistema con IA. Por eso entregamos en días y no se nos acaban las ideas.',
+    'sys.h3':'Producimos con IA. <em>Decidimos</em> con criterio.','sys.p':'Hemos construido nuestro propio estudio de producción con IA: anuncios, reels, carruseles y vídeos de YouTube salen de un sistema que conoce tu negocio, tu tono y lo que ya ha funcionado. La IA hace el volumen. Nosotros decidimos qué se publica, qué se escala y qué se mata.',
+    'res.eyebrow':'Resultados','res.h2':'Lo que pasa cuando el marketing <em>se mide.</em>',
+    'work.eyebrow':'Trabajo','work.h2':'Así se ve <em>por fuera.</em>','work.lead':'Anuncios, reels, vídeos de YouTube y vídeos de venta. Pasa el ratón para verlos en movimiento y haz clic para oírlos.','work.reel':'Showreel · 25 s','work.more':'Ver más trabajos','work.less':'Ver menos',
+    'cta.eyebrow':'Contacto','cta.h2':'¿Hablamos de <em>tu caso?</em>','cta.lead':'Cuéntanos qué vendes y qué estás haciendo ahora. Te decimos por WhatsApp qué haríamos nosotros, en cuánto tiempo y cuánto cuesta.','cta.btn':'Abrir WhatsApp','cta.fit':'Para marcas personales y empresas que ya facturan y quieren más clientes. Marketing completo o solo vídeo: dinos qué necesitas.',
+    'ftr.tag':'Marketing con IA · Tenerife, España','lb.yt':'Ver completo en YouTube'
+  },
+  en:{
+    'nav.results':'Results','nav.services':'What we do','nav.work':'Work','nav.contact':'Contact','nav.cta':'Chat on WhatsApp',
+    'hero.eyebrow':'Acceler · AI-driven marketing · 2+ years with personal brands and companies',
+    'hero.h1':'Your marketing, <em>measured in sales.</em>',
+    'hero.lead':'Meta ads, organic content and YouTube for personal brands and companies. <strong>With 10,000 € in ads, IUVER Academy billed 165,000 €.</strong> That is what we measure every week: what reaches the bank.',
+    'hero.cta1':'Tell us your case on WhatsApp','hero.cta2':'See results',
+    'proof.k':'Real case · Meta Ads','proof.who':'<strong>IUVER Academy</strong> · aesthetic medicine master’s. Ad spend and revenue generated.','proof.k2':'In the market','proof.v2':'2+ years','proof.k3':'Brands',
+    'wall.cap':'Who we work and have worked with',
+    'pain.eyebrow':'Sound familiar?','pain.h2':'You invest in marketing and what you get back are <em>reports.</em>',
+    'turn.h3':'We start from <em>the end:</em> how many clients each euro brought you.',
+    'turn.p':'We run your whole marketing and connect it to your sales. Every ad, reel and video has a job to do, and every week you know which one did it and which one gets switched off. No three-hour meetings to change a headline.',
+    'svc.eyebrow':'What we do','svc.h2':'Three fronts, <em>one goal.</em>','svc.lead':'Ads, content and YouTube working together, produced by our own AI system. That is why we deliver in days and never run out of ideas.',
+    'sys.h3':'We produce with AI. <em>We decide</em> with judgement.','sys.p':'We built our own AI production studio: ads, reels, carousels and YouTube videos come out of a system that knows your business, your tone and what has already worked. The AI does the volume. We decide what gets published, what gets scaled and what gets killed.',
+    'res.eyebrow':'Results','res.h2':'What happens when marketing <em>gets measured.</em>',
+    'work.eyebrow':'Work','work.h2':'What it looks like <em>from outside.</em>','work.lead':'Ads, reels, YouTube videos and sales videos. Hover to see them move, click to hear them.','work.reel':'Showreel · 25 s','work.more':'See more work','work.less':'See less',
+    'cta.eyebrow':'Contact','cta.h2':'Shall we talk about <em>your case?</em>','cta.lead':'Tell us what you sell and what you are doing now. We reply on WhatsApp with what we would do, how long it takes and what it costs.','cta.btn':'Open WhatsApp','cta.fit':'For personal brands and companies with revenue that want more clients. Full marketing or video only: tell us what you need.',
+    'ftr.tag':'AI-driven marketing · Tenerife, Spain','lb.yt':'Watch the full video on YouTube'
+  }
+};
+
+let lang = (new URLSearchParams(location.search).get('lang') || (function(){try{return localStorage.getItem('lang')}catch(e){return null}})() || 'es');
+if(!I18N[lang]) lang='es';
+const tr = k => (I18N[lang][k] ?? I18N.es[k] ?? k);
+const canHover = matchMedia('(hover:hover) and (pointer:fine)').matches;
+const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+let expanded=false;
+
+function esc(s){return String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))}
+function cardHTML(w){
+  const hidden = (!expanded && !w.first) ? ' hidden' : '';
+  return `<article class="work" data-id="${w.id}" tabindex="0" role="button" aria-label="${esc(w.title[lang])}"${hidden}>
+    <div class="media">
+      <img src="assets/posters/${w.id}.jpg" alt="${esc(w.title[lang])}" loading="lazy" decoding="async">
+      <video muted loop playsinline preload="none" src="assets/videos/${w.id}.mp4"></video>
+      <span class="tag">${esc(w.type[lang])}</span>
+      <span class="play"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg></span>
+    </div>
+    <div class="info"><h3>${esc(w.title[lang])}</h3><div class="m">${esc(w.client)} · ${esc(w.dur)}</div></div>
+  </article>`;
+}
+function render(){
+  document.getElementById('faces').innerHTML = FACES.map(f=>`<div class="face"><img src="assets/img/${f.img}" alt="${esc(f.n)}" loading="lazy"><div class="n">${esc(f.n)}</div><div class="r">${esc(f.r[lang])}</div></div>`).join('');
+  document.getElementById('pains').innerHTML = PAINS.map(p=>`<div class="pain reveal"><div class="x">${p.x}</div><h3>${esc(p.h[lang])}</h3><p>${esc(p.p[lang])}</p></div>`).join('');
+  document.getElementById('services').innerHTML = SERVICES.map(s=>`<div class="service reveal"><div class="num">${s.num}</div><h3>${esc(s.h[lang])}</h3><p>${esc(s.p[lang])}</p><span class="tag">${esc(s.tag[lang])}</span></div>`).join('');
+  document.getElementById('cases').innerHTML = CASES.map(c=>`<div class="case reveal"><div class="head">${c.logo?`<img class="lg" src="assets/img/${c.logo}" alt="">`:`<img class="av" src="assets/img/${c.face}" alt="">`}<div class="who">${esc(c.who[lang])}</div></div><div class="big">${esc(c.big[lang])}<small>${esc(c.small[lang])}</small></div><p>${esc(c.p[lang])}</p></div>`).join('');
+  document.getElementById('gridH').innerHTML = WORKS.filter(w=>w.r==='h').map(cardHTML).join('');
+  document.getElementById('gridV').innerHTML = WORKS.filter(w=>w.r==='v').map(cardHTML).join('');
+  document.getElementById('moreBtn').textContent = expanded ? tr('work.less') : tr('work.more');
+  bindCards();
+}
+function applyI18n(){
+  document.documentElement.lang = lang;
+  document.querySelectorAll('[data-i18n]').forEach(el=>{el.textContent = tr(el.dataset.i18n)});
+  document.querySelectorAll('[data-i18n-html]').forEach(el=>{el.innerHTML = tr(el.dataset.i18nHtml)});
+  document.getElementById('langBtn').textContent = lang==='es' ? 'EN' : 'ES';
+  const wa = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(WA_TEXT[lang])}`;
+  document.querySelectorAll('.wa-link').forEach(a=>a.href=wa);
+  document.title = lang==='es' ? 'Acceler · Tu marketing, medido en ventas' : 'Acceler · Your marketing, measured in sales';
+}
+
+/* cards */
+let activeMobile=null;
+function bindCards(){
+  document.querySelectorAll('.work').forEach(card=>{
+    const v = card.querySelector('video');
+    if(v && canHover){
+      card.addEventListener('pointerenter', ()=>{ v.play().then(()=>card.classList.add('playing')).catch(()=>{}); });
+      card.addEventListener('pointerleave', ()=>{ v.pause(); v.currentTime=0; card.classList.remove('playing'); });
+    }
+    card.addEventListener('click', ()=>openLightbox(card.dataset.id));
+    card.addEventListener('keydown', e=>{ if(e.key==='Enter'||e.key===' '){e.preventDefault();openLightbox(card.dataset.id)} });
+  });
+  if(!canHover && !reduce){
+    const io = new IntersectionObserver(entries=>{
+      entries.forEach(en=>{
+        const card=en.target, v=card.querySelector('video'); if(!v) return;
+        if(en.intersectionRatio>=.75){ if(activeMobile && activeMobile!==card){ activeMobile.querySelector('video').pause(); activeMobile.classList.remove('playing'); } activeMobile=card; v.play().then(()=>card.classList.add('playing')).catch(()=>{}); }
+        else if(card===activeMobile){ v.pause(); card.classList.remove('playing'); activeMobile=null; }
+      });
+    },{threshold:[0,.75]});
+    document.querySelectorAll('#gridV .work').forEach(c=>io.observe(c));
+  }
+}
+const lb=document.getElementById('lb'), lbMedia=document.getElementById('lbMedia'), lbCap=document.getElementById('lbCap');
+function openLightbox(id){
+  const w = WORKS.find(x=>x.id===id); if(!w) return;
+  document.querySelectorAll('.work video').forEach(v=>{v.pause()});
+  lbMedia.innerHTML = `<video class="${w.r}" controls autoplay playsinline src="assets/videos/${w.id}.mp4" poster="assets/posters/${w.id}.jpg"></video>`;
+  lbCap.innerHTML = `<strong>${esc(w.title[lang])}</strong><span>${esc(w.client)} · ${esc(w.type[lang])} · ${esc(w.dur)}</span>${w.yt?`<a href="https://www.youtube.com/watch?v=${w.yt}" target="_blank" rel="noopener">${tr('lb.yt')} ↗</a>`:''}`;
+  if(typeof lb.showModal==='function') lb.showModal(); else lb.setAttribute('open','');
+  if(window.lenis) window.lenis.stop();
+  document.body.style.overflow='hidden';
+}
+function closeLightbox(){
+  lbMedia.innerHTML='';
+  if(lb.open) lb.close(); else lb.removeAttribute('open');
+  if(window.lenis) window.lenis.start();
+  document.body.style.overflow='';
+}
+document.getElementById('lbClose').addEventListener('click',closeLightbox);
+lb.addEventListener('click',e=>{ if(e.target===lb) closeLightbox(); });
+lb.addEventListener('close',()=>{ lbMedia.innerHTML=''; if(window.lenis) window.lenis.start(); document.body.style.overflow=''; });
+document.addEventListener('keydown',e=>{ if(e.key==='Escape' && lb.open) closeLightbox(); });
+
+document.getElementById('moreBtn').addEventListener('click',()=>{
+  expanded=!expanded;
+  document.querySelectorAll('.work').forEach(el=>{ const w=WORKS.find(x=>x.id===el.dataset.id); el.hidden = !expanded && !w.first; });
+  document.getElementById('moreBtn').textContent = expanded ? tr('work.less') : tr('work.more');
+  if(window.ScrollTrigger) ScrollTrigger.refresh();
+});
+document.getElementById('langBtn').addEventListener('click',()=>{
+  lang = lang==='es' ? 'en' : 'es';
+  try{localStorage.setItem('lang',lang)}catch(e){}
+  applyI18n(); render(); setupReveal(true);
+});
+const hdr=document.querySelector('.hdr');
+addEventListener('scroll',()=>hdr.classList.toggle('scrolled',scrollY>40),{passive:true});
+
+/* motion */
+function setupReveal(refresh){
+  const els=[...document.querySelectorAll('.reveal:not(.in)')];
+  if(reduce || !window.gsap){ els.forEach(e=>e.classList.add('in')); return; }
+  els.forEach(el=>{
+    gsap.fromTo(el,{opacity:0,y:28},{opacity:1,y:0,duration:1,ease:'power3.out',onStart:()=>el.classList.add('in'),
+      scrollTrigger:{trigger:el,start:'top 88%',once:true}});
+  });
+  if(refresh && window.ScrollTrigger) ScrollTrigger.refresh();
+}
+function init(){
+  applyI18n(); render();
+  if(window.gsap){
+    gsap.registerPlugin(ScrollTrigger, SplitText);
+    if(!reduce && window.Lenis){
+      const lenis = new Lenis({lerp:.09,smoothWheel:true});
+      lenis.on('scroll',ScrollTrigger.update);
+      gsap.ticker.add(time=>lenis.raf(time*1000));
+      gsap.ticker.lagSmoothing(0);
+      window.lenis=lenis;
+      document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{ const id=a.getAttribute('href'); if(id.length>1 && document.querySelector(id)){ e.preventDefault(); lenis.scrollTo(id,{offset:-72}); } }));
+    }
+    if(!reduce){
+      document.fonts.ready.then(()=>{
+        const split = new SplitText('#heroTitle',{type:'lines',mask:'lines'});
+        gsap.from(split.lines,{yPercent:110,duration:1.2,stagger:.09,ease:'power4.out',delay:.15});
+        gsap.from('.hero .eyebrow',{opacity:0,y:10,duration:.8,delay:.1});
+        gsap.from('.hero .lead, .hero-cta, .proof',{opacity:0,y:20,duration:1,stagger:.1,delay:.55,ease:'power3.out'});
+        gsap.from('.giant',{yPercent:30,opacity:0,duration:1.6,delay:.4,ease:'power4.out'});
+        gsap.to('.giant',{yPercent:18,ease:'none',scrollTrigger:{trigger:'.hero',start:'top top',end:'bottom top',scrub:true}});
+      });
+    }
+    setupReveal(false);
+  } else { document.querySelectorAll('.reveal').forEach(e=>e.classList.add('in')); }
+}
+init();
+})();
+</script>
+</body>
+</html>
