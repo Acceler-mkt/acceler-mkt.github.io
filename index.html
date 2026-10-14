@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Acceler · Marketing con IA para marcas personales y empresas</title>
+<title>Acceler MKT · Marketing con IA para marcas personales y empresas</title>
 <meta name="description" content="Anuncios de Meta, contenido orgánico y YouTube para marcas personales y empresas que ya facturan, producidos con nuestro sistema de IA y medidos en ventas. Con 10.000 € en anuncios, IUVER Academy facturó 165.000 €.">
 <link rel="canonical" href="https://acceler-mkt.github.io/">
-<meta property="og:title" content="Acceler · Marketing con IA para marcas personales y empresas">
+<meta property="og:title" content="Acceler MKT · Marketing con IA para marcas personales y empresas">
 <meta property="og:description" content="Esto es lo que medimos cada semana: lo que entra en caja. Con 10.000 € en anuncios, IUVER Academy facturó 165.000 €.">
 <meta property="og:image" content="https://acceler-mkt.github.io/assets/posters/showreel.jpg">
 <meta property="og:type" content="website">
@@ -58,6 +58,7 @@ em{font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:-.0
 .light .btn-ghost{border-color:var(--lined);color:var(--inkd)}
 .light .btn-ghost:hover{background:rgba(27,26,24,.05)}
 .reassure{font-family:var(--mono);font-size:12px;letter-spacing:.06em;color:var(--mute);margin-top:14px}
+.qual{margin-top:18px;font-size:15px;color:var(--ink);border-left:2px solid var(--coral);padding-left:12px;max-width:52ch}
 
 /* header */
 .hdr{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .4s,backdrop-filter .4s,border-color .4s;border-bottom:1px solid transparent}
@@ -142,22 +143,53 @@ em{font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:-.0
 .light .eyebrow{color:#c24a4a}.light .eyebrow::before{background:#c24a4a;box-shadow:0 0 0 4px rgba(194,74,74,.15)}
 .light .reassure{color:var(--greyw)}
 
-/* comparison table */
-.cmp{border:1px solid var(--lined);border-radius:24px;overflow:hidden;background:#fff}
-.cmp-row{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--lined)}
-.cmp-row:first-child{border-top:0;background:var(--cream)}
-.cmp-row>div{padding:18px 22px;font-size:15.5px;line-height:1.5}
-.cmp-row:first-child>div{font-family:var(--mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;padding:14px 22px}
-.cmp-row>div:first-child{color:var(--greyw);border-right:1px solid var(--lined)}
-.cmp-row>div:last-child{color:var(--inkd);font-weight:500;background:linear-gradient(90deg,rgba(222,98,98,.06),transparent)}
-.cmp-row>div:last-child::before{content:"→ ";color:#c24a4a}
-.cmp-row:first-child>div:last-child::before{content:""}
-@media(max-width:600px){.cmp-row>div{padding:14px 16px;font-size:14px}}
+/* comparison */
+.cmp{display:grid;gap:14px}
+@media(min-width:860px){.cmp{grid-template-columns:.9fr 1.1fr;align-items:stretch}}
+.cmp ul{list-style:none}
+.cmp li{display:flex;gap:12px;align-items:flex-start;padding:15px 0;border-top:1px solid var(--lined);font-size:15.5px;line-height:1.45}
+.cmp li i{font-style:normal;font-family:var(--mono);flex:none;width:18px;text-align:center;transition:transform .3s}
+.cmp-h{font-family:var(--mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;padding-bottom:14px}
+.cmp-old{background:#fff;border:1px solid var(--lined);border-radius:24px;padding:24px 26px;color:var(--greyw)}
+.cmp-old .cmp-h{color:var(--greyw)}
+.cmp-old li i{color:#b9b2a8}
+.cmp-new{position:relative;overflow:hidden;border-radius:24px;padding:24px 26px;background:var(--inkd);color:var(--ink);border:1px solid rgba(222,98,98,.45);box-shadow:0 40px 90px -40px rgba(222,98,98,.55),0 0 0 1px rgba(222,98,98,.08) inset}
+.cmp-new::before{content:"";position:absolute;inset:auto -35% -55% auto;width:85%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(222,98,98,.55),rgba(232,160,72,.22) 40%,transparent 68%);filter:blur(12px);animation:breathe 4.5s ease-in-out infinite}
+.cmp-new::after{content:"";position:absolute;inset:-40% auto auto -30%;width:60%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(232,160,72,.25),transparent 65%);filter:blur(14px);animation:breathe 6s ease-in-out infinite reverse}
+.cmp-new .sweep{position:absolute;inset:0;background:linear-gradient(105deg,transparent 35%,rgba(246,245,244,.12) 50%,transparent 65%);transform:translateX(-120%);animation:sweep 5.5s cubic-bezier(.6,0,.2,1) infinite;pointer-events:none}
+.cmp-new>*{position:relative}
+.cmp-new .cmp-h{display:flex;align-items:center;gap:10px;color:var(--ink);border-bottom:1px solid rgba(246,245,244,.12)}
+.cmp-new .cmp-h svg{width:22px;height:22px}
+.cmp-new .cmp-h span{font-family:"Inter",var(--sans);font-weight:700;font-size:18px;letter-spacing:-.04em;text-transform:none}
+.cmp-new .cmp-h span b{color:var(--coral)}
+.cmp-new .cmp-h em{margin-left:auto;font-style:normal;font-family:var(--mono);color:var(--gold)}
+.cmp-new li{border-top-color:rgba(246,245,244,.1);color:var(--ink);font-weight:500;animation:rowin .9s cubic-bezier(.2,.8,.2,1) both;animation-delay:calc(.12s * var(--i))}
+.cmp-new li i{color:var(--coral);text-shadow:0 0 12px rgba(222,98,98,.8)}
+.cmp-new li:hover{color:#fff}
+.cmp-new li:hover i{transform:translateX(3px)}
+@keyframes breathe{0%,100%{transform:scale(1);opacity:.85}50%{transform:scale(1.18);opacity:1}}
+@keyframes sweep{0%,55%{transform:translateX(-120%)}100%{transform:translateX(120%)}}
+@keyframes rowin{from{opacity:0;transform:translateX(-14px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.cmp-new::before,.cmp-new::after,.cmp-new .sweep,.cmp-new li{animation:none}}
 
 /* services */
 .services{display:grid;gap:14px;margin-top:40px}
 @media(min-width:900px){.services{grid-template-columns:repeat(3,1fr)}}
-.service{background:#fff;border:1px solid var(--lined);border-radius:24px;padding:30px 28px;display:grid;gap:14px;align-content:start;transition:transform .5s cubic-bezier(.2,.8,.2,1),box-shadow .5s}
+.service{background:#fff;border:1px solid var(--lined);border-radius:24px;padding:0 28px 30px;display:grid;gap:14px;align-content:start;overflow:hidden;transition:transform .5s cubic-bezier(.2,.8,.2,1),box-shadow .5s}
+.vis{position:relative;height:230px;margin:0 -28px 14px;background:radial-gradient(80% 70% at 50% 110%,rgba(222,98,98,.22),transparent 70%),linear-gradient(180deg,#eceae5,#f5f3f0);border-bottom:1px solid var(--lined);overflow:hidden}
+.vis .ph{position:absolute;left:50%;top:24px;transform:translateX(-50%);width:124px;aspect-ratio:9/16;border-radius:18px;overflow:hidden;border:4px solid #1b1a18;box-shadow:0 24px 50px -20px rgba(27,26,24,.6);background:#000}
+.vis .ph img{width:100%;height:100%;object-fit:cover}
+.vis .yt{position:absolute;left:28px;right:28px;top:26px;aspect-ratio:16/9;border-radius:14px;overflow:hidden;box-shadow:0 24px 50px -20px rgba(27,26,24,.6);background:#000}
+.vis .yt img{width:100%;height:100%;object-fit:cover}
+.vis .yt i{position:absolute;left:50%;top:50%;width:54px;height:36px;transform:translate(-50%,-50%);background:#ff0033;border-radius:10px}
+.vis .yt i::after{content:"";position:absolute;left:55%;top:50%;transform:translate(-50%,-50%);border-left:14px solid #fff;border-top:9px solid transparent;border-bottom:9px solid transparent}
+.vis .chip{position:absolute;background:#fff;color:var(--inkd);border-radius:999px;padding:9px 13px;font-size:12.5px;font-weight:500;box-shadow:0 14px 30px -14px rgba(27,26,24,.5);border:1px solid var(--lined);white-space:nowrap;max-width:46%;overflow:hidden;text-overflow:ellipsis}
+.vis .chip::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--coral);margin-right:8px;vertical-align:middle}
+.vis .c1{left:18px;top:52px;animation:floaty 5s ease-in-out infinite}
+.vis .c2{right:18px;bottom:36px;animation:floaty 6s ease-in-out infinite reverse}
+.vis .c3{right:18px;bottom:22px;animation:floaty 6s ease-in-out infinite reverse}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+@media(prefers-reduced-motion:reduce){.vis .chip{animation:none}}
 .service:hover{transform:translateY(-4px);box-shadow:0 30px 60px -30px rgba(27,26,24,.3)}
 .service .num{font-family:var(--mono);font-size:12px;letter-spacing:.14em;color:#c24a4a}
 .service h3{font-size:clamp(26px,2.4vw,34px);letter-spacing:-.04em;font-weight:600}
@@ -215,8 +247,13 @@ em{font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:-.0
 
 /* team */
 .team{display:grid;gap:14px;margin-top:48px}
-@media(min-width:900px){.team{grid-template-columns:1.2fr .9fr .9fr}}
-.team .who{background:#fff;border:1px solid var(--lined);border-radius:22px;padding:26px 24px;display:grid;gap:8px;align-content:start}
+@media(min-width:900px){.team{grid-template-columns:repeat(3,1fr)}}
+.team .who{background:#fff;border:1px solid var(--lined);border-radius:22px;padding:18px 18px 24px;display:grid;gap:8px;align-content:start}
+.tphoto{aspect-ratio:4/5;border-radius:16px;overflow:hidden;background:#dcd8d2;margin-bottom:10px;display:grid;place-items:center}
+.tphoto img{width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.05)}
+.tlogo{background:var(--inkd);position:relative}
+.tlogo::before{content:"";position:absolute;inset:auto -30% -40% auto;width:80%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(222,98,98,.5),rgba(232,160,72,.2) 45%,transparent 70%);filter:blur(12px)}
+.tlogo svg{position:relative;width:46%;height:auto;filter:drop-shadow(0 20px 40px rgba(222,98,98,.5))}
 .team .who .r{font-family:var(--mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:#c24a4a}
 .team .who h3{font-size:22px;letter-spacing:-.03em;font-weight:600}
 .team .who p{color:var(--greyw);font-size:15px;line-height:1.5}
@@ -303,7 +340,7 @@ html.static .hero{min-height:880px}
   <div class="wrap">
     <a class="logo" href="#top" aria-label="Acceler">
       <svg viewBox="0 0 136 136" aria-hidden="true"><circle cx="68" cy="68" r="60" fill="#7a2a2a"/><circle cx="86" cy="50" r="48" fill="#e8a048"/><circle cx="78" cy="62" r="40" fill="#c24a4a"/><circle cx="88" cy="56" r="30" fill="#de6262"/><circle cx="95" cy="52" r="18" fill="#f1b76f"/></svg>
-      <span>acceler<b>.</b></span>
+      <span>acceler mkt<b>.</b></span>
     </a>
     <nav class="nav">
       <a href="#servicios" data-i18n="nav.services">Qué hacemos</a>
@@ -328,14 +365,15 @@ html.static .hero{min-height:880px}
   <div class="wrap">
     <div class="hero-grid">
       <div>
-        <span class="eyebrow" data-i18n="hero.eyebrow">Acceler · Marketing con IA · Más de 2 años con marcas personales y empresas</span>
-        <h1 id="heroTitle" data-i18n-html="hero.h1">Esto es lo que medimos cada semana: <em>lo que entra en caja.</em></h1>
-        <p class="lead" data-i18n-html="hero.lead">Llevamos los anuncios de Meta, el contenido orgánico y el YouTube de marcas personales y empresas que ya facturan. Lo producimos con nuestro propio sistema de IA y lo conectamos con tus ventas. <strong>Si tu marketing te da informes y no clientes, sigue leyendo.</strong></p>
+        <span class="eyebrow" data-i18n="hero.eyebrow">Acceler MKT · Marketing con IA para marcas personales y empresas que ya facturan</span>
+        <h1 id="heroTitle" data-i18n-html="hero.h1">No tienes marketing. <em>Tienes gastos.</em></h1>
+        <p class="lead" data-i18n-html="hero.lead">Si no sabes qué anuncio, qué reel o qué vídeo te ha traído el último cliente, eso es lo que te está pasando. <strong>Nosotros llevamos tus anuncios de Meta, tu contenido y tu YouTube, los producimos con nuestro propio sistema de IA y los medimos hasta la venta. Funcionando en 21 días.</strong></p>
+        <p class="qual" data-i18n="hero.qual">Para marcas personales y empresas que ya facturan. Si empiezas de cero, no somos para ti.</p>
         <div class="hero-cta">
           <a class="btn btn-wa wa-link" href="#" target="_blank" rel="noopener"><svg><use href="#wa"/></svg><span data-i18n="hero.cta1">Cuéntanos tu caso por WhatsApp</span></a>
           <a class="btn btn-ghost" href="#servicios" data-i18n="hero.cta2">Ver casos</a>
         </div>
-        <p class="reassure" data-i18n="hero.reassure">Sin compromiso: en la primera conversación te decimos si encajamos y qué haríamos.</p>
+        <p class="reassure" data-i18n="hero.reassure">Sin compromiso. Dos plazas por trimestre.</p>
       </div>
       <aside class="proof">
         <div class="proof-card">
@@ -350,7 +388,7 @@ html.static .hero{min-height:880px}
       </aside>
     </div>
   </div>
-  <div class="giant" aria-hidden="true">acceler<b>.</b></div>
+  <div class="giant" aria-hidden="true">acceler mkt<b>.</b></div>
 </section>
 
 <section class="wall" id="clientes">
@@ -379,8 +417,8 @@ html.static .hero{min-height:880px}
     </div>
     <div class="pains" id="pains"></div>
     <div class="tesis reveal">
-      <h3 data-i18n-html="tesis.h3">El marketing de las marcas que facturan lo llevan agencias de posts bonitos o freelances que <em>desaparecen en agosto.</em></h3>
-      <p data-i18n-html="tesis.p">Las dos cobran por piezas y reportan impresiones. Ninguna se juega nada en tus ventas. Acceler existe para lo contrario: <strong>un sistema de producción con IA que conoce tu negocio, publica cada semana y se mide en lo que entra en caja.</strong> La IA hace el volumen. Nosotros decidimos qué se publica, qué se escala y qué se mata.</p>
+      <h3 data-i18n-html="tesis.h3">Hasta ahora tenías dos opciones: una agencia de posts bonitos <em>o un freelance que desaparece en agosto.</em></h3>
+      <p data-i18n-html="tesis.p">Las dos cobran por piezas y reportan impresiones. Ninguna se juega nada en tus ventas. Acceler MKT existe para lo contrario: <strong>un sistema de producción con IA que conoce tu negocio, publica cada semana y se mide en lo que entra en caja.</strong> La IA hace el volumen. Nosotros decidimos qué se publica, qué se escala y qué se mata.</p>
     </div>
   </div>
 </section>
@@ -427,7 +465,7 @@ html.static .hero{min-height:880px}
     <div class="sec-head">
       <div>
         <span class="eyebrow" data-i18n="how.eyebrow">Cómo trabajamos</span>
-        <h2 class="reveal" data-i18n-html="how.h2">Tres pasos y un día: <em>el 21.</em></h2>
+        <h2 class="reveal" data-i18n-html="how.h2">De tu grabación a clientes, <em>en tres pasos.</em></h2>
       </div>
       <p class="lead reveal" data-i18n="how.lead">Sin reuniones de tres horas ni calendarios que nadie mira. Cada paso quita un miedo.</p>
     </div>
@@ -498,9 +536,9 @@ html.static .hero{min-height:880px}
 
 <footer class="ftr">
   <div class="wrap">
-    <a class="logo" href="#top" style="font-size:18px"><svg viewBox="0 0 136 136" aria-hidden="true" style="width:22px;height:22px"><circle cx="68" cy="68" r="60" fill="#7a2a2a"/><circle cx="86" cy="50" r="48" fill="#e8a048"/><circle cx="78" cy="62" r="40" fill="#c24a4a"/><circle cx="88" cy="56" r="30" fill="#de6262"/><circle cx="95" cy="52" r="18" fill="#f1b76f"/></svg><span>acceler<b>.</b></span></a>
+    <a class="logo" href="#top" style="font-size:18px"><svg viewBox="0 0 136 136" aria-hidden="true" style="width:22px;height:22px"><circle cx="68" cy="68" r="60" fill="#7a2a2a"/><circle cx="86" cy="50" r="48" fill="#e8a048"/><circle cx="78" cy="62" r="40" fill="#c24a4a"/><circle cx="88" cy="56" r="30" fill="#de6262"/><circle cx="95" cy="52" r="18" fill="#f1b76f"/></svg><span>acceler mkt<b>.</b></span></a>
     <span data-i18n="ftr.tag">Marketing con IA · Tenerife, España</span>
-    <span>© 2026 Acceler</span>
+    <span>© 2026 Acceler MKT</span>
   </div>
 </footer>
 
@@ -522,8 +560,8 @@ html.static .hero{min-height:880px}
 (function(){
 const WA_NUMBER = '34647829854';
 const WA_TEXT = {
-  es: 'Hola Alfonso, he visto la web de Acceler y quiero hablar de mi caso.',
-  en: 'Hi Alfonso, I saw the Acceler site and I would like to talk about my case.'
+  es: 'Hola Alfonso, he visto la web de Acceler MKT y quiero hablar de mi caso.',
+  en: 'Hi Alfonso, I saw the Acceler MKT site and I would like to talk about my case.'
 };
 
 const FACES = [
@@ -549,19 +587,19 @@ const CMP = {
     {es:['Un calendario de publicaciones','Las objeciones que oye tu comercial, convertidas en contenido'],en:['A posting calendar','The objections your salesperson hears, turned into content']},
     {es:['Un informe mensual de impresiones','Un panel semanal con leads, llamadas y ventas por pieza'],en:['A monthly report of impressions','A weekly panel with leads, calls and sales per piece']},
     {es:['Un editor que entrega cuando puede','Un sistema propio que produce cada semana'],en:['An editor who delivers when he can','Our own system producing every week']},
-    {es:['Una creatividad nueva cada trimestre','30 o 40 creatividades al mes'],en:['One new creative per quarter','30 to 40 creatives a month']},
+    {es:['Unas pocas creatividades al mes, a ver qué pasa','30 o 40 creatividades al mes, y se apaga lo que no vende'],en:['A handful of creatives a month, fingers crossed','30 to 40 creatives a month, and what doesn’t sell gets switched off']},
     {es:['Tres reuniones para cambiar un titular','Cambios en el día, por WhatsApp'],en:['Three meetings to change a headline','Changes the same day, over WhatsApp']}
   ]
 };
 
 const SERVICES = [
-  {num:'01', h:{es:'Que te compren.',en:'Get bought.'}, sub:{es:'Anuncios de Meta medidos hasta la venta',en:'Meta ads measured down to the sale'},
+  {num:'01', vis:{type:'phone',img:'iuver-ad1.jpg',a:{es:'Lead cualificado · médica',en:'Qualified lead · doctor'},b:{es:'Matrícula · 7.000 €',en:'Enrolment · 7,000 €'}}, h:{es:'Que te compren.',en:'Get bought.'}, sub:{es:'Anuncios de Meta medidos hasta la venta',en:'Meta ads measured down to the sale'},
    c:{es:'<b>IUVER Academy:</b> 10.000 € en anuncios, 165.000 € facturados en matrículas de un máster de 7.000 €.',en:'<b>IUVER Academy:</b> 10,000 € in ads, 165,000 € billed in enrolments for a 7,000 € master’s.'},
    inc:{es:'Creatividades nuevas cada semana con el contexto de tu negocio, campañas que se apagan o se escalan según lo que venden y seguimiento hasta la matrícula o el pedido.',en:'New creatives every week with your business context, campaigns paused or scaled by what they sell, and tracking down to the enrolment or the order.'}},
-  {num:'02', h:{es:'Que te crean.',en:'Get believed.'}, sub:{es:'Contenido orgánico que abre conversaciones',en:'Organic content that opens conversations'},
+  {num:'02', vis:{type:'phone',img:'gla-oro.jpg',a:{es:'«He visto tu reel, ¿podemos hablar?»',en:'“Saw your reel, can we talk?”'},b:{es:'Llamada reservada',en:'Call booked'}}, h:{es:'Que te crean.',en:'Get believed.'}, sub:{es:'Contenido orgánico que abre conversaciones',en:'Organic content that opens conversations'},
    c:{es:'<b>GLA Patrimonio:</b> siete piezas a la semana entre Álex y Laura con un formato propio, documentado y repetible.',en:'<b>GLA Patrimonio:</b> seven pieces a week between Álex and Laura in a format of their own, documented and repeatable.'},
    inc:{es:'Reels, carruseles y stories con estrategia detrás, hooks que paran el scroll y una llamada a la acción en cada pieza.',en:'Reels, carousels and stories with a strategy behind them, hooks that stop the scroll and a call to action in every piece.'}},
-  {num:'03', h:{es:'Que te recuerden.',en:'Get remembered.'}, sub:{es:'YouTube de principio a fin',en:'YouTube from start to finish'},
+  {num:'03', vis:{type:'yt',img:'ms-holding.jpg',a:{es:'2 vídeos a la semana',en:'2 videos a week'},b:{es:'Miguel Sierra · 12:55',en:'Miguel Sierra · 12:55'}}, h:{es:'Que te recuerden.',en:'Get remembered.'}, sub:{es:'YouTube de principio a fin',en:'YouTube from start to finish'},
    c:{es:'<b>Miguel Sierra:</b> dos vídeos a la semana desde hace años, con sus clips verticales, sin que él toque un programa de edición.',en:'<b>Miguel Sierra:</b> two videos a week for years, vertical clips included, without him touching an editing app.'},
    inc:{es:'Estrategia del canal, guion, edición con motion graphics, miniatura, títulos y clips.',en:'Channel strategy, script, editing with motion graphics, thumbnail, titles and clips.'}}
 ];
@@ -569,19 +607,19 @@ const SERVICES = [
 const STEPS = [
   {when:{es:'Semana 1',en:'Week 1'}, h:{es:'Nos cuentas tu negocio',en:'You tell us about your business'}, p:{es:'Una llamada y tus materiales. Sacamos el contexto: qué vendes, a quién, qué objeciones oyes, qué ha funcionado.',en:'One call and your materials. We extract the context: what you sell, to whom, which objections you hear, what has worked.'}, fear:{es:'No tienes que preparar nada.',en:'You don’t have to prepare anything.'}},
   {when:{es:'Semana 2',en:'Week 2'}, h:{es:'Producimos',en:'We produce'}, p:{es:'Anuncios, contenido y vídeo salen de nuestro sistema con tu tono y tu marca. Tú apruebas en un calendario, con un clic.',en:'Ads, content and video come out of our system with your tone and your brand. You approve in a calendar, with one click.'}, fear:{es:'Sin reuniones.',en:'No meetings.'}},
-  {when:{es:'Día 21',en:'Day 21'}, h:{es:'Publicas y medimos',en:'You publish, we measure'}, p:{es:'Todo en marcha y un panel semanal con lo que ha traído cada pieza. Lo que no vende se apaga.',en:'Everything running and a weekly panel with what each piece brought in. What doesn’t sell gets switched off.'}, fear:{es:'No pagas por piezas: pagas por un sistema que mejora cada semana.',en:'You don’t pay per piece: you pay for a system that improves every week.'}}
+  {when:{es:'Semana 3',en:'Week 3'}, h:{es:'Publicas y medimos',en:'You publish, we measure'}, p:{es:'Todo en marcha y un panel semanal con lo que ha traído cada pieza. Lo que no vende se apaga.',en:'Everything running and a weekly panel with what each piece brought in. What doesn’t sell gets switched off.'}, fear:{es:'No pagas por piezas: pagas por un sistema que mejora cada semana.',en:'You don’t pay per piece: you pay for a system that improves every week.'}}
 ];
 
 const TEAM = [
-  {r:{es:'Estrategia y criterio',en:'Strategy and judgement'}, h:'Alfonso Aparicio', p:{es:'Lleva la estrategia, el copy y el criterio, y da la cara en cada llamada. Cofundador de Acceler.',en:'Runs strategy, copy and judgement, and is on every call. Co-founder of Acceler.'}},
-  {r:{es:'Sistemas y plataforma',en:'Systems and platform'}, h:{es:'Su socio técnico',en:'His technical partner'}, p:{es:'Construye los sistemas, las automatizaciones y la plataforma propia de Acceler.',en:'Builds the systems, the automations and Acceler’s own platform.'}},
-  {r:{es:'Producción',en:'Production'}, h:{es:'El sistema de producción con IA',en:'The AI production system'}, p:{es:'Pone el volumen: anuncios, reels, carruseles y vídeos con tu contexto. Lo que se publica lo decidimos nosotros.',en:'Brings the volume: ads, reels, carousels and videos with your context. What gets published is our call.'}}
+  {img:'t-alfonso.jpg', r:{es:'Estrategia y criterio',en:'Strategy and judgement'}, h:'Alfonso Aparicio', p:{es:'Lleva la estrategia, el copy y el criterio, y da la cara en cada llamada. Cofundador de Acceler MKT.',en:'Runs strategy, copy and judgement, and is on every call. Co-founder of Acceler MKT.'}},
+  {img:'t-winslet.jpg', r:{es:'Sistemas y plataforma',en:'Systems and platform'}, h:'Winslet Mateus', p:{es:'Construye los sistemas, las automatizaciones y la plataforma propia. Cofundador y socio técnico.',en:'Builds the systems, the automations and our own platform. Co-founder and technical partner.'}},
+  {logo:true, r:{es:'Producción',en:'Production'}, h:{es:'El sistema de producción con IA',en:'The AI production system'}, p:{es:'El tercer miembro del equipo. Pone el volumen: anuncios, reels, carruseles y vídeos con tu contexto. Lo que se publica lo decidimos nosotros.',en:'The third team member. Brings the volume: ads, reels, carousels and videos with your context. What gets published is our call.'}}
 ];
 
 const MODELS = [
   {k:{es:'Lo hacemos por ti',en:'We do it for you'}, h:{es:'Marketing completo',en:'Full marketing'}, p:{es:'Anuncios, contenido y YouTube, medido en ventas. Un sistema vivo dentro de tu negocio.',en:'Ads, content and YouTube, measured in sales. A living system inside your business.'}, f:{es:'Marcas personales y empresas que ya facturan y quieren crecer sin montar equipo.',en:'Personal brands and companies with revenue that want to grow without building a team.'}, hl:true},
   {k:{es:'Solo una pieza',en:'One piece only'}, h:{es:'Anuncios, contenido o YouTube',en:'Ads, content or YouTube'}, p:{es:'Entramos en la pata que te falta y la conectamos con lo que ya tienes.',en:'We take the leg you are missing and connect it to what you already have.'}, f:{es:'Quien ya tiene equipo y le falta una pata.',en:'Teams that already exist and are missing one leg.'}},
-  {k:{es:'Tú con nuestra plataforma',en:'You on our platform'}, h:{es:'Tu operativa, con IA',en:'Your operations, with AI'}, p:{es:'CRM y automatizaciones propias de Acceler, para cuando el marketing ya funciona y el cuello de botella está dentro.',en:'Acceler’s own CRM and automations, for when marketing already works and the bottleneck is inside.'}, f:{es:'Empresas que ya captan y necesitan que la operativa siga el ritmo.',en:'Companies that already acquire and need operations to keep up.'}}
+  {k:{es:'Tú con nuestra plataforma',en:'You on our platform'}, h:{es:'Tu operativa, con IA',en:'Your operations, with AI'}, p:{es:'CRM y automatizaciones propias, para cuando el marketing ya funciona y el cuello de botella está dentro.',en:'Our own CRM and automations, for when marketing already works and the bottleneck is inside.'}, f:{es:'Empresas que ya captan y necesitan que la operativa siga el ritmo.',en:'Companies that already acquire and need operations to keep up.'}}
 ];
 
 const ALTS = [
@@ -589,7 +627,7 @@ const ALTS = [
   {h:{es:'Freelance',en:'Freelancer'}, p:{es:'Barato y rápido al principio. <b>Cada mes empiezas de cero y nadie mira las ventas.</b>',en:'Cheap and fast at first. <b>Every month you start over and nobody looks at sales.</b>'}},
   {h:{es:'Equipo propio',en:'In-house team'}, p:{es:'Control total. <b>Unos 7.800 € al mes y tres meses de contratación</b> antes de la primera pieza.',en:'Full control. <b>Around 7,800 € a month and three months of hiring</b> before the first piece.'}},
   {h:{es:'No hacer nada',en:'Doing nothing'}, p:{es:'Lo más caro de todo. <b>Cada mes sin sistema son clientes que se van a quien sí publica.</b>',en:'The most expensive option. <b>Every month without a system is clients going to whoever does publish.</b>'}},
-  {h:{es:'Acceler',en:'Acceler'}, p:{es:'Un sistema con IA que conoce tu negocio, produce cada semana y <b>se mide en lo que entra en caja.</b> Funcionando el día 21.',en:'An AI system that knows your business, produces every week and <b>is measured by what reaches the bank.</b> Running by day 21.'}, us:true}
+  {h:{es:'Acceler MKT',en:'Acceler MKT'}, p:{es:'Un sistema con IA que conoce tu negocio, produce cada semana y <b>se mide en lo que entra en caja.</b> Funcionando el día 21.',en:'An AI system that knows your business, produces every week and <b>is measured by what reaches the bank.</b> Running by day 21.'}, us:true}
 ];
 
 const FAQ = [
@@ -624,20 +662,20 @@ const WORKS = [
 const I18N = {
   es:{
     'nav.services':'Qué hacemos','nav.work':'Trabajo','nav.how':'Cómo trabajamos','nav.faq':'Preguntas','nav.contact':'Contacto','nav.cta':'Hablar por WhatsApp',
-    'hero.eyebrow':'Acceler · Marketing con IA · Más de 2 años con marcas personales y empresas',
-    'hero.h1':'Esto es lo que medimos cada semana: <em>lo que entra en caja.</em>',
-    'hero.lead':'Llevamos los anuncios de Meta, el contenido orgánico y el YouTube de marcas personales y empresas que ya facturan. Lo producimos con nuestro propio sistema de IA y lo conectamos con tus ventas. <strong>Si tu marketing te da informes y no clientes, sigue leyendo.</strong>',
-    'hero.cta1':'Cuéntanos tu caso por WhatsApp','hero.cta2':'Ver casos','hero.reassure':'Sin compromiso: en la primera conversación te decimos si encajamos y qué haríamos.',
+    'hero.eyebrow':'Acceler MKT · Marketing con IA para marcas personales y empresas que ya facturan',
+    'hero.h1':'No tienes marketing. <em>Tienes gastos.</em>',
+    'hero.lead':'Si no sabes qué anuncio, qué reel o qué vídeo te ha traído el último cliente, eso es lo que te está pasando. <strong>Nosotros llevamos tus anuncios de Meta, tu contenido y tu YouTube, los producimos con nuestro propio sistema de IA y los medimos hasta la venta. Funcionando en 21 días.</strong>',
+    'hero.cta1':'Cuéntanos tu caso por WhatsApp','hero.cta2':'Ver casos','hero.reassure':'Sin compromiso. Dos plazas por trimestre.','hero.qual':'Para marcas personales y empresas que ya facturan. Si empiezas de cero, no somos para ti.',
     'proof.k':'Caso real · Meta Ads','proof.who':'<strong>IUVER Academy</strong> · máster de medicina estética. Inversión en anuncios y facturación generada.','proof.k2':'En el mercado','proof.v2':'+2 años','proof.k3':'Marcas',
     'wall.cap':'Con quién trabajamos y hemos trabajado',
     'pain.eyebrow':'¿Te suena?','pain.h2':'Inviertes en marketing y lo que recibes son <em>informes.</em>',
-    'tesis.h3':'El marketing de las marcas que facturan lo llevan agencias de posts bonitos o freelances que <em>desaparecen en agosto.</em>',
-    'tesis.p':'Las dos cobran por piezas y reportan impresiones. Ninguna se juega nada en tus ventas. Acceler existe para lo contrario: <strong>un sistema de producción con IA que conoce tu negocio, publica cada semana y se mide en lo que entra en caja.</strong> La IA hace el volumen. Nosotros decidimos qué se publica, qué se escala y qué se mata.',
+    'tesis.h3':'Hasta ahora tenías dos opciones: una agencia de posts bonitos <em>o un freelance que desaparece en agosto.</em>',
+    'tesis.p':'Las dos cobran por piezas y reportan impresiones. Ninguna se juega nada en tus ventas. Acceler MKT existe para lo contrario: <strong>un sistema de producción con IA que conoce tu negocio, publica cada semana y se mide en lo que entra en caja.</strong> La IA hace el volumen. Nosotros decidimos qué se publica, qué se escala y qué se mata.',
     'cmp.eyebrow':'La forma antigua y la nuestra','cmp.h2':'Lo que cambia cuando el marketing <em>se mide en caja.</em>',
     'svc.eyebrow':'Qué hacemos','svc.h2':'Tres resultados, <em>con nombre y número.</em>','svc.lead':'Anuncios, contenido y YouTube trabajando juntos. Cada uno con un caso real detrás; si no hay número, no lo publicamos.',
     'svc.inc':'Qué incluye',
     'work.eyebrow':'Trabajo','work.h2':'Así se ve <em>por fuera.</em>','work.lead':'Anuncios, reels, vídeos de YouTube y vídeos de venta. Pasa el ratón para verlos en movimiento y haz clic para oírlos.','work.reel':'Showreel · 25 s','work.more':'Ver más trabajos','work.less':'Ver menos',
-    'how.eyebrow':'Cómo trabajamos','how.h2':'Tres pasos y un día: <em>el 21.</em>','how.lead':'Sin reuniones de tres horas ni calendarios que nadie mira. Cada paso quita un miedo.',
+    'how.eyebrow':'Cómo trabajamos','how.h2':'De tu grabación a clientes, <em>en tres pasos.</em>','how.lead':'Sin reuniones de tres horas ni calendarios que nadie mira. Cada paso quita un miedo.',
     'g.k':'días','g.p':'<strong>Si el día 21 el sistema no está funcionando, te devolvemos la puesta en marcha.</strong> Lo decimos en la web porque lo cumplimos en el contrato.',
     'team.eyebrow':'Quién hace el trabajo','team.h2':'Los que diseñan la estrategia <em>son los que la ejecutan.</em>','team.lead':'Nadie te vende al senior para entregarte al becario. Hablas con quien decide y con quien produce.',
     'models.eyebrow':'Tres formas de trabajar con nosotros','models.h2':'Lo hacemos por ti, una sola pieza <em>o tu operativa entera.</em>','models.lead':'El precio no está en la web: te lo decimos en la primera conversación, con tu caso delante. Abrimos dos plazas por trimestre.','models.for':'Para quién',
@@ -648,20 +686,20 @@ const I18N = {
   },
   en:{
     'nav.services':'What we do','nav.work':'Work','nav.how':'How we work','nav.faq':'Questions','nav.contact':'Contact','nav.cta':'Chat on WhatsApp',
-    'hero.eyebrow':'Acceler · AI-driven marketing · 2+ years with personal brands and companies',
-    'hero.h1':'This is what we measure every week: <em>what reaches the bank.</em>',
-    'hero.lead':'We run the Meta ads, organic content and YouTube of personal brands and companies with revenue. We produce it with our own AI system and connect it to your sales. <strong>If your marketing gives you reports instead of clients, keep reading.</strong>',
-    'hero.cta1':'Tell us your case on WhatsApp','hero.cta2':'See cases','hero.reassure':'No strings: in the first conversation we tell you whether we fit and what we would do.',
+    'hero.eyebrow':'Acceler MKT · AI-driven marketing for personal brands and companies with revenue',
+    'hero.h1':'You don’t have marketing. <em>You have expenses.</em>',
+    'hero.lead':'If you can’t say which ad, reel or video brought your last client, that is what is happening to you. <strong>We run your Meta ads, your content and your YouTube, produce them with our own AI system and measure them down to the sale. Up and running in 21 days.</strong>',
+    'hero.cta1':'Tell us your case on WhatsApp','hero.cta2':'See cases','hero.reassure':'No strings. Two spots per quarter.','hero.qual':'For personal brands and companies with revenue. If you are starting from zero, we are not for you.',
     'proof.k':'Real case · Meta Ads','proof.who':'<strong>IUVER Academy</strong> · aesthetic medicine master’s. Ad spend and revenue generated.','proof.k2':'In the market','proof.v2':'2+ years','proof.k3':'Brands',
     'wall.cap':'Who we work and have worked with',
     'pain.eyebrow':'Sound familiar?','pain.h2':'You invest in marketing and what you get back are <em>reports.</em>',
-    'tesis.h3':'Marketing for brands with revenue is run by pretty-posts agencies or freelancers who <em>vanish in August.</em>',
-    'tesis.p':'Both charge per piece and report impressions. Neither has anything riding on your sales. Acceler exists for the opposite: <strong>an AI production system that knows your business, publishes every week and is measured by what reaches the bank.</strong> The AI does the volume. We decide what gets published, scaled or killed.',
+    'tesis.h3':'Until now you had two options: a pretty-posts agency <em>or a freelancer who vanishes in August.</em>',
+    'tesis.p':'Both charge per piece and report impressions. Neither has anything riding on your sales. Acceler MKT exists for the opposite: <strong>an AI production system that knows your business, publishes every week and is measured by what reaches the bank.</strong> The AI does the volume. We decide what gets published, scaled or killed.',
     'cmp.eyebrow':'The old way and ours','cmp.h2':'What changes when marketing <em>is measured in revenue.</em>',
     'svc.eyebrow':'What we do','svc.h2':'Three results, <em>with a name and a number.</em>','svc.lead':'Ads, content and YouTube working together. Each one with a real case behind it; no number, no publishing.',
     'svc.inc':'What is included',
     'work.eyebrow':'Work','work.h2':'What it looks like <em>from outside.</em>','work.lead':'Ads, reels, YouTube videos and sales videos. Hover to see them move, click to hear them.','work.reel':'Showreel · 25 s','work.more':'See more work','work.less':'See less',
-    'how.eyebrow':'How we work','how.h2':'Three steps and one day: <em>day 21.</em>','how.lead':'No three-hour meetings, no calendars nobody reads. Every step removes a fear.',
+    'how.eyebrow':'How we work','how.h2':'From your footage to clients, <em>in three steps.</em>','how.lead':'No three-hour meetings, no calendars nobody reads. Every step removes a fear.',
     'g.k':'days','g.p':'<strong>If the system isn’t running by day 21, we refund the setup.</strong> We say it on the site because it is in the contract.',
     'team.eyebrow':'Who does the work','team.h2':'The people who design the strategy <em>are the ones who execute it.</em>','team.lead':'Nobody sells you the senior and hands you the intern. You talk to whoever decides and whoever produces.',
     'models.eyebrow':'Three ways to work with us','models.h2':'We do it for you, one piece only <em>or your whole operation.</em>','models.lead':'Pricing is not on the site: we tell you in the first conversation, with your case in front of us. We open two spots per quarter.','models.for':'Who it is for',
@@ -680,6 +718,7 @@ const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches || new URL
 let expanded=false;
 if(reduce) document.documentElement.classList.add('static');
 
+const MARK='<svg viewBox="0 0 136 136" aria-hidden="true"><circle cx="68" cy="68" r="60" fill="#7a2a2a"/><circle cx="86" cy="50" r="48" fill="#e8a048"/><circle cx="78" cy="62" r="40" fill="#c24a4a"/><circle cx="88" cy="56" r="30" fill="#de6262"/><circle cx="95" cy="52" r="18" fill="#f1b76f"/></svg>';
 function esc(s){return String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))}
 const L = o => (typeof o==='string') ? o : o[lang];
 function cardHTML(w){
@@ -697,10 +736,14 @@ function cardHTML(w){
 function render(){
   document.getElementById('faces').innerHTML = FACES.map(f=>`<div class="face"><img src="assets/img/${f.img}" alt="${esc(f.n)}" loading="lazy"><div class="n">${esc(f.n)}</div><div class="r">${esc(L(f.r))}</div></div>`).join('');
   document.getElementById('pains').innerHTML = PAINS.map((p,i)=>`<div class="pain reveal"><div class="x">0${i+1}</div><h3>${esc(L(p.h))}</h3><p>${esc(L(p.p))}</p></div>`).join('');
-  document.getElementById('cmp').innerHTML = `<div class="cmp-row"><div>${esc(CMP.head[lang][0])}</div><div>${esc(CMP.head[lang][1])}</div></div>` + CMP.rows.map(r=>`<div class="cmp-row"><div>${esc(r[lang][0])}</div><div>${esc(r[lang][1])}</div></div>`).join('');
-  document.getElementById('services').innerHTML = SERVICES.map(s=>`<div class="service reveal"><div class="num">${s.num}</div><h3>${esc(L(s.h))}<small>${esc(L(s.sub))}</small></h3><div class="case">${L(s.c)}</div><div class="inc"><span>${tr('svc.inc')}</span>${esc(L(s.inc))}</div></div>`).join('');
+  document.getElementById('cmp').innerHTML = `<div class="cmp-old"><div class="cmp-h">${esc(CMP.head[lang][0])}</div><ul>${CMP.rows.map(r=>`<li><i>✕</i><span>${esc(r[lang][0])}</span></li>`).join('')}</ul></div>
+    <div class="cmp-new"><div class="sweep"></div><div class="cmp-h">${MARK}<span>acceler mkt<b>.</b></span><em>${esc(CMP.head[lang][1])}</em></div><ul>${CMP.rows.map((r,i)=>`<li style="--i:${i}"><i>→</i><span>${esc(r[lang][1])}</span></li>`).join('')}</ul></div>`;
+  const visHTML = v => v.type==='phone'
+    ? `<div class="vis"><div class="ph"><img src="assets/posters/${v.img}" alt="" loading="lazy"></div><span class="chip c1">${esc(L(v.a))}</span><span class="chip c2">${esc(L(v.b))}</span></div>`
+    : `<div class="vis"><div class="yt"><img src="assets/posters/${v.img}" alt="" loading="lazy"><i></i></div><span class="chip c1">${esc(L(v.a))}</span><span class="chip c3">${esc(L(v.b))}</span></div>`;
+  document.getElementById('services').innerHTML = SERVICES.map(s=>`<div class="service reveal">${visHTML(s.vis)}<div class="num">${s.num}</div><h3>${esc(L(s.h))}<small>${esc(L(s.sub))}</small></h3><div class="case">${L(s.c)}</div><div class="inc"><span>${tr('svc.inc')}</span>${esc(L(s.inc))}</div></div>`).join('');
   document.getElementById('steps').innerHTML = STEPS.map(s=>`<div class="step reveal"><div class="when">${esc(L(s.when))}</div><h3>${esc(L(s.h))}</h3><p>${esc(L(s.p))}</p><div class="fear">${esc(L(s.fear))}</div></div>`).join('');
-  document.getElementById('team').innerHTML = TEAM.map(t=>`<div class="who reveal"><div class="r">${esc(L(t.r))}</div><h3>${esc(L(t.h))}</h3><p>${esc(L(t.p))}</p></div>`).join('');
+  document.getElementById('team').innerHTML = TEAM.map(t=>`<div class="who reveal">${t.logo?`<div class="tphoto tlogo">${MARK}</div>`:`<div class="tphoto"><img src="assets/img/${t.img}" alt="${esc(L(t.h))}" loading="lazy"></div>`}<div class="r">${esc(L(t.r))}</div><h3>${esc(L(t.h))}</h3><p>${esc(L(t.p))}</p></div>`).join('');
   document.getElementById('models').innerHTML = MODELS.map(m=>`<div class="model reveal${m.hl?' hl':''}"><div class="k">${esc(L(m.k))}</div><h3>${esc(L(m.h))}</h3><p>${esc(L(m.p))}</p><div class="for"><span>${tr('models.for')}</span>${esc(L(m.f))}</div></div>`).join('');
   document.getElementById('alts').innerHTML = ALTS.map(a=>`<div class="alt${a.us?' us':''}"><h3>${esc(L(a.h))}</h3><p>${L(a.p)}</p></div>`).join('');
   document.getElementById('faqList').innerHTML = FAQ.map(f=>`<details><summary>${esc(L(f.q))}</summary><div class="a">${esc(L(f.a))}</div></details>`).join('');
@@ -716,7 +759,7 @@ function applyI18n(){
   document.getElementById('langBtn').textContent = lang==='es' ? 'EN' : 'ES';
   const wa = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(WA_TEXT[lang])}`;
   document.querySelectorAll('.wa-link').forEach(a=>a.href=wa);
-  document.title = lang==='es' ? 'Acceler · Marketing con IA para marcas personales y empresas' : 'Acceler · AI-driven marketing for personal brands and companies';
+  document.title = lang==='es' ? 'Acceler MKT · Marketing con IA para marcas personales y empresas' : 'Acceler MKT · AI-driven marketing for personal brands and companies';
 }
 
 /* cards */
@@ -804,7 +847,7 @@ function init(){
         const split = new SplitText('#heroTitle',{type:'lines',mask:'lines'});
         gsap.from(split.lines,{yPercent:110,duration:1.2,stagger:.09,ease:'power4.out',delay:.15});
         gsap.from('.hero .eyebrow',{opacity:0,y:10,duration:.8,delay:.1});
-        gsap.from('.hero .lead, .hero-cta, .hero .reassure, .proof',{opacity:0,y:20,duration:1,stagger:.1,delay:.55,ease:'power3.out'});
+        gsap.from('.hero .lead, .hero .qual, .hero-cta, .hero .reassure, .proof',{opacity:0,y:20,duration:1,stagger:.1,delay:.55,ease:'power3.out'});
         gsap.from('.giant',{yPercent:30,opacity:0,duration:1.6,delay:.4,ease:'power4.out'});
         gsap.to('.giant',{yPercent:18,ease:'none',scrollTrigger:{trigger:'.hero',start:'top top',end:'bottom top',scrub:true}});
       });
