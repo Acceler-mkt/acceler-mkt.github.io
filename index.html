@@ -251,6 +251,8 @@ em{font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:-.0
 .team .who{background:#fff;border:1px solid var(--lined);border-radius:22px;padding:18px 18px 24px;display:grid;gap:8px;align-content:start}
 .tphoto{aspect-ratio:4/5;border-radius:16px;overflow:hidden;background:#dcd8d2;margin-bottom:10px;display:grid;place-items:center}
 .tphoto img{width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.05)}
+.tsil{background:#e4e1dc;border:1px dashed #b9b2a8}
+.tsil svg{width:42%;height:auto;fill:#c9c3bb}
 .tlogo{background:var(--inkd);position:relative}
 .tlogo::before{content:"";position:absolute;inset:auto -30% -40% auto;width:80%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(222,98,98,.5),rgba(232,160,72,.2) 45%,transparent 70%);filter:blur(12px)}
 .tlogo svg{position:relative;width:46%;height:auto;filter:drop-shadow(0 20px 40px rgba(222,98,98,.5))}
@@ -611,8 +613,8 @@ const STEPS = [
 ];
 
 const TEAM = [
-  {img:'t-alfonso.jpg', r:{es:'Estrategia y criterio',en:'Strategy and judgement'}, h:'Alfonso Aparicio', p:{es:'Lleva la estrategia, el copy y el criterio, y da la cara en cada llamada. Cofundador de Acceler MKT.',en:'Runs strategy, copy and judgement, and is on every call. Co-founder of Acceler MKT.'}},
-  {img:'t-winslet.jpg', r:{es:'Sistemas y plataforma',en:'Systems and platform'}, h:'Winslet Mateus', p:{es:'Construye los sistemas, las automatizaciones y la plataforma propia. Cofundador y socio técnico.',en:'Builds the systems, the automations and our own platform. Co-founder and technical partner.'}},
+  {sil:true, r:{es:'Estrategia y criterio',en:'Strategy and judgement'}, h:'Alfonso Aparicio', p:{es:'Lleva la estrategia, el copy y el criterio, y da la cara en cada llamada. Cofundador de Acceler MKT.',en:'Runs strategy, copy and judgement, and is on every call. Co-founder of Acceler MKT.'}},
+  {sil:true, r:{es:'Sistemas y plataforma',en:'Systems and platform'}, h:'Winslet Mateus', p:{es:'Construye los sistemas, las automatizaciones y la plataforma propia. Cofundador y socio técnico.',en:'Builds the systems, the automations and our own platform. Co-founder and technical partner.'}},
   {logo:true, r:{es:'Producción',en:'Production'}, h:{es:'El sistema de producción con IA',en:'The AI production system'}, p:{es:'El tercer miembro del equipo. Pone el volumen: anuncios, reels, carruseles y vídeos con tu contexto. Lo que se publica lo decidimos nosotros.',en:'The third team member. Brings the volume: ads, reels, carousels and videos with your context. What gets published is our call.'}}
 ];
 
@@ -743,7 +745,7 @@ function render(){
     : `<div class="vis"><div class="yt"><img src="assets/posters/${v.img}" alt="" loading="lazy"><i></i></div><span class="chip c1">${esc(L(v.a))}</span><span class="chip c3">${esc(L(v.b))}</span></div>`;
   document.getElementById('services').innerHTML = SERVICES.map(s=>`<div class="service reveal">${visHTML(s.vis)}<div class="num">${s.num}</div><h3>${esc(L(s.h))}<small>${esc(L(s.sub))}</small></h3><div class="case">${L(s.c)}</div><div class="inc"><span>${tr('svc.inc')}</span>${esc(L(s.inc))}</div></div>`).join('');
   document.getElementById('steps').innerHTML = STEPS.map(s=>`<div class="step reveal"><div class="when">${esc(L(s.when))}</div><h3>${esc(L(s.h))}</h3><p>${esc(L(s.p))}</p><div class="fear">${esc(L(s.fear))}</div></div>`).join('');
-  document.getElementById('team').innerHTML = TEAM.map(t=>`<div class="who reveal">${t.logo?`<div class="tphoto tlogo">${MARK}</div>`:`<div class="tphoto"><img src="assets/img/${t.img}" alt="${esc(L(t.h))}" loading="lazy"></div>`}<div class="r">${esc(L(t.r))}</div><h3>${esc(L(t.h))}</h3><p>${esc(L(t.p))}</p></div>`).join('');
+  document.getElementById('team').innerHTML = TEAM.map(t=>`<div class="who reveal">${t.logo?`<div class="tphoto tlogo">${MARK}</div>`:`<div class="tphoto tsil" aria-hidden="true"><svg viewBox="0 0 120 150"><circle cx="60" cy="48" r="26"/><path d="M12 150c0-30 21-50 48-50s48 20 48 50z"/></svg></div>`}<div class="r">${esc(L(t.r))}</div><h3>${esc(L(t.h))}</h3><p>${esc(L(t.p))}</p></div>`).join('');
   document.getElementById('models').innerHTML = MODELS.map(m=>`<div class="model reveal${m.hl?' hl':''}"><div class="k">${esc(L(m.k))}</div><h3>${esc(L(m.h))}</h3><p>${esc(L(m.p))}</p><div class="for"><span>${tr('models.for')}</span>${esc(L(m.f))}</div></div>`).join('');
   document.getElementById('alts').innerHTML = ALTS.map(a=>`<div class="alt${a.us?' us':''}"><h3>${esc(L(a.h))}</h3><p>${L(a.p)}</p></div>`).join('');
   document.getElementById('faqList').innerHTML = FAQ.map(f=>`<details><summary>${esc(L(f.q))}</summary><div class="a">${esc(L(f.a))}</div></details>`).join('');
