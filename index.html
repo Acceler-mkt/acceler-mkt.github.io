@@ -125,11 +125,12 @@ em{font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:-.0
 .wall{padding:clamp(48px,6vw,80px) 0;border-top:1px solid var(--line2)}
 .wall .cap{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute2);text-align:center;margin-bottom:30px}
 .faces{display:flex;flex-wrap:wrap;justify-content:center;gap:22px 18px}
-.face{display:grid;justify-items:center;gap:10px;width:118px;text-align:center}
+.face{display:grid;justify-items:center;gap:8px;width:118px;text-align:center;text-decoration:none;color:inherit}
 .face img{width:84px;height:84px;border-radius:50%;object-fit:cover;border:2px solid rgba(246,245,244,.14);box-shadow:0 10px 30px -12px rgba(0,0,0,.8);transition:transform .5s cubic-bezier(.2,.8,.2,1),border-color .4s}
 .face:hover img{transform:translateY(-4px) scale(1.04);border-color:var(--coral)}
 .face .n{font-size:13px;font-weight:500;line-height:1.2}
-.face .r{font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;color:var(--mute);line-height:1.3}
+.face .r{font-family:var(--mono);font-size:10.5px;letter-spacing:.02em;color:var(--gold);line-height:1.3;word-break:break-all}
+.face img{background:#1b1917}
 .logos{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:26px 44px;margin-top:36px;padding-top:32px;border-top:1px solid var(--line2)}
 .logos img{height:30px;width:auto;opacity:.78;transition:opacity .3s}
 .logos img:hover{opacity:1}
@@ -406,7 +407,7 @@ html.static .hero{min-height:880px}
 
 <section class="wall" id="clientes">
   <div class="wrap">
-    <div class="cap" data-i18n="wall.cap">Con quién trabajamos y hemos trabajado</div>
+    <div class="cap" data-i18n="wall.cap">Cuentas con las que trabajamos y hemos trabajado</div>
     <div class="faces" id="faces"></div>
     <div class="logos">
       <img src="assets/img/logo-iuver.png" alt="IUVER Academy" loading="lazy">
@@ -571,12 +572,20 @@ const WA_TEXT = {
 };
 
 const FACES = [
-  {img:'f-miguel-sierra.jpg', n:'Miguel Sierra', r:{es:'Empresario · Fixcal',en:'Entrepreneur · Fixcal'}},
-  {img:'f-alex-mestres.jpg', n:'Álex Mestres', r:{es:'GLA Patrimonio',en:'GLA Patrimonio'}},
-  {img:'f-cesar-rivero.jpg', n:'César Rivero', r:{es:'Inversor inmobiliario',en:'Real estate investor'}},
-  {img:'f-pedro-redes.jpg', n:'Pedro Redes', r:{es:'Comunidad Estelar',en:'Comunidad Estelar'}},
-  {img:'f-angel-aparicio.jpg', n:'Ángel Aparicio', r:{es:'IA Masters · Automatizaciones',en:'IA Masters · Automation'}},
-  {img:'f-miguel-rms.jpg', n:'Miguel RMS', r:{es:'Marca personal',en:'Personal brand'}},
+  {img:'f-miguel-sierra.jpg', n:'Miguel Sierra', h:'miguelsierrag'},
+  {img:'f-fixcal.jpg', n:'Fixcal', h:'fixcal.asesores'},
+  {img:'f-alex-mestres.jpg', n:'Álex Mestres', h:'alexsmestres'},
+  {img:'f-gla.jpg', n:'GLA Patrimonio', h:'glapatrimonio'},
+  {img:'f-iuver.jpg', n:'IUVER Academy', h:'iuver_academy'},
+  {img:'f-dna.jpg', n:'DNA Formación', h:'dnaformacion'},
+  {img:'f-liberfy.jpg', n:'Liberfy', h:'liberfy.es'},
+  {img:'f-vas.jpg', n:'Zapatos VAS', h:'vas_bootsandshoes'},
+  {img:'f-edtuhogar.jpg', n:'ED Tu Hogar', h:'edtuhogar'},
+  {img:'f-cesar-rivero.jpg', n:'César Rivero', h:'cesarriveroo'},
+  {img:'f-angel-aparicio.jpg', n:'Ángel Aparicio', h:'angelapa_ia'},
+  {img:'f-simon.jpg', n:'Simón Hernangómez', h:'simon.hernangomez'},
+  {img:'f-miguel-rms.jpg', n:'Miguel RMS', yt:'https://www.youtube.com/@MiguelRMS', r:{es:'YouTube',en:'YouTube'}},
+  {img:'f-pedro-redes.jpg', n:'Pedro Redes', yt:'https://www.youtube.com/channel/UCnyTiZXykfkpyKa5Vs9jZpw', r:{es:'YouTube',en:'YouTube'}},
   {img:'f-josep-baixas.jpg', n:'Josep Baixas', r:{es:'Coach de montaña',en:'Mountain coach'}}
 ];
 
@@ -673,7 +682,7 @@ const I18N = {
     'hero.lead':'Si no sabes qué anuncio te trajo el último cliente, es esto. <strong>Llevamos tus anuncios, tu contenido y tu YouTube con nuestro sistema de IA, medidos hasta la venta. Funcionando en 21 días.</strong>',
     'hero.cta1':'Cuéntanos tu caso por WhatsApp','hero.cta2':'Ver casos','hero.reassure':'Sin compromiso · Una empresa nueva por semana · Solo marcas que ya facturan',
     'proof.k':'Caso real · Meta Ads','proof.who':'<strong>IUVER Academy</strong> · máster de medicina estética. Inversión en anuncios y facturación generada.','proof.k2':'En el mercado','proof.v2':'+2 años','proof.k3':'Marcas',
-    'wall.cap':'Con quién trabajamos y hemos trabajado',
+    'wall.cap':'Cuentas con las que trabajamos y hemos trabajado',
     'pain.eyebrow':'¿Te suena?','pain.h2':'Inviertes en marketing y lo que recibes son <em>informes.</em>',
     'tesis.h3':'Hasta ahora tenías dos opciones: una agencia de posts bonitos <em>o un freelance que desaparece en agosto.</em>',
     'tesis.p':'Las dos cobran por piezas y reportan impresiones. Acceler MKT existe para lo contrario: <strong>un sistema con IA que conoce tu negocio, publica cada semana y se mide en lo que entra en caja.</strong>',
@@ -697,7 +706,7 @@ const I18N = {
     'hero.lead':'If you can’t say which ad brought your last client, this is it. <strong>We run your ads, your content and your YouTube with our AI system, measured down to the sale. Running in 21 days.</strong>',
     'hero.cta1':'Tell us your case on WhatsApp','hero.cta2':'See cases','hero.reassure':'No strings · One new company per week · Only brands with revenue',
     'proof.k':'Real case · Meta Ads','proof.who':'<strong>IUVER Academy</strong> · aesthetic medicine master’s. Ad spend and revenue generated.','proof.k2':'In the market','proof.v2':'2+ years','proof.k3':'Brands',
-    'wall.cap':'Who we work and have worked with',
+    'wall.cap':'Accounts we work and have worked with',
     'pain.eyebrow':'Sound familiar?','pain.h2':'You invest in marketing and what you get back are <em>reports.</em>',
     'tesis.h3':'Until now you had two options: a pretty-posts agency <em>or a freelancer who vanishes in August.</em>',
     'tesis.p':'Both charge per piece and report impressions. Acceler MKT exists for the opposite: <strong>an AI system that knows your business, publishes every week and is measured by what reaches the bank.</strong>',
@@ -740,7 +749,11 @@ function cardHTML(w){
   </article>`;
 }
 function render(){
-  document.getElementById('faces').innerHTML = FACES.map(f=>`<div class="face"><img src="assets/img/${f.img}" alt="${esc(f.n)}" loading="lazy"><div class="n">${esc(f.n)}</div><div class="r">${esc(L(f.r))}</div></div>`).join('');
+  document.getElementById('faces').innerHTML = FACES.map(f=>{
+    const inner=`<img src="assets/img/${f.img}" alt="${esc(f.n)}" loading="lazy"><div class="n">${esc(f.n)}</div><div class="r">${f.h?'@'+esc(f.h):esc(L(f.r))}</div>`;
+    const url=f.h?`https://www.instagram.com/${f.h}/`:(f.yt||'');
+    return url?`<a class="face" href="${url}" target="_blank" rel="noopener">${inner}</a>`:`<div class="face">${inner}</div>`;
+  }).join('');
   document.getElementById('pains').innerHTML = PAINS.map((p,i)=>`<div class="pain reveal"><div class="x">0${i+1}</div><h3>${esc(L(p.h))}</h3></div>`).join('');
   document.getElementById('cmp').innerHTML = `<div class="cmp-old"><div class="cmp-h">${esc(CMP.head[lang][0])}</div><ul>${CMP.rows.map(r=>`<li><i>✕</i><span>${esc(r[lang][0])}</span></li>`).join('')}</ul></div>
     <div class="cmp-new"><div class="sweep"></div><div class="cmp-h">${MARK}<span>acceler mkt<b>.</b></span><em>${esc(CMP.head[lang][1])}</em></div><ul>${CMP.rows.map((r,i)=>`<li style="--i:${i}"><i>→</i><span>${esc(r[lang][1])}</span></li>`).join('')}</ul></div>`;
