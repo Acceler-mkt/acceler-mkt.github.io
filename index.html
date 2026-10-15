@@ -4,20 +4,34 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Acceler MKT · Marketing con IA para marcas personales y empresas</title>
-<meta name="description" content="Anuncios de Meta, contenido orgánico y YouTube para marcas personales y empresas que ya facturan, producidos con nuestro sistema de IA y medidos en ventas. Con 10.000 € en anuncios, IUVER Academy facturó 165.000 €.">
+<meta name="description" content="Anuncios de Meta, contenido y YouTube para marcas personales y empresas que ya facturan, producidos con IA y medidos hasta la venta. Con 10.000 € en anuncios, IUVER Academy facturó 165.000 €.">
+<meta name="robots" content="index,follow">
 <link rel="canonical" href="https://acceler-mkt.github.io/">
-<meta property="og:title" content="Acceler MKT · Marketing con IA para marcas personales y empresas">
-<meta property="og:description" content="Esto es lo que medimos cada semana: lo que entra en caja. Con 10.000 € en anuncios, IUVER Academy facturó 165.000 €.">
-<meta property="og:image" content="https://acceler-mkt.github.io/assets/posters/showreel.jpg">
+<meta property="og:url" content="https://acceler-mkt.github.io/">
+<meta property="og:site_name" content="Acceler MKT">
+<meta property="og:locale" content="es_ES">
+<meta property="og:title" content="Acceler MKT · No tienes marketing. Tienes gastos.">
+<meta property="og:description" content="Anuncios, contenido y YouTube producidos con IA y medidos hasta la venta. Con 10.000 € en anuncios, IUVER Academy facturó 165.000 €.">
+<meta property="og:image" content="https://acceler-mkt.github.io/assets/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Acceler MKT · No tienes marketing. Tienes gastos.">
+<meta name="twitter:description" content="Anuncios, contenido y YouTube producidos con IA y medidos hasta la venta.">
+<meta name="twitter:image" content="https://acceler-mkt.github.io/assets/img/og.jpg">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#0c0b0a">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 136 136'%3E%3Ccircle cx='68' cy='68' r='60' fill='%237a2a2a'/%3E%3Ccircle cx='86' cy='50' r='48' fill='%23e8a048'/%3E%3Ccircle cx='78' cy='62' r='40' fill='%23c24a4a'/%3E%3Ccircle cx='88' cy='56' r='30' fill='%23de6262'/%3E%3Ccircle cx='95' cy='52' r='18' fill='%23f1b76f'/%3E%3C/svg%3E">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Acceler MKT","url":"https://acceler-mkt.github.io/","logo":"https://acceler-mkt.github.io/apple-touch-icon.png","description":"Marketing con IA para marcas personales y empresas: anuncios de Meta, contenido orgánico y YouTube medidos hasta la venta.","address":{"@type":"PostalAddress","addressRegion":"Santa Cruz de Tenerife","addressCountry":"ES"},"contactPoint":{"@type":"ContactPoint","telephone":"+34647829854","contactType":"sales","availableLanguage":["es","en"]}}</script>
+<!-- ANALÍTICA: pendiente de ID (GA4 o Meta Pixel). Si se añade, hace falta banner de consentimiento. -->
 <style>
 :root{
-  --bg:#0c0b0a;--bg2:#141210;--bg3:#1b1917;--ink:#f6f5f4;--mute:#a39d94;--mute2:#6f6961;
+  --bg:#0c0b0a;--bg2:#141210;--bg3:#1b1917;--ink:#f6f5f4;--mute:#a39d94;--mute2:#8a847c;
   --line:rgba(246,245,244,.12);--line2:rgba(246,245,244,.06);
   --coral:#de6262;--amber:#e8a048;--gold:#f1b76f;--wine:#7a2a2a;
   --cream:#f5f3f0;--inkd:#1b1a18;--greyw:#514c46;--lined:rgba(27,26,24,.1);
@@ -306,6 +320,8 @@ em{font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:-.0
 /* footer */
 .ftr{border-top:1px solid var(--line2);padding:36px 0;font-size:14px;color:var(--mute)}
 .ftr .wrap{display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between;align-items:center}
+.ftr a{color:var(--mute);text-decoration:none;border-bottom:1px solid var(--line)}
+.ftr a:hover{color:var(--ink)}
 
 /* lightbox */
 dialog.lb{border:0;padding:0;background:transparent;max-width:none;max-height:none;width:100vw;height:100vh;margin:0;inset:0;display:none}
@@ -360,8 +376,8 @@ html.static .hero{min-height:880px}
 
 <section class="hero">
   <div class="hero-media">
-    <video id="heroVideo" autoplay muted loop playsinline preload="auto" poster="assets/posters/showreel.jpg">
-      <source src="assets/videos/showreel.mp4" type="video/mp4">
+    <video id="heroVideo" autoplay muted loop playsinline preload="auto" poster="assets/posters/showreel-bg.jpg" aria-hidden="true">
+      <source src="assets/videos/showreel-bg.mp4" type="video/mp4">
     </video>
   </div>
   <div class="wrap">
@@ -450,7 +466,7 @@ html.static .hero{min-height:880px}
       </div>
       <p class="lead reveal" data-i18n="work.lead">Pasa el ratón para verlos en movimiento y haz clic para oírlos.</p>
     </div>
-    <div class="showreel reveal"><video autoplay muted loop playsinline preload="metadata" poster="assets/posters/showreel.jpg" src="assets/videos/showreel.mp4"></video><span class="lbl" data-i18n="work.reel">Showreel · 25 s</span></div>
+    <div class="showreel reveal"><video autoplay muted loop playsinline preload="metadata" poster="assets/posters/showreel.jpg" src="assets/videos/showreel.mp4" aria-label="Showreel de Acceler MKT"></video><span class="lbl" data-i18n="work.reel">Showreel · 25 s</span></div>
     <div class="grid-h" id="gridH"></div>
     <div class="grid-v" id="gridV"></div>
     <div class="more"><button class="btn btn-ghost" id="moreBtn" data-i18n="work.more">Ver más trabajos</button></div>
@@ -528,7 +544,7 @@ html.static .hero{min-height:880px}
   <div class="wrap">
     <a class="logo" href="#top" style="font-size:18px"><svg viewBox="0 0 136 136" aria-hidden="true" style="width:22px;height:22px"><circle cx="68" cy="68" r="60" fill="#7a2a2a"/><circle cx="86" cy="50" r="48" fill="#e8a048"/><circle cx="78" cy="62" r="40" fill="#c24a4a"/><circle cx="88" cy="56" r="30" fill="#de6262"/><circle cx="95" cy="52" r="18" fill="#f1b76f"/></svg><span>acceler mkt<b>.</b></span></a>
     <span data-i18n="ftr.tag">Marketing con IA · Tenerife, España</span>
-    <span>© 2026 Acceler MKT</span>
+    <span><a href="legal.html" data-i18n="ftr.legal">Aviso legal y privacidad</a> · <a href="legal.html#cookies">Cookies</a> · © 2026 Acceler MKT</span>
   </div>
 </footer>
 
@@ -583,13 +599,13 @@ const CMP = {
 };
 
 const SERVICES = [
-  {num:'01', vis:{type:'phone',img:'iuver-ad1.jpg',a:{es:'Lead cualificado · médica',en:'Qualified lead · doctor'},b:{es:'Matrícula · 7.000 €',en:'Enrolment · 7,000 €'}}, h:{es:'Que te compren.',en:'Get bought.'}, sub:{es:'Anuncios de Meta medidos hasta la venta',en:'Meta ads measured down to the sale'},
+  {num:'01', vis:{type:'phone',img:'iuver-ad1.jpg',alt:{es:'Anuncio de Meta de IUVER Academy en un móvil',en:'IUVER Academy Meta ad on a phone'},a:{es:'Lead cualificado · médica',en:'Qualified lead · doctor'},b:{es:'Matrícula · 7.000 €',en:'Enrolment · 7,000 €'}}, h:{es:'Que te compren.',en:'Get bought.'}, sub:{es:'Anuncios de Meta medidos hasta la venta',en:'Meta ads measured down to the sale'},
    c:{es:'<b>IUVER Academy:</b> 10.000 € en anuncios, 165.000 € facturados.',en:'<b>IUVER Academy:</b> 10,000 € in ads, 165,000 € billed.'},
    inc:{es:'Creatividades nuevas cada semana con el contexto de tu negocio, campañas que se apagan o se escalan según lo que venden y seguimiento hasta la matrícula o el pedido.',en:'New creatives every week with your business context, campaigns paused or scaled by what they sell, and tracking down to the enrolment or the order.'}},
-  {num:'02', vis:{type:'phone',img:'gla-oro.jpg',a:{es:'«He visto tu reel, ¿podemos hablar?»',en:'“Saw your reel, can we talk?”'},b:{es:'Llamada reservada',en:'Call booked'}}, h:{es:'Que te crean.',en:'Get believed.'}, sub:{es:'Contenido orgánico que abre conversaciones',en:'Organic content that opens conversations'},
+  {num:'02', vis:{type:'phone',img:'gla-oro.jpg',alt:{es:'Reel de GLA Patrimonio en un móvil',en:'GLA Patrimonio reel on a phone'},a:{es:'«He visto tu reel, ¿podemos hablar?»',en:'“Saw your reel, can we talk?”'},b:{es:'Llamada reservada',en:'Call booked'}}, h:{es:'Que te crean.',en:'Get believed.'}, sub:{es:'Contenido orgánico que abre conversaciones',en:'Organic content that opens conversations'},
    c:{es:'<b>GLA Patrimonio:</b> siete piezas a la semana con un formato propio.',en:'<b>GLA Patrimonio:</b> seven pieces a week in a format of their own.'},
    inc:{es:'Reels, carruseles y stories con estrategia detrás, hooks que paran el scroll y una llamada a la acción en cada pieza.',en:'Reels, carousels and stories with a strategy behind them, hooks that stop the scroll and a call to action in every piece.'}},
-  {num:'03', vis:{type:'yt',img:'ms-holding.jpg',a:{es:'2 vídeos a la semana',en:'2 videos a week'},b:{es:'Miguel Sierra · 12:55',en:'Miguel Sierra · 12:55'}}, h:{es:'Que te recuerden.',en:'Get remembered.'}, sub:{es:'YouTube de principio a fin',en:'YouTube from start to finish'},
+  {num:'03', vis:{type:'yt',img:'ms-holding.jpg',alt:{es:'Vídeo de YouTube de Miguel Sierra',en:'Miguel Sierra YouTube video'},a:{es:'2 vídeos a la semana',en:'2 videos a week'},b:{es:'Miguel Sierra · 12:55',en:'Miguel Sierra · 12:55'}}, h:{es:'Que te recuerden.',en:'Get remembered.'}, sub:{es:'YouTube de principio a fin',en:'YouTube from start to finish'},
    c:{es:'<b>Miguel Sierra:</b> dos vídeos a la semana desde hace años.',en:'<b>Miguel Sierra:</b> two videos a week for years.'},
    inc:{es:'Estrategia del canal, guion, edición con motion graphics, miniatura, títulos y clips.',en:'Channel strategy, script, editing with motion graphics, thumbnail, titles and clips.'}}
 ];
@@ -672,7 +688,7 @@ const I18N = {
     'alts.eyebrow':'Qué harías si no nos contratas','alts.h2':'Las alternativas, <em>sin trampa.</em>',
     'faq.eyebrow':'Preguntas incómodas','faq.h2':'Lo que preguntarías <em>en la llamada.</em>',
     'cta.eyebrow':'Contacto','cta.h2':'Esto es lo que medimos cada semana: <em>lo que entra en caja.</em>','cta.lead':'Cuéntanos qué vendes y te decimos por WhatsApp si encajamos y qué haríamos.','cta.btn':'Abrir WhatsApp','cta.fit':'Sin compromiso · Marketing completo o solo vídeo',
-    'ftr.tag':'Marketing con IA · Tenerife, España','lb.yt':'Ver completo en YouTube'
+    'ftr.tag':'Marketing con IA · Tenerife, España','ftr.legal':'Aviso legal y privacidad','lb.yt':'Ver completo en YouTube'
   },
   en:{
     'nav.services':'What we do','nav.work':'Work','nav.how':'How we work','nav.faq':'Questions','nav.contact':'Contact','nav.cta':'Chat on WhatsApp',
@@ -696,7 +712,7 @@ const I18N = {
     'alts.eyebrow':'What you would do instead','alts.h2':'The alternatives, <em>no tricks.</em>',
     'faq.eyebrow':'Uncomfortable questions','faq.h2':'What you would ask <em>on the call.</em>',
     'cta.eyebrow':'Contact','cta.h2':'This is what we measure every week: <em>what reaches the bank.</em>','cta.lead':'Tell us what you sell and we reply on WhatsApp with whether we fit and what we would do.','cta.btn':'Open WhatsApp','cta.fit':'No strings · Full marketing or video only',
-    'ftr.tag':'AI-driven marketing · Tenerife, Spain','lb.yt':'Watch the full video on YouTube'
+    'ftr.tag':'AI-driven marketing · Tenerife, Spain','ftr.legal':'Legal notice and privacy','lb.yt':'Watch the full video on YouTube'
   }
 };
 
@@ -729,8 +745,8 @@ function render(){
   document.getElementById('cmp').innerHTML = `<div class="cmp-old"><div class="cmp-h">${esc(CMP.head[lang][0])}</div><ul>${CMP.rows.map(r=>`<li><i>✕</i><span>${esc(r[lang][0])}</span></li>`).join('')}</ul></div>
     <div class="cmp-new"><div class="sweep"></div><div class="cmp-h">${MARK}<span>acceler mkt<b>.</b></span><em>${esc(CMP.head[lang][1])}</em></div><ul>${CMP.rows.map((r,i)=>`<li style="--i:${i}"><i>→</i><span>${esc(r[lang][1])}</span></li>`).join('')}</ul></div>`;
   const visHTML = v => v.type==='phone'
-    ? `<div class="vis"><div class="ph"><img src="assets/posters/${v.img}" alt="" loading="lazy"></div><span class="chip c1">${esc(L(v.a))}</span><span class="chip c2">${esc(L(v.b))}</span></div>`
-    : `<div class="vis"><div class="yt"><img src="assets/posters/${v.img}" alt="" loading="lazy"><i></i></div><span class="chip c1">${esc(L(v.a))}</span><span class="chip c3">${esc(L(v.b))}</span></div>`;
+    ? `<div class="vis"><div class="ph"><img src="assets/posters/${v.img}" alt="${esc(L(v.alt))}" loading="lazy"></div><span class="chip c1">${esc(L(v.a))}</span><span class="chip c2">${esc(L(v.b))}</span></div>`
+    : `<div class="vis"><div class="yt"><img src="assets/posters/${v.img}" alt="${esc(L(v.alt))}" loading="lazy"><i></i></div><span class="chip c1">${esc(L(v.a))}</span><span class="chip c3">${esc(L(v.b))}</span></div>`;
   document.getElementById('services').innerHTML = SERVICES.map(s=>`<div class="service reveal">${visHTML(s.vis)}<div class="num">${s.num}</div><h3>${esc(L(s.h))}<small>${esc(L(s.sub))}</small></h3><div class="case">${L(s.c)}</div></div>`).join('');
   document.getElementById('steps').innerHTML = STEPS.map(s=>`<div class="step reveal"><div class="when">${esc(L(s.when))}</div><h3>${esc(L(s.h))}</h3><p>${esc(L(s.p))}</p><div class="fear">${esc(L(s.fear))}</div></div>`).join('');
   document.getElementById('team').innerHTML = TEAM.map(t=>`<div class="who reveal">${t.logo?`<div class="tphoto tlogo">${MARK}</div>`:`<div class="tphoto tsil" aria-hidden="true"><svg viewBox="0 0 120 150"><circle cx="60" cy="48" r="26"/><path d="M12 150c0-30 21-50 48-50s48 20 48 50z"/></svg></div>`}<div class="r">${esc(L(t.r))}</div><h3>${esc(L(t.h))}</h3><p>${esc(L(t.p))}</p></div>`).join('');
