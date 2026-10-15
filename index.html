@@ -4,14 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Acceler MKT · Marketing con IA para marcas personales y empresas</title>
-<meta name="description" content="Anuncios de Meta, contenido y YouTube para marcas personales y empresas que ya facturan, producidos con IA y medidos hasta la venta. Con 10.000 € en anuncios, IUVER Academy facturó 165.000 €.">
+<meta name="description" content="Anuncios de Meta, contenido y YouTube para empresas que ya invierten en anuncios, producidos con IA y medidos hasta la venta. Con 10.000 € en anuncios, IUVER Academy facturó 165.000 €.">
 <meta name="robots" content="index,follow">
 <link rel="canonical" href="https://acceler-mkt.github.io/">
 <meta property="og:url" content="https://acceler-mkt.github.io/">
 <meta property="og:site_name" content="Acceler MKT">
 <meta property="og:locale" content="es_ES">
 <meta property="og:title" content="Acceler MKT · No tienes marketing. Tienes gastos.">
-<meta property="og:description" content="Anuncios, contenido y YouTube producidos con IA y medidos hasta la venta. Con 10.000 € en anuncios, IUVER Academy facturó 165.000 €.">
+<meta property="og:description" content="Convertimos lo que dicen tus clientes en anuncios, contenido y vídeo, medidos hasta la venta. Con 10.000 € en anuncios, IUVER Academy facturó 165.000 €.">
 <meta property="og:image" content="https://acceler-mkt.github.io/assets/img/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -389,7 +389,7 @@ html.static .hero{min-height:880px}
         <p class="lead" data-i18n-html="hero.lead">Si no sabes qué anuncio te trajo el último cliente, es esto. <strong>Llevamos tus anuncios, tu contenido y tu YouTube con nuestro sistema de IA, medidos hasta la venta. Funcionando en 21 días.</strong></p>
         <div class="hero-cta">
           <a class="btn btn-wa wa-link" href="#" target="_blank" rel="noopener"><svg><use href="#wa"/></svg><span data-i18n="hero.cta1">Cuéntanos tu caso por WhatsApp</span></a>
-          <a class="btn btn-ghost" href="#servicios" data-i18n="hero.cta2">Ver casos</a>
+          <a class="btn btn-ghost" href="#dolor" data-i18n="hero.cta2">Ver casos</a>
         </div>
         <p class="reassure" data-i18n="hero.reassure">Sin compromiso · Una empresa nueva por semana · Solo marcas que ya facturan</p>
       </div>
@@ -432,8 +432,16 @@ html.static .hero{min-height:880px}
     <div class="pains" id="pains"></div>
     <div class="tesis reveal">
       <h3 data-i18n-html="tesis.h3">Hasta ahora tenías dos opciones: una agencia de posts bonitos <em>o un freelance que desaparece en agosto.</em></h3>
-      <p data-i18n-html="tesis.p">Las dos cobran por piezas y reportan impresiones. Acceler MKT existe para lo contrario: <strong>un sistema con IA que conoce tu negocio, publica cada semana y se mide en lo que entra en caja.</strong></p>
+      <p data-i18n-html="tesis.p"></p>
     </div>
+    <div class="sec-head" style="margin-top:clamp(56px,7vw,96px)">
+      <div>
+        <span class="eyebrow" data-i18n="mech.eyebrow"></span>
+        <h2 class="reveal" data-i18n-html="mech.h2"></h2>
+      </div>
+      <p class="lead reveal" data-i18n="mech.lead"></p>
+    </div>
+    <div class="models" id="mech"></div>
   </div>
 </section>
 
@@ -510,7 +518,7 @@ html.static .hero{min-height:880px}
       <p class="lead reveal" data-i18n="models.lead">Sin precio en la web: te lo decimos en la primera conversación. Entramos con una empresa nueva por semana.</p>
     </div>
     <div class="models" id="models"></div>
-
+    <p class="lead reveal" style="margin-top:28px" data-i18n-html="models.other"></p>
   </div>
 </section>
 
@@ -567,8 +575,8 @@ html.static .hero{min-height:880px}
 (function(){
 const WA_NUMBER = '34647829854';
 const WA_TEXT = {
-  es: 'Hola Alfonso, he visto la web de Acceler MKT y quiero hablar de mi caso.',
-  en: 'Hi Alfonso, I saw the Acceler MKT site and I would like to talk about my case.'
+  es: 'Hola Alfonso, quiero el análisis de mis anuncios. Mi empresa es: ',
+  en: 'Hi Alfonso, I would like the review of my ads. My company is: '
 };
 
 const FACES = [
@@ -590,10 +598,16 @@ const FACES = [
 ];
 
 const PAINS = [
-  {h:{es:'La agencia te manda el informe y tú tienes que explicárselo a tu socio.',en:'The agency sends the report and you have to explain it to your partner.'}, p:{es:'Impresiones, alcance, clics. Nadie te dice qué anuncio ha traído un cliente y cuál lleva tres meses quemando presupuesto.',en:'Impressions, reach, clicks. Nobody tells you which ad brought a client and which one has been burning budget for three months.'}},
-  {h:{es:'Publicas cada semana y por ahí no entra nada.',en:'You post every week and nothing comes in through it.'}, p:{es:'Reels que gustan a tus amigos. Ni una conversación, ni una llamada, ni un lead que puedas atribuir a un vídeo.',en:'Reels your friends like. Not one conversation, not one call, not one lead you can trace back to a video.'}},
-  {h:{es:'Cada mes empiezas de cero.',en:'Every month you start from scratch.'}, p:{es:'Nuevo freelance, nuevo brief, nuevo tono. Y la grabación esperando en una carpeta mientras el editor entrega cuando puede.',en:'New freelancer, new brief, new tone. And the footage waiting in a folder while the editor delivers when he can.'}},
-  {h:{es:'Ya probaste una agencia y te quemó.',en:'You already tried an agency and got burned.'}, p:{es:'Te vendieron al senior y te atendió el becario. El presupuesto se gastó y la aguja no se movió.',en:'They sold you the senior and the intern did the work. The budget got spent and the needle never moved.'}}
+  {h:{es:'Tu agencia te manda un informe de clics y tu comercial te dice que los leads no valen.',en:'Your agency sends a clicks report and your salesperson says the leads are useless.'}},
+  {h:{es:'Llevas dos meses con las mismas tres creatividades, porque hacer más cuesta.',en:'You have run the same three creatives for two months, because making more is expensive.'}},
+  {h:{es:'Sabes que deberías publicar más, pero grabar te quita el día.',en:'You know you should post more, but recording eats your whole day.'}},
+  {h:{es:'Ya probaste una agencia y te quemó.',en:'You already tried an agency and got burned.'}}
+];
+
+const MECH = [
+  {k:{es:'01 · Escuchamos',en:'01 · We listen'}, h:{es:'Lo que dicen tus clientes',en:'What your clients say'}, p:{es:'Llamadas de venta, preguntas por WhatsApp, objeciones, reseñas y tus vídeos entran en el sistema. Así aprende cómo vendes tú.',en:'Sales calls, WhatsApp questions, objections, reviews and your videos go into the system. That is how it learns how you sell.'}},
+  {k:{es:'02 · Producimos',en:'02 · We produce'}, h:{es:'30-40 creatividades al mes',en:'30-40 creatives a month'}, p:{es:'Con tu tono, cada una con un motivo de compra o una duda real de tus clientes. Meta decide a quién enseña un anuncio según el propio anuncio: cuantas más creatividades distintas, más compradores encuentra.',en:'In your tone, each one built on a real reason to buy or a real doubt. Meta decides who sees an ad based on the ad itself: the more distinct creatives, the more buyers it finds.'}, hl:true},
+  {k:{es:'03 · Medimos',en:'03 · We measure'}, h:{es:'Hasta la caja',en:'All the way to the bank'}, p:{es:'Cada semana ves en un panel los leads, las llamadas y las ventas de cada pieza. Lo que no vende se apaga y lo que vende se multiplica en variaciones.',en:'Every week a panel shows leads, calls and sales per piece. What doesn\u2019t sell gets switched off and what sells gets multiplied into variations.'}}
 ];
 
 const CMP = {
@@ -612,10 +626,10 @@ const SERVICES = [
    c:{es:'<b>IUVER Academy:</b> 10.000 € en anuncios, 165.000 € facturados.',en:'<b>IUVER Academy:</b> 10,000 € in ads, 165,000 € billed.'},
    inc:{es:'Creatividades nuevas cada semana con el contexto de tu negocio, campañas que se apagan o se escalan según lo que venden y seguimiento hasta la matrícula o el pedido.',en:'New creatives every week with your business context, campaigns paused or scaled by what they sell, and tracking down to the enrolment or the order.'}},
   {num:'02', vis:{type:'phone',img:'gla-oro.jpg',alt:{es:'Reel de GLA Patrimonio en un móvil',en:'GLA Patrimonio reel on a phone'},a:{es:'«He visto tu reel, ¿podemos hablar?»',en:'“Saw your reel, can we talk?”'},b:{es:'Llamada reservada',en:'Call booked'}}, h:{es:'Que te crean.',en:'Get believed.'}, sub:{es:'Contenido orgánico que abre conversaciones',en:'Organic content that opens conversations'},
-   c:{es:'<b>GLA Patrimonio:</b> siete piezas a la semana con un formato propio.',en:'<b>GLA Patrimonio:</b> seven pieces a week in a format of their own.'},
+   c:{es:'<b>GLA Patrimonio</b> y <b>Fixcal:</b> marca personal en inversión y fiscalidad.',en:'<b>GLA Patrimonio</b> and <b>Fixcal:</b> personal brands in investing and tax.'},
    inc:{es:'Reels, carruseles y stories con estrategia detrás, hooks que paran el scroll y una llamada a la acción en cada pieza.',en:'Reels, carousels and stories with a strategy behind them, hooks that stop the scroll and a call to action in every piece.'}},
   {num:'03', vis:{type:'yt',img:'ms-holding.jpg',alt:{es:'Vídeo de YouTube de Miguel Sierra',en:'Miguel Sierra YouTube video'},a:{es:'2 vídeos a la semana',en:'2 videos a week'},b:{es:'Miguel Sierra · 12:55',en:'Miguel Sierra · 12:55'}}, h:{es:'Que te recuerden.',en:'Get remembered.'}, sub:{es:'YouTube de principio a fin',en:'YouTube from start to finish'},
-   c:{es:'<b>Miguel Sierra:</b> dos vídeos a la semana desde hace años.',en:'<b>Miguel Sierra:</b> two videos a week for years.'},
+   c:{es:'<b>Miguel Sierra:</b> su canal de YouTube, del guion a la miniatura.',en:'<b>Miguel Sierra:</b> his YouTube channel, from script to thumbnail.'},
    inc:{es:'Estrategia del canal, guion, edición con motion graphics, miniatura, títulos y clips.',en:'Channel strategy, script, editing with motion graphics, thumbnail, titles and clips.'}}
 ];
 
@@ -632,9 +646,9 @@ const TEAM = [
 ];
 
 const MODELS = [
-  {k:{es:'Lo hacemos por ti',en:'We do it for you'}, h:{es:'Marketing completo',en:'Full marketing'}, p:{es:'Anuncios, contenido y YouTube, medido en ventas.',en:'Ads, content and YouTube, measured in sales.'}, f:{es:'Marcas personales y empresas que ya facturan y quieren crecer sin montar equipo.',en:'Personal brands and companies with revenue that want to grow without building a team.'}, hl:true},
-  {k:{es:'Solo una pieza',en:'One piece only'}, h:{es:'Anuncios, contenido o YouTube',en:'Ads, content or YouTube'}, p:{es:'Entramos en la pata que te falta.',en:'We take the leg you are missing.'}, f:{es:'Quien ya tiene equipo y le falta una pata.',en:'Teams that already exist and are missing one leg.'}},
-  {k:{es:'Tú con nuestra plataforma',en:'You on our platform'}, h:{es:'Tu operativa, con IA',en:'Your operations, with AI'}, p:{es:'CRM y automatizaciones propias, para cuando el cuello de botella está dentro.',en:'Our own CRM and automations, for when the bottleneck is inside.'}, f:{es:'Empresas que ya captan y necesitan que la operativa siga el ritmo.',en:'Companies that already acquire and need operations to keep up.'}}
+  {k:{es:'Es para ti si',en:'It is for you if'}, h:{es:'Ya vendes y ya inviertes',en:'You already sell and invest'}, p:{es:'Facturas más de 300.000 € al año, vendes algo de más de 1.000 € y metes al menos 3.000 € al mes en anuncios.',en:'You bill over 300,000 € a year, sell something above 1,000 € and put at least 3,000 € a month into ads.'}, hl:true},
+  {k:{es:'Y además',en:'And also'}, h:{es:'Atiendes a tus leads',en:'You answer your leads'}, p:{es:'Alguien de tu equipo contesta el mismo día. Sin eso, ningún anuncio vende.',en:'Someone on your team replies the same day. Without that, no ad sells.'}},
+  {k:{es:'No es para ti si',en:'It is not for you if'}, h:{es:'Empiezas de cero o buscas lo más barato',en:'You start from zero or want the cheapest'}, p:{es:'Tampoco si quieres que te «lleven las redes» sin mirar las ventas.',en:'Nor if you want someone to \u201crun your socials\u201d without looking at sales.'}}
 ];
 
 const ALTS = [
@@ -646,12 +660,12 @@ const ALTS = [
 ];
 
 const FAQ = [
-  {q:{es:'¿Qué no hacéis?',en:'What don’t you do?'}, a:{es:'Redes por llevarlas, bodas, vídeo institucional y negocios que empiezan de cero.',en:'Social media for its own sake, weddings, corporate films and businesses starting from zero.'}},
+  {q:{es:'¿Cuánto cuesta?',en:'How much does it cost?'}, a:{es:'Depende de tu caso y te lo decimos en la primera llamada. Como referencia, menos de lo que cuesta contratar a una persona de marketing a jornada completa, y a cambio trabajas con un equipo y un sistema que produce cada semana.',en:'It depends on your case and we tell you on the first call. As a reference, less than hiring one full-time marketing person, and you get a team and a system producing every week.'}},
+  {q:{es:'¿Hay permanencia?',en:'Is there a minimum term?'}, a:{es:'Tres meses. Es lo que necesitan los anuncios para aprender y tú para ver con datos qué vende.',en:'Three months. That is what the ads need to learn and what you need to see, with data, what sells.'}},
+  {q:{es:'Ya tengo agencia.',en:'I already have an agency.'}, a:{es:'Pregúntale qué anuncio te trajo al último cliente. Si te lo sabe decir, quédate con ella.',en:'Ask them which ad brought your last client. If they can tell you, stay with them.'}},
   {q:{es:'¿Cuánto tiempo me va a costar a mí?',en:'How much of my time will it take?'}, a:{es:'Una llamada al principio, grabar cuando toca y unos minutos a la semana para aprobar.',en:'One call at the start, recording when it is due and a few minutes a week to approve.'}},
-  {q:{es:'¿La IA no hace contenido genérico?',en:'Doesn’t AI make generic content?'}, a:{es:'Lo hace cuando no sabe nada de ti. Nuestro sistema trabaja con tu contexto y el criterio es nuestro.',en:'It does when it knows nothing about you. Ours works with your context, and the judgement is ours.'}},
-  {q:{es:'¿Y si no funciona?',en:'What if it doesn’t work?'}, a:{es:'Lo ves en el panel semanal, no a los seis meses. Y si el día 21 no está funcionando, te devolvemos la puesta en marcha.',en:'You see it in the weekly panel, not six months later. And if it isn’t running by day 21, we refund the setup.'}},
-  {q:{es:'¿Por qué no un freelance o una agencia?',en:'Why not a freelancer or an agency?'}, a:{es:'Los dos cobran por piezas. Nosotros llevamos un sistema que produce, publica y mide, y no desaparece en agosto.',en:'Both charge per piece. We run a system that produces, publishes and measures, and it doesn’t vanish in August.'}},
-  {q:{es:'¿Enseñáis el precio?',en:'Do you show prices?'}, a:{es:'En la primera conversación, con tu caso delante.',en:'In the first conversation, with your case in front of us.'}}
+  {q:{es:'¿Y si no funciona?',en:'What if it doesn\u2019t work?'}, a:{es:'Lo ves en el panel cada semana, no a los seis meses. Si el día 21 no está funcionando, te devolvemos la puesta en marcha. Y si una semana no entregamos lo comprometido, esa semana no la pagas.',en:'You see it in the panel every week, not six months later. If it isn\u2019t running by day 21, we refund the setup. And if one week we don\u2019t deliver what we committed to, you don\u2019t pay that week.'}},
+  {q:{es:'¿Qué no hacéis?',en:'What don\u2019t you do?'}, a:{es:'Llevar redes por llevarlas, bodas, vídeo institucional y negocios que empiezan de cero.',en:'Social media for its own sake, weddings, corporate films and businesses starting from zero.'}}
 ];
 
 const WORKS = [
@@ -677,50 +691,52 @@ const WORKS = [
 const I18N = {
   es:{
     'nav.services':'Qué hacemos','nav.work':'Trabajo','nav.how':'Cómo trabajamos','nav.faq':'Preguntas','nav.contact':'Contacto','nav.cta':'Hablar por WhatsApp',
-    'hero.eyebrow':'Acceler MKT · Marketing con IA · Más de 2 años',
+    'hero.eyebrow':'Para empresas de servicios que ya invierten en anuncios',
     'hero.h1':'No tienes marketing. <em>Tienes gastos.</em>',
-    'hero.lead':'Si no sabes qué anuncio te trajo el último cliente, es esto. <strong>Llevamos tus anuncios, tu contenido y tu YouTube con nuestro sistema de IA, medidos hasta la venta. Funcionando en 21 días.</strong>',
-    'hero.cta1':'Cuéntanos tu caso por WhatsApp','hero.cta2':'Ver casos','hero.reassure':'Sin compromiso · Una empresa nueva por semana · Solo marcas que ya facturan',
-    'proof.k':'Caso real · Meta Ads','proof.who':'<strong>IUVER Academy</strong> · máster de medicina estética. Inversión en anuncios y facturación generada.','proof.k2':'En el mercado','proof.v2':'+2 años','proof.k3':'Marcas',
+    'hero.lead':'Si no sabes qué anuncio te trajo el último cliente, es esto. <strong>Convertimos lo que ya te dicen tus clientes en anuncios, contenido y vídeo, y lo medimos hasta la venta. En marcha en 21 días.</strong>',
+    'hero.cta1':'Quiero el análisis de mis anuncios','hero.cta2':'Ver cómo funciona','hero.reassure':'Gratis: revisamos tus anuncios y te mandamos 3 creatividades · Te contesta Alfonso',
+    'proof.k':'Caso real · Meta Ads','proof.who':'<strong>IUVER Academy</strong> · máster de medicina estética de 7.000 €. Inversión en anuncios y facturación en matrículas.','proof.k2':'En el mercado','proof.v2':'+2 años','proof.k3':'Marcas',
     'wall.cap':'Cuentas con las que trabajamos y hemos trabajado',
     'pain.eyebrow':'¿Te suena?','pain.h2':'Inviertes en marketing y lo que recibes son <em>informes.</em>',
-    'tesis.h3':'Hasta ahora tenías dos opciones: una agencia de posts bonitos <em>o un freelance que desaparece en agosto.</em>',
-    'tesis.p':'Las dos cobran por piezas y reportan impresiones. Acceler MKT existe para lo contrario: <strong>un sistema con IA que conoce tu negocio, publica cada semana y se mide en lo que entra en caja.</strong>',
+    'tesis.h3':'Meta funciona y lo que vendes se vende. <em>Lo que falla es de dónde salen tus anuncios.</em>',
+    'tesis.p':'Los hace alguien que nunca ha oído una llamada con tus clientes. Y tus clientes te dicen cada día por qué compran y por qué dudan: <strong>esas frases son los mejores anuncios que tendrás nunca</strong>, y ahora mismo se pierden en el WhatsApp de tu comercial.',
+    'mech.eyebrow':'Cómo lo hacemos','mech.h2':'Tus ventas escriben <em>tus anuncios.</em>','mech.lead':'Un sistema con IA que trabaja con el contexto de tu negocio, en tres movimientos.',
     'cmp.eyebrow':'La forma antigua y la nuestra','cmp.h2':'Lo que cambia cuando el marketing <em>se mide en caja.</em>',
-    'svc.eyebrow':'Qué hacemos','svc.h2':'Tres resultados, <em>con nombre y número.</em>','svc.lead':'Cada uno con un caso real detrás. Si no hay número, no lo publicamos.',
+    'svc.eyebrow':'Qué hacemos','svc.h2':'Tres frentes, <em>un mismo sistema.</em>','svc.lead':'Que te compren, que te crean y que te recuerden. Así se ve en cuentas reales.',
     'svc.inc':'Qué incluye',
-    'work.eyebrow':'Trabajo','work.h2':'Así se ve <em>por fuera.</em>','work.lead':'Pasa el ratón para verlos en movimiento y haz clic para oírlos.','work.reel':'Showreel · 25 s','work.more':'Ver más trabajos','work.less':'Ver menos',
+    'work.eyebrow':'Trabajo','work.h2':'¿Cara de IA? <em>Júzgalo tú.</em>','work.lead':'Queda genérico cuando la IA no sabe nada de ti. La nuestra trabaja con tus llamadas, tus clientes y tu forma de hablar, y lo que se publica lo decidimos nosotros.','work.reel':'Showreel · 25 s','work.more':'Ver más trabajos','work.less':'Ver menos',
     'how.eyebrow':'Cómo trabajamos','how.h2':'De tu grabación a clientes, <em>en tres pasos.</em>','how.lead':'Sin reuniones de tres horas.',
-    'g.k':'días','g.p':'<strong>Si el día 21 el sistema no está funcionando, te devolvemos la puesta en marcha.</strong>',
+    'g.k':'días','g.p':'<strong>Si el día 21 el sistema no está funcionando, te devolvemos la puesta en marcha.</strong> Fijamos el día 21 porque esos días dependen solo de nosotros. Después, si una semana no entregamos las creatividades comprometidas, esa semana no la pagas. Y lo que hemos producido es tuyo aunque te vayas.',
     'team.eyebrow':'Quién hace el trabajo','team.h2':'Los que diseñan la estrategia <em>son los que la ejecutan.</em>','team.lead':'Nadie te vende al senior para entregarte al becario.',
-    'models.eyebrow':'Tres formas de trabajar con nosotros','models.h2':'Lo hacemos por ti, una sola pieza <em>o tu operativa entera.</em>','models.lead':'Sin precio en la web: te lo decimos en la primera conversación. Entramos con una empresa nueva por semana.','models.for':'Para quién',
+    'models.eyebrow':'Para quién es','models.h2':'Para empresas que ya venden <em>y quieren saber qué les hace vender.</em>','models.lead':'Sin precio en la web: depende de tu caso y te lo decimos en la primera conversación. Entramos con una empresa nueva por semana, porque cada puesta en marcha la llevamos los dos socios.','models.other':'¿Solo necesitas vídeo o quieres automatizar tu operativa con nuestra plataforma? También lo hacemos: <strong>escríbenos igual.</strong>','models.for':'Para quién',
     'alts.eyebrow':'Qué harías si no nos contratas','alts.h2':'Las alternativas, <em>sin trampa.</em>',
     'faq.eyebrow':'Preguntas incómodas','faq.h2':'Lo que preguntarías <em>en la llamada.</em>',
-    'cta.eyebrow':'Contacto','cta.h2':'Esto es lo que medimos cada semana: <em>lo que entra en caja.</em>','cta.lead':'Cuéntanos qué vendes y te decimos por WhatsApp si encajamos y qué haríamos.','cta.btn':'Abrir WhatsApp','cta.fit':'Sin compromiso · Marketing completo o solo vídeo',
+    'cta.eyebrow':'Contacto','cta.h2':'Esto es lo que medimos cada semana: <em>lo que entra en caja.</em>','cta.lead':'Escríbenos qué vendes. Te contesta Alfonso en persona, te hace tres preguntas y, si encajamos, te manda el análisis de tus anuncios con 3 creatividades para tu negocio. Si no encajamos, te lo dice.','cta.btn':'Quiero el análisis de mis anuncios','cta.fit':'Gratis y sin compromiso · Una empresa nueva por semana',
     'ftr.tag':'Marketing con IA · Tenerife, España','ftr.legal':'Aviso legal y privacidad','lb.yt':'Ver completo en YouTube'
   },
   en:{
     'nav.services':'What we do','nav.work':'Work','nav.how':'How we work','nav.faq':'Questions','nav.contact':'Contact','nav.cta':'Chat on WhatsApp',
-    'hero.eyebrow':'Acceler MKT · AI-driven marketing · 2+ years',
+    'hero.eyebrow':'For service companies already running ads',
     'hero.h1':'You don’t have marketing. <em>You have expenses.</em>',
-    'hero.lead':'If you can’t say which ad brought your last client, this is it. <strong>We run your ads, your content and your YouTube with our AI system, measured down to the sale. Running in 21 days.</strong>',
-    'hero.cta1':'Tell us your case on WhatsApp','hero.cta2':'See cases','hero.reassure':'No strings · One new company per week · Only brands with revenue',
-    'proof.k':'Real case · Meta Ads','proof.who':'<strong>IUVER Academy</strong> · aesthetic medicine master’s. Ad spend and revenue generated.','proof.k2':'In the market','proof.v2':'2+ years','proof.k3':'Brands',
+    'hero.lead':'If you can’t say which ad brought your last client, this is it. <strong>We turn what your clients already tell you into ads, content and video, and measure it down to the sale. Running in 21 days.</strong>',
+    'hero.cta1':'Get a review of my ads','hero.cta2':'See how it works','hero.reassure':'Free: we review your ads and send you 3 creatives · Alfonso replies',
+    'proof.k':'Real case · Meta Ads','proof.who':'<strong>IUVER Academy</strong> · 7,000 € aesthetic medicine master’s. Ad spend and enrolment revenue.','proof.k2':'In the market','proof.v2':'2+ years','proof.k3':'Brands',
     'wall.cap':'Accounts we work and have worked with',
     'pain.eyebrow':'Sound familiar?','pain.h2':'You invest in marketing and what you get back are <em>reports.</em>',
-    'tesis.h3':'Until now you had two options: a pretty-posts agency <em>or a freelancer who vanishes in August.</em>',
-    'tesis.p':'Both charge per piece and report impressions. Acceler MKT exists for the opposite: <strong>an AI system that knows your business, publishes every week and is measured by what reaches the bank.</strong>',
+    'tesis.h3':'Meta works and what you sell sells. <em>What fails is where your ads come from.</em>',
+    'tesis.p':'They are made by someone who has never heard a call with your clients. Yet your clients tell you every day why they buy and why they hesitate: <strong>those sentences are the best ads you will ever have</strong>, and right now they get lost in your salesperson’s WhatsApp.',
+    'mech.eyebrow':'How we do it','mech.h2':'Your sales write <em>your ads.</em>','mech.lead':'An AI system that works with your business context, in three moves.',
     'cmp.eyebrow':'The old way and ours','cmp.h2':'What changes when marketing <em>is measured in revenue.</em>',
-    'svc.eyebrow':'What we do','svc.h2':'Three results, <em>with a name and a number.</em>','svc.lead':'Each one with a real case behind it. No number, no publishing.',
+    'svc.eyebrow':'What we do','svc.h2':'Three fronts, <em>one system.</em>','svc.lead':'Get bought, get believed, get remembered. This is how it looks on real accounts.',
     'svc.inc':'What is included',
-    'work.eyebrow':'Work','work.h2':'What it looks like <em>from outside.</em>','work.lead':'Hover to see them move, click to hear them.','work.reel':'Showreel · 25 s','work.more':'See more work','work.less':'See less',
+    'work.eyebrow':'Work','work.h2':'Looks like AI? <em>Judge for yourself.</em>','work.lead':'It looks generic when the AI knows nothing about you. Ours works with your calls, your clients and the way you talk, and what gets published is our call.','work.reel':'Showreel · 25 s','work.more':'See more work','work.less':'See less',
     'how.eyebrow':'How we work','how.h2':'From your footage to clients, <em>in three steps.</em>','how.lead':'No three-hour meetings.',
-    'g.k':'days','g.p':'<strong>If the system isn’t running by day 21, we refund the setup.</strong>',
+    'g.k':'days','g.p':'<strong>If the system isn’t running by day 21, we refund the setup.</strong> We set day 21 because those days depend only on us. After that, if one week we don’t deliver the committed creatives, you don’t pay that week. And everything we produced is yours even if you leave.',
     'team.eyebrow':'Who does the work','team.h2':'The people who design the strategy <em>are the ones who execute it.</em>','team.lead':'Nobody sells you the senior and hands you the intern.',
-    'models.eyebrow':'Three ways to work with us','models.h2':'We do it for you, one piece only <em>or your whole operation.</em>','models.lead':'No pricing on the site: we tell you in the first conversation. We onboard one new company per week.','models.for':'Who it is for',
+    'models.eyebrow':'Who it is for','models.h2':'For companies that already sell <em>and want to know what makes them sell.</em>','models.lead':'No pricing on the site: it depends on your case and we tell you in the first conversation. We onboard one new company per week, because both partners run every setup.','models.other':'Only need video, or want to automate your operations with our platform? We do that too: <strong>write to us anyway.</strong>','models.for':'Who it is for',
     'alts.eyebrow':'What you would do instead','alts.h2':'The alternatives, <em>no tricks.</em>',
     'faq.eyebrow':'Uncomfortable questions','faq.h2':'What you would ask <em>on the call.</em>',
-    'cta.eyebrow':'Contact','cta.h2':'This is what we measure every week: <em>what reaches the bank.</em>','cta.lead':'Tell us what you sell and we reply on WhatsApp with whether we fit and what we would do.','cta.btn':'Open WhatsApp','cta.fit':'No strings · Full marketing or video only',
+    'cta.eyebrow':'Contact','cta.h2':'This is what we measure every week: <em>what reaches the bank.</em>','cta.lead':'Tell us what you sell. Alfonso replies in person, asks three questions and, if we fit, sends you a review of your ads with 3 creatives for your business. If we don’t fit, he tells you.','cta.btn':'Get a review of my ads','cta.fit':'Free, no strings · One new company per week',
     'ftr.tag':'AI-driven marketing · Tenerife, Spain','ftr.legal':'Legal notice and privacy','lb.yt':'Watch the full video on YouTube'
   }
 };
@@ -763,6 +779,7 @@ function render(){
   document.getElementById('services').innerHTML = SERVICES.map(s=>`<div class="service reveal">${visHTML(s.vis)}<div class="num">${s.num}</div><h3>${esc(L(s.h))}<small>${esc(L(s.sub))}</small></h3><div class="case">${L(s.c)}</div></div>`).join('');
   document.getElementById('steps').innerHTML = STEPS.map(s=>`<div class="step reveal"><div class="when">${esc(L(s.when))}</div><h3>${esc(L(s.h))}</h3><p>${esc(L(s.p))}</p><div class="fear">${esc(L(s.fear))}</div></div>`).join('');
   document.getElementById('team').innerHTML = TEAM.map(t=>`<div class="who reveal">${t.logo?`<div class="tphoto tlogo">${MARK}</div>`:`<div class="tphoto tsil" aria-hidden="true"><svg viewBox="0 0 120 150"><circle cx="60" cy="48" r="26"/><path d="M12 150c0-30 21-50 48-50s48 20 48 50z"/></svg></div>`}<div class="r">${esc(L(t.r))}</div><h3>${esc(L(t.h))}</h3><p>${esc(L(t.p))}</p></div>`).join('');
+  document.getElementById('mech').innerHTML = MECH.map(m=>`<div class="model reveal${m.hl?' hl':''}"><div class="k">${esc(L(m.k))}</div><h3>${esc(L(m.h))}</h3><p>${esc(L(m.p))}</p></div>`).join('');
   document.getElementById('models').innerHTML = MODELS.map(m=>`<div class="model reveal${m.hl?' hl':''}"><div class="k">${esc(L(m.k))}</div><h3>${esc(L(m.h))}</h3><p>${esc(L(m.p))}</p></div>`).join('');
   document.getElementById('faqList').innerHTML = FAQ.map(f=>`<details><summary>${esc(L(f.q))}</summary><div class="a">${esc(L(f.a))}</div></details>`).join('');
   document.getElementById('gridH').innerHTML = WORKS.filter(w=>w.r==='h').map(cardHTML).join('');
@@ -777,7 +794,7 @@ function applyI18n(){
   document.getElementById('langBtn').textContent = lang==='es' ? 'EN' : 'ES';
   const wa = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(WA_TEXT[lang])}`;
   document.querySelectorAll('.wa-link').forEach(a=>a.href=wa);
-  document.title = lang==='es' ? 'Acceler MKT · Marketing con IA para marcas personales y empresas' : 'Acceler MKT · AI-driven marketing for personal brands and companies';
+  document.title = lang==='es' ? 'Acceler MKT · Marketing con IA para empresas que ya invierten en anuncios' : 'Acceler MKT · AI-driven marketing for companies already running ads';
 }
 
 /* cards */
