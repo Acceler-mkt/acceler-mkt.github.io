@@ -1,0 +1,222 @@
+{
+ "carruseles": [
+  {
+   "cliente": "Miguel Sierra",
+   "cuenta": "@miguelsierrag",
+   "titulo": "Paco, Pedro y Miguel",
+   "slides": [
+    "assets/portfolio/miguel/c01-01.jpg",
+    "assets/portfolio/miguel/c01-02.jpg",
+    "assets/portfolio/miguel/c01-03.jpg",
+    "assets/portfolio/miguel/c01-04.jpg",
+    "assets/portfolio/miguel/c01-05.jpg",
+    "assets/portfolio/miguel/c01-06.jpg",
+    "assets/portfolio/miguel/c01-07.jpg"
+   ]
+  },
+  {
+   "cliente": "Miguel Sierra",
+   "cuenta": "@miguelsierrag",
+   "titulo": "Vender la empresa con holding",
+   "slides": [
+    "assets/portfolio/miguel/c02-01.jpg",
+    "assets/portfolio/miguel/c02-02.jpg",
+    "assets/portfolio/miguel/c02-03.jpg",
+    "assets/portfolio/miguel/c02-04.jpg",
+    "assets/portfolio/miguel/c02-05.jpg",
+    "assets/portfolio/miguel/c02-06.jpg",
+    "assets/portfolio/miguel/c02-07.jpg"
+   ]
+  },
+  {
+   "cliente": "Miguel Sierra",
+   "cuenta": "@miguelsierrag",
+   "titulo": "Subida de sueldo e IRPF",
+   "slides": [
+    "assets/portfolio/miguel/c03-01.jpg",
+    "assets/portfolio/miguel/c03-02.jpg",
+    "assets/portfolio/miguel/c03-03.jpg",
+    "assets/portfolio/miguel/c03-04.jpg",
+    "assets/portfolio/miguel/c03-05.jpg",
+    "assets/portfolio/miguel/c03-06.jpg",
+    "assets/portfolio/miguel/c03-07.jpg"
+   ]
+  },
+  {
+   "cliente": "Miguel Sierra",
+   "cuenta": "@miguelsierrag",
+   "titulo": "En junio ya es tarde",
+   "slides": [
+    "assets/portfolio/miguel/c04-01.jpg",
+    "assets/portfolio/miguel/c04-02.jpg",
+    "assets/portfolio/miguel/c04-03.jpg",
+    "assets/portfolio/miguel/c04-04.jpg",
+    "assets/portfolio/miguel/c04-05.jpg",
+    "assets/portfolio/miguel/c04-06.jpg",
+    "assets/portfolio/miguel/c04-07.jpg"
+   ]
+  },
+  {
+   "cliente": "Miguel Sierra",
+   "cuenta": "@miguelsierrag",
+   "titulo": "Varios negocios en una SL",
+   "slides": [
+    "assets/portfolio/miguel/c05-01.jpg",
+    "assets/portfolio/miguel/c05-02.jpg",
+    "assets/portfolio/miguel/c05-03.jpg",
+    "assets/portfolio/miguel/c05-04.jpg",
+    "assets/portfolio/miguel/c05-05.jpg",
+    "assets/portfolio/miguel/c05-06.jpg",
+    "assets/portfolio/miguel/c05-07.jpg"
+   ]
+  },
+  {
+   "cliente": "Miguel Sierra",
+   "cuenta": "@miguelsierrag",
+   "titulo": "Fracasar antes de empezar",
+   "slides": [
+    "assets/portfolio/miguel/c06-01.jpg",
+    "assets/portfolio/miguel/c06-02.jpg",
+    "assets/portfolio/miguel/c06-03.jpg",
+    "assets/portfolio/miguel/c06-04.jpg",
+    "assets/portfolio/miguel/c06-05.jpg",
+    "assets/portfolio/miguel/c06-06.jpg",
+    "assets/portfolio/miguel/c06-07.jpg"
+   ]
+  },
+  {
+   "cliente": "Álex Mestres · GLA Patrimonio",
+   "cuenta": "@alexsmestres",
+   "titulo": "40.000 parados, 3 preguntas",
+   "slides": [
+    "assets/portfolio/alex/c01-01.jpg",
+    "assets/portfolio/alex/c01-02.jpg",
+    "assets/portfolio/alex/c01-03.jpg",
+    "assets/portfolio/alex/c01-04.jpg",
+    "assets/portfolio/alex/c01-05.jpg",
+    "assets/portfolio/alex/c01-06.jpg",
+    "assets/portfolio/alex/c01-07.jpg"
+   ]
+  },
+  {
+   "cliente": "Álex Mestres · GLA Patrimonio",
+   "cuenta": "@alexsmestres",
+   "titulo": "Herencia, no firmes",
+   "slides": [
+    "assets/portfolio/alex/c02-01.jpg",
+    "assets/portfolio/alex/c02-02.jpg",
+    "assets/portfolio/alex/c02-03.jpg",
+    "assets/portfolio/alex/c02-04.jpg",
+    "assets/portfolio/alex/c02-05.jpg",
+    "assets/portfolio/alex/c02-06.jpg",
+    "assets/portfolio/alex/c02-07.jpg"
+   ]
+  },
+  {
+   "cliente": "Álex Mestres · GLA Patrimonio",
+   "cuenta": "@alexsmestres",
+   "titulo": "Inflación del 4,9 %",
+   "slides": [
+    "assets/portfolio/alex/c03-01.jpg",
+    "assets/portfolio/alex/c03-02.jpg",
+    "assets/portfolio/alex/c03-03.jpg",
+    "assets/portfolio/alex/c03-04.jpg",
+    "assets/portfolio/alex/c03-05.jpg",
+    "assets/portfolio/alex/c03-06.jpg",
+    "assets/portfolio/alex/c03-07.jpg"
+   ]
+  },
+  {
+   "cliente": "Álex Mestres · GLA Patrimonio",
+   "cuenta": "@alexsmestres",
+   "titulo": "La bolsa cae un 30 %",
+   "slides": [
+    "assets/portfolio/alex/c04-01.jpg",
+    "assets/portfolio/alex/c04-02.jpg",
+    "assets/portfolio/alex/c04-03.jpg",
+    "assets/portfolio/alex/c04-04.jpg",
+    "assets/portfolio/alex/c04-05.jpg",
+    "assets/portfolio/alex/c04-06.jpg",
+    "assets/portfolio/alex/c04-07.jpg"
+   ]
+  },
+  {
+   "cliente": "Álex Mestres · GLA Patrimonio",
+   "cuenta": "@alexsmestres",
+   "titulo": "Dos hermanos heredan 60.000",
+   "slides": [
+    "assets/portfolio/alex/c05-01.jpg",
+    "assets/portfolio/alex/c05-02.jpg",
+    "assets/portfolio/alex/c05-03.jpg",
+    "assets/portfolio/alex/c05-04.jpg",
+    "assets/portfolio/alex/c05-05.jpg",
+    "assets/portfolio/alex/c05-06.jpg",
+    "assets/portfolio/alex/c05-07.jpg"
+   ]
+  },
+  {
+   "cliente": "Álex Mestres · GLA Patrimonio",
+   "cuenta": "@alexsmestres",
+   "titulo": "289 toneladas de oro",
+   "slides": [
+    "assets/portfolio/alex/c06-01.jpg",
+    "assets/portfolio/alex/c06-02.jpg",
+    "assets/portfolio/alex/c06-03.jpg",
+    "assets/portfolio/alex/c06-04.jpg",
+    "assets/portfolio/alex/c06-05.jpg",
+    "assets/portfolio/alex/c06-06.jpg",
+    "assets/portfolio/alex/c06-07.jpg"
+   ]
+  }
+ ],
+ "estaticos": [
+  {
+   "cliente": "IUVER Academy",
+   "src": "assets/portfolio/iuver/e01.jpg",
+   "w": 720,
+   "h": 900
+  },
+  {
+   "cliente": "IUVER Academy",
+   "src": "assets/portfolio/iuver/e02.jpg",
+   "w": 720,
+   "h": 900
+  },
+  {
+   "cliente": "IUVER Academy",
+   "src": "assets/portfolio/iuver/e03.jpg",
+   "w": 720,
+   "h": 956
+  },
+  {
+   "cliente": "IUVER Academy",
+   "src": "assets/portfolio/iuver/e04.jpg",
+   "w": 720,
+   "h": 956
+  },
+  {
+   "cliente": "IUVER Academy",
+   "src": "assets/portfolio/iuver/e05.jpg",
+   "w": 720,
+   "h": 956
+  },
+  {
+   "cliente": "IUVER Academy",
+   "src": "assets/portfolio/iuver/e06.jpg",
+   "w": 720,
+   "h": 956
+  },
+  {
+   "cliente": "IUVER Academy",
+   "src": "assets/portfolio/iuver/e07.jpg",
+   "w": 720,
+   "h": 956
+  },
+  {
+   "cliente": "IUVER Academy",
+   "src": "assets/portfolio/iuver/e08.jpg",
+   "w": 720,
+   "h": 956
+  }
+ ]
+}
