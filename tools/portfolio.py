@@ -20,10 +20,8 @@ CARRUSELES = {
              ["01 - 40.000 parados, 3 preguntas", "03 - Herencia, no firmes", "05 - Inflación del 4,9 %",
               "07 - La bolsa cae un 30 %", "13 - Dos hermanos heredan 60.000", "14 - 289 toneladas de oro"]),
 }
-ESTATICOS = CL / "Iuver Academy (Yiro)/ADS/estaticos"
-# (carpeta, posición dentro de la carpeta ordenada, empezando en 1) de los 8 estáticos de IUVER ya publicados
-EST = [("OCTUBRE", 3), ("OCTUBRE", 5), ("cuarta tanda", 5), ("4a tanda 2.1", 3), ("tercera tand", 5),
-       ("tercera tand", 3), ("segunda tanda", 3), ("segunda tanda", 2)]
+# Solo la tanda de abril 2027 del sistema de estáticos (22-10-2026): fotográficos (P) y tipográficos (T)
+ESTATICOS = Path(__file__).resolve().parent.parent / "ads/iuver/abr27"
 
 
 def guardar(src: Path, dst: Path):
@@ -41,9 +39,10 @@ def main():
             slides = sorted((base / carpeta).glob("slide-*.png")) or sorted((base / carpeta).glob("*.png"))
             rutas = [guardar(s, OUT / clave / f"c{i:02d}-{n:02d}.jpg")[0] for n, s in enumerate(slides, 1)]
             datos["carruseles"].append({"cliente": cliente, "cuenta": cuenta, "titulo": carpeta.split(" - ", 1)[1], "slides": rutas})
-    for i, (carpeta, idx) in enumerate(EST, 1):
-        archivos = sorted(list((ESTATICOS / carpeta).glob("*.png")) + list((ESTATICOS / carpeta).glob("*.jpg")))
-        ruta, w, h = guardar(archivos[idx - 1], OUT / "iuver" / f"e{i:02d}.jpg")
+    for viejo in (OUT / "iuver").glob("e*.jpg"):
+        viejo.unlink()
+    for i, src in enumerate(sorted(ESTATICOS.glob("*.png")), 1):
+        ruta, w, h = guardar(src, OUT / "iuver" / f"e{i:02d}.jpg")
         datos["estaticos"].append({"cliente": "IUVER Academy", "src": ruta, "w": w, "h": h})
     (OUT / "portfolio.json").write_text(json.dumps(datos, ensure_ascii=False, indent=1), encoding="utf-8")
     # La web lo carga como script para que funcione también abriendo el HTML en local (sin servidor)

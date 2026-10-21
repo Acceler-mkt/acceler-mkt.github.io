@@ -186,37 +186,43 @@
    "cliente": "IUVER Academy",
    "src": "assets/portfolio/iuver/e03.jpg",
    "w": 720,
-   "h": 956
+   "h": 900
   },
   {
    "cliente": "IUVER Academy",
    "src": "assets/portfolio/iuver/e04.jpg",
    "w": 720,
-   "h": 956
+   "h": 900
   },
   {
    "cliente": "IUVER Academy",
    "src": "assets/portfolio/iuver/e05.jpg",
    "w": 720,
-   "h": 956
+   "h": 900
   },
   {
    "cliente": "IUVER Academy",
    "src": "assets/portfolio/iuver/e06.jpg",
    "w": 720,
-   "h": 956
+   "h": 900
   },
   {
    "cliente": "IUVER Academy",
    "src": "assets/portfolio/iuver/e07.jpg",
    "w": 720,
-   "h": 956
+   "h": 900
   },
   {
    "cliente": "IUVER Academy",
    "src": "assets/portfolio/iuver/e08.jpg",
    "w": 720,
-   "h": 956
+   "h": 900
+  },
+  {
+   "cliente": "IUVER Academy",
+   "src": "assets/portfolio/iuver/e09.jpg",
+   "w": 720,
+   "h": 900
   }
  ]
 }
