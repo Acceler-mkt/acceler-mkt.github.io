@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Acceler MKT · Tu Cerebro de Marketing en 7 días</title>
-<meta name="description" content="En 7 días instalamos en tu empresa una IA cargada con todo lo que sabe tu negocio, que escribe tus anuncios como tú, y te entregamos 10 anuncios nuevos hechos con ella. Es tuya. Si no la tienes en 7 días, te devolvemos el dinero.">
+<meta name="description" content="En 7 días instalamos en tu empresa una IA cargada con todo lo que sabe tu negocio, que escribe tus anuncios como tú, y te entregamos 10 anuncios nuevos hechos con ella. Es tuya. Caso real: 24.000 € en anuncios, 210.000 € en matrículas en formación médica.">
 <meta name="robots" content="index,follow">
 <link rel="canonical" href="https://acceler-mkt.github.io/">
 <meta property="og:url" content="https://acceler-mkt.github.io/">
@@ -402,6 +402,32 @@ html.static .hero{min-height:880px}
 .nofor li{list-style:none;color:var(--mute);font-size:17px;padding-left:26px;position:relative}
 .nofor li::before{content:"✕";position:absolute;left:0;color:var(--coral);font-family:var(--mono)}
 .proof .to-sm{font-size:clamp(34px,3vw,46px)}
+.ui{border:1px solid var(--line2);border-radius:20px;background:#121110;overflow:hidden;box-shadow:0 40px 90px -40px rgba(222,98,98,.35);margin-bottom:clamp(20px,3vw,32px)}
+.ui-top{display:flex;align-items:center;gap:8px;padding:12px 16px;border-bottom:1px solid var(--line2);font-family:var(--mono);font-size:11px;letter-spacing:.08em;color:var(--mute)}
+.ui-top i{width:9px;height:9px;border-radius:50%;background:#3a3633}
+.ui-top i:first-child{background:#de6262}.ui-top b{margin-left:8px;color:var(--ink);font-weight:500}
+.ui-top em{margin-left:auto;font-style:normal;border:1px solid var(--line);border-radius:999px;padding:3px 9px;font-size:10px}
+.ui-body{display:grid;grid-template-columns:150px minmax(0,1fr);min-height:300px}
+.ui-side{border-right:1px solid var(--line2);padding:14px 10px;display:grid;gap:4px;align-content:start;font-size:13px;color:var(--mute)}
+.ui-side span{padding:7px 10px;border-radius:8px}.ui-side span.on{background:rgba(222,98,98,.14);color:var(--ink)}
+.ui-main{padding:18px;display:grid;gap:12px;align-content:start}
+.ui-msg{max-width:78%;padding:10px 14px;border-radius:14px;font-size:14px;line-height:1.45}
+.ui-you{justify-self:end;background:#2a2725;color:var(--ink)}
+.ui-ai{background:transparent;border:1px solid var(--line2);color:var(--mute)}
+.ui-ads{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.ui-ad{border:1px solid var(--line2);border-radius:12px;padding:12px;background:#1a1816;display:grid;gap:6px}
+.ui-ad .img{height:56px;border-radius:8px;background:linear-gradient(135deg,rgba(222,98,98,.5),rgba(232,160,72,.35))}
+.ui-ad b{font-size:13px;color:var(--ink);line-height:1.3}.ui-ad small{font-size:11px;color:var(--mute)}
+.ui-kpis{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.ui-kpi{border:1px solid var(--line2);border-radius:12px;padding:12px;background:#1a1816}
+.ui-kpi small{display:block;font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--mute)}
+.ui-kpi b{font-size:24px;letter-spacing:-.03em;color:var(--ink)}
+.ui-rows{display:grid;gap:8px}
+.ui-row{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,2fr) 34px;gap:10px;align-items:center;font-size:13px;color:var(--mute)}
+.ui-row .bar{height:8px;border-radius:8px;background:#2a2725;overflow:hidden}.ui-row .bar i{display:block;height:100%;background:linear-gradient(90deg,var(--coral),var(--gold))}
+.ui-row b{color:var(--ink);text-align:right}
+.ui-note{font-family:var(--mono);font-size:11px;color:var(--mute);letter-spacing:.06em}
+@media(max-width:700px){.ui-body{grid-template-columns:1fr}.ui-side{display:none}.ui-ads,.ui-kpis{grid-template-columns:1fr 1fr}.ui-ads .ui-ad:nth-child(3){display:none}.ui-msg{max-width:92%}}
 .hero h1{max-width:22ch;font-size:clamp(38px,5.4vw,82px)}
 </style>
 </head>
@@ -449,8 +475,8 @@ html.static .hero{min-height:880px}
       </div>
       <aside class="proof">
         <div class="proof-card">
-          <div class="k" data-i18n="proof.k">En 7 días</div>
-          <div class="row"><span class="to to-sm" data-i18n="proof.to">10 anuncios</span></div>
+          <div class="k" data-i18n="proof.k">Caso real · Meta Ads</div>
+          <div class="row"><span class="from">24.000 €</span><span class="arrow">→</span><span class="to">210.000 €</span></div>
           <div class="who" data-i18n-html="proof.who"></div>
         </div>
         <div class="proof-card proof-2">
@@ -492,6 +518,21 @@ html.static .hero{min-height:880px}
       <div><span class="eyebrow" data-i18n="rec.eyebrow"></span><h2 class="reveal" data-i18n-html="rec.h2"></h2></div>
       <p class="lead reveal" data-i18n="rec.lead"></p>
     </div>
+    <div class="ui reveal" aria-label="Ejemplo de la interfaz del Cerebro de Marketing">
+      <div class="ui-top"><i></i><i></i><i></i><b data-i18n="ui1.t">Cerebro de Academia Ejemplo</b><em data-i18n="ui.ej">Ejemplo</em></div>
+      <div class="ui-body">
+        <div class="ui-side"><span class="on" data-i18n="ui1.s1">Anuncios</span><span data-i18n="ui1.s2">Carruseles</span><span data-i18n="ui1.s3">Guiones</span><span data-i18n="ui1.s4">Emails</span><span data-i18n="ui1.s5">Lo que sabe</span></div>
+        <div class="ui-main">
+          <div class="ui-msg ui-you" data-i18n="ui1.you">Hazme 3 anuncios para la promoción de enero, para quien ya nos ha escrito y no se ha matriculado.</div>
+          <div class="ui-msg ui-ai" data-i18n="ui1.ai">Aquí tienes 3, con lo que más os preguntan en las llamadas:</div>
+          <div class="ui-ads">
+            <div class="ui-ad"><div class="img"></div><b data-i18n="ui1.a1">«¿Y si no tengo experiencia?» Por eso hay prácticas desde el primer mes.</b><small data-i18n="ui1.f">Estático · 1080×1350</small></div>
+            <div class="ui-ad"><div class="img"></div><b data-i18n="ui1.a2">Quedan 9 plazas para enero. Esto es lo que harás la primera semana.</b><small data-i18n="ui1.f2">Vídeo animado · 15 s</small></div>
+            <div class="ui-ad"><div class="img"></div><b data-i18n="ui1.a3">Lo que nos preguntó Laura antes de matricularse.</b><small data-i18n="ui1.f">Estático · 1080×1350</small></div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="models" id="recibesList"></div>
   </div>
 </section>
@@ -528,6 +569,26 @@ html.static .hero{min-height:880px}
     <div class="sec-head">
       <div><span class="eyebrow" data-i18n="mas.eyebrow"></span><h2 class="reveal" data-i18n-html="mas.h2"></h2></div>
       <p class="lead reveal" data-i18n="mas.lead"></p>
+    </div>
+    <div class="ui reveal" aria-label="Ejemplo del panel del departamento de marketing">
+      <div class="ui-top"><i></i><i></i><i></i><b data-i18n="ui2.t">Departamento de marketing · esta semana</b><em data-i18n="ui.ej">Ejemplo</em></div>
+      <div class="ui-body">
+        <div class="ui-side"><span class="on" data-i18n="ui2.s1">Resumen</span><span data-i18n="ui1.s1">Anuncios</span><span data-i18n="ui2.s3">Contenido</span><span data-i18n="ui2.s4">Embudo</span><span data-i18n="ui2.s5">Ventas</span></div>
+        <div class="ui-main">
+          <div class="ui-kpis">
+            <div class="ui-kpi"><small data-i18n="ui2.k1">Anuncios nuevos</small><b>8</b></div>
+            <div class="ui-kpi"><small data-i18n="ui2.k2">Piezas de contenido</small><b>12</b></div>
+            <div class="ui-kpi"><small data-i18n="ui2.k3">Ventas atribuidas</small><b>6</b></div>
+          </div>
+          <div class="ui-note" data-i18n="ui2.h">Qué anuncio trajo cada venta</div>
+          <div class="ui-rows">
+            <div class="ui-row"><span data-i18n="ui2.r1">«Prácticas desde el mes 1»</span><span class="bar"><i style="width:84%"></i></span><b>3</b></div>
+            <div class="ui-row"><span data-i18n="ui2.r2">«Quedan 9 plazas»</span><span class="bar"><i style="width:56%"></i></span><b>2</b></div>
+            <div class="ui-row"><span data-i18n="ui2.r3">«Lo que preguntó Laura»</span><span class="bar"><i style="width:28%"></i></span><b>1</b></div>
+            <div class="ui-row"><span data-i18n="ui2.r4">«Horario compatible» · se apaga</span><span class="bar"><i style="width:4%"></i></span><b>0</b></div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="cards4" id="completo"></div>
     <div class="extras" id="extras2"></div>
@@ -617,6 +678,7 @@ const FACES = [
 ];
 
 const STATS = [
+  {hl:true, big:'24.000 € → 210.000 €', k:{es:'Formación médica de ticket alto · Meta Ads',en:'High-ticket medical training · Meta Ads'}, p:{es:'Por cada euro en anuncios, 8,75 € en matrículas. Primera promoción llena: 30 de 30 plazas.',en:'For every euro in ads, 8.75 € in enrolments. First intake full: 30 out of 30 places.'}},
   {big:'+8.000', k:{es:'Miguel Sierra · YouTube',en:'Miguel Sierra · YouTube'}, p:{es:'Suscriptores en menos de 4 meses.',en:'Subscribers in under 4 months.'}},
   {big:{es:'Decenas de millones',en:'Tens of millions'}, k:{es:'Miguel Sierra · reels y vídeos',en:'Miguel Sierra · reels and videos'}, p:{es:'De visualizaciones en total. Su reel más visto: 1,4 millones.',en:'Views in total. His most-watched reel: 1.4 million.'}}
 ];
@@ -691,12 +753,17 @@ const PIECES = [
 
 const I18N = {
   es:{
+    'ui.ej':'Ejemplo','ui1.t':'Cerebro de Academia Ejemplo','ui1.s1':'Anuncios','ui1.s2':'Carruseles','ui1.s3':'Guiones','ui1.s4':'Emails','ui1.s5':'Lo que sabe',
+    'ui1.you':'Hazme 3 anuncios para la promoción de enero, para quien ya nos ha escrito y no se ha matriculado.','ui1.ai':'Aquí tienes 3, con lo que más os preguntan en las llamadas:',
+    'ui1.a1':'«¿Y si no tengo experiencia?» Por eso hay prácticas desde el primer mes.','ui1.a2':'Quedan 9 plazas para enero. Esto es lo que harás la primera semana.','ui1.a3':'Lo que nos preguntó Laura antes de matricularse.','ui1.f':'Estático · 1080×1350','ui1.f2':'Vídeo animado · 15 s',
+    'ui2.t':'Departamento de marketing · esta semana','ui2.s1':'Resumen','ui2.s3':'Contenido','ui2.s4':'Embudo','ui2.s5':'Ventas','ui2.k1':'Anuncios nuevos','ui2.k2':'Piezas de contenido','ui2.k3':'Ventas atribuidas','ui2.h':'Qué anuncio trajo cada venta',
+    'ui2.r1':'«Prácticas desde el mes 1»','ui2.r2':'«Quedan 9 plazas»','ui2.r3':'«Lo que preguntó Laura»','ui2.r4':'«Horario compatible» · se apaga',
     'nav.services':'Qué recibes','nav.work':'Trabajo','nav.how':'Cómo funciona','nav.faq':'Preguntas','nav.contact':'Contacto','nav.cta':'Hablar por WhatsApp',
     'hero.eyebrow':'Para negocios que ya invierten en anuncios',
     'hero.h1':'Tu Cerebro de Marketing. <em>Instalado en tu empresa en 7&nbsp;días.</em>',
     'hero.lead':'Una IA cargada con todo lo que sabe tu negocio, que escribe tus anuncios y tu contenido como tú, y 10 anuncios nuevos hechos con ella. <strong>Es tuya. Y si no la tienes en 7 días, te devolvemos el dinero.</strong>',
     'hero.cta1':'Quiero mi cerebro','hero.cta2':'Ver cómo funciona','hero.reassure':'Formación, servicios y programas de ticket alto · Sin permanencia',
-    'proof.k':'En 7 días','proof.to':'10 anuncios','proof.who':'y tu cerebro funcionando, <strong>o te devolvemos el dinero.</strong>','proof.k2':'Miguel Sierra · YouTube','proof.v2':'+8.000 suscriptores en menos de 4 meses',
+    'proof.k':'Caso real · Meta Ads','proof.who':'<strong>Formación médica de ticket alto.</strong> Inversión en anuncios y matrículas generadas. Primera promoción llena: 30 de 30 plazas.','proof.k2':'Miguel Sierra · YouTube','proof.v2':'+8.000 suscriptores en menos de 4 meses',
     'wall.cap':'Cuentas con las que trabajamos y hemos trabajado',
     'pain.eyebrow':'¿Te suena?','pain.h2':'No tienes marketing. <em>Tienes gastos.</em>',
     'rec.eyebrow':'Qué recibes en 7 días','rec.h2':'Algo que es tuyo <em>y que trabaja desde el primer día.</em>','rec.lead':'Una agencia te alquila su trabajo mientras le pagas. Esto se queda contigo.',
@@ -711,12 +778,17 @@ const I18N = {
     'ftr.tag':'Marketing con IA · Tenerife, España','ftr.legal':'Aviso legal y privacidad','lb.yt':'Ver completo en YouTube'
   },
   en:{
+    'ui.ej':'Example','ui1.t':'Brain of Example Academy','ui1.s1':'Ads','ui1.s2':'Carousels','ui1.s3':'Scripts','ui1.s4':'Emails','ui1.s5':'What it knows',
+    'ui1.you':'Make me 3 ads for the January intake, for people who already messaged us but didn\u2019t enrol.','ui1.ai':'Here are 3, built on what you get asked most on calls:',
+    'ui1.a1':'“What if I have no experience?” That\u2019s why there\u2019s practice from month one.','ui1.a2':'9 places left for January. This is what you\u2019ll do in week one.','ui1.a3':'What Laura asked us before enrolling.','ui1.f':'Static · 1080×1350','ui1.f2':'Animated video · 15 s',
+    'ui2.t':'Marketing department · this week','ui2.s1':'Overview','ui2.s3':'Content','ui2.s4':'Funnel','ui2.s5':'Sales','ui2.k1':'New ads','ui2.k2':'Content pieces','ui2.k3':'Attributed sales','ui2.h':'Which ad brought each sale',
+    'ui2.r1':'“Practice from month 1”','ui2.r2':'“9 places left”','ui2.r3':'“What Laura asked”','ui2.r4':'“Flexible schedule” · switched off',
     'nav.services':'What you get','nav.work':'Work','nav.how':'How it works','nav.faq':'Questions','nav.contact':'Contact','nav.cta':'Chat on WhatsApp',
     'hero.eyebrow':'For businesses already running ads',
     'hero.h1':'Your Marketing Brain. <em>Installed in your business in 7&nbsp;days.</em>',
     'hero.lead':'An AI loaded with everything your business knows, that writes your ads and content the way you do, plus 10 new ads made with it. <strong>It\u2019s yours. And if you don\u2019t have it in 7 days, we refund you.</strong>',
     'hero.cta1':'I want my brain','hero.cta2':'See how it works','hero.reassure':'High-ticket training, services and programmes · No lock-in',
-    'proof.k':'In 7 days','proof.to':'10 ads','proof.who':'and your brain up and running, <strong>or your money back.</strong>','proof.k2':'Miguel Sierra · YouTube','proof.v2':'+8,000 subscribers in under 4 months',
+    'proof.k':'Real case · Meta Ads','proof.who':'<strong>High-ticket medical training.</strong> Ad spend and enrolments generated. First intake full: 30 out of 30 places.','proof.k2':'Miguel Sierra · YouTube','proof.v2':'+8,000 subscribers in under 4 months',
     'wall.cap':'Accounts we work and have worked with',
     'pain.eyebrow':'Sound familiar?','pain.h2':'You don\u2019t have marketing. <em>You have expenses.</em>',
     'rec.eyebrow':'What you get in 7 days','rec.h2':'Something that\u2019s yours <em>and works from day one.</em>','rec.lead':'An agency rents you its work while you pay. This stays with you.',
