@@ -441,6 +441,10 @@ html.static .hero{min-height:880px}
 .ag-label{position:absolute;left:50%;bottom:-2px;transform:translateX(-50%);font-size:13px;color:var(--mute);white-space:nowrap}
 @media (prefers-reduced-motion: reduce){.ag-ring,.ag-core,.ag-links line{animation:none}}
 @media(max-width:999px){.agent{max-width:300px}}
+.dos{display:grid;gap:14px}
+@media(min-width:900px){.dos{grid-template-columns:minmax(0,1fr) minmax(0,1.25fr)}}
+.dos .for b{display:block;font-weight:400;color:var(--mute);font-size:14.5px;line-height:1.5}
+.dos-nota{margin-top:24px;max-width:70ch}
 .hero h1{max-width:22ch;font-size:clamp(38px,5.4vw,82px)}
 </style>
 </head>
@@ -565,10 +569,25 @@ html.static .hero{min-height:880px}
   <div class="wrap">
     <div class="sec-head"><div><span class="eyebrow" data-i18n="mech.eyebrow"></span><h2 class="reveal" data-i18n-html="mech.h2"></h2></div></div>
     <div class="models" id="mech"></div>
-    <div class="guarantee reveal" style="margin-top:clamp(28px,4vw,48px)">
-      <div class="d">7<small data-i18n="g.k"></small></div>
-      <p data-i18n-html="g.p"></p>
+    <div class="sec-head" style="margin-top:clamp(56px,7vw,96px)">
+      <div><span class="eyebrow" data-i18n="dos.eyebrow"></span><h2 class="reveal" data-i18n-html="dos.h2"></h2></div>
+      <p class="lead reveal" data-i18n="dos.lead"></p>
     </div>
+    <div class="dos">
+      <div class="model reveal">
+        <div class="k" data-i18n="f1.k"></div>
+        <h3 data-i18n="f1.h"></h3>
+        <p data-i18n-html="f1.p"></p>
+        <div class="for"><span data-i18n="f1.gk"></span><b data-i18n="f1.g"></b></div>
+      </div>
+      <div class="model hl reveal">
+        <div class="k" data-i18n="dfy.k"></div>
+        <h3 data-i18n="dfy.h"></h3>
+        <p data-i18n-html="dfy.p"></p>
+        <div class="for"><span data-i18n="dfy.gk"></span><b data-i18n="dfy.g"></b></div>
+      </div>
+    </div>
+    <p class="lead reveal dos-nota" data-i18n-html="dos.nota"></p>
   </div>
 </section>
 
@@ -725,6 +744,20 @@ const PIECES = [
 
 const I18N = {
   es:{
+    'dos.nota':'La IA nos hace rápidos y nos deja producir mucho. <strong>Los resultados los pone el equipo que mira tus números cada semana y decide.</strong>',
+    'dfy.g':'Lo montamos en 30 días. Si el día 30 no está produciendo cada semana, te devolvemos la instalación. Después, sin permanencia.',
+    'dfy.gk':'Garantía Día 30',
+    'dfy.p':'Anuncios nuevos cada semana, el contenido del mes, el embudo y un informe de qué anuncio trajo cada venta. Y un equipo que decide cada semana qué subir, qué apagar y dónde meter presupuesto, y que responde cuando algo se quema. <strong>El caso de formación médica (24.000 € en anuncios, 210.000 € en ventas) salió de aquí.</strong>',
+    'dfy.h':'Llevamos tu marketing cada semana',
+    'dfy.k':'Servicio completo · donde están los resultados',
+    'f1.g':'Si en 14 días ninguno trae leads más baratos que tu mejor anuncio de ahora, otros 10 gratis o te devolvemos el dinero. Si sigues, lo que pagaste se descuenta.',
+    'f1.gk':'Garantía',
+    'f1.p':'Los hace nuestro equipo con nuestro sistema, cargado con tu negocio. Es rápido y te sirve para ver cómo trabajamos. <strong>Son piezas: por sí solas no son el resultado.</strong>',
+    'f1.h':'10 anuncios nuevos',
+    'f1.k':'Fase 1 · 7 días · para probarnos',
+    'dos.lead':'Puedes probarnos con una primera fase de 7 días. Pero que quede claro dónde está el valor.',
+    'dos.h2':'Empieza rápido. <em>Los resultados vienen del servicio completo.</em>',
+    'dos.eyebrow':'Dos formas de trabajar con nosotros',
     'ag.c':'El sistema con el que trabajamos',
     'ag.5':'Vídeos',
     'ag.4':'Guiones',
@@ -756,6 +789,20 @@ const I18N = {
     'ftr.tag':'Marketing con IA · Tenerife, España','ftr.legal':'Aviso legal y privacidad','lb.yt':'Ver completo en YouTube'
   },
   en:{
+    'dos.nota':'AI makes us fast and lets us produce a lot. <strong>The results come from the team that looks at your numbers every week and decides.</strong>',
+    'dfy.g':'We set it up in 30 days. If by day 30 it isn\u2019t producing every week, we refund the setup. After that, no lock-in.',
+    'dfy.gk':'Day 30 guarantee',
+    'dfy.p':'New ads every week, the month\u2019s content, the funnel and a report of which ad brought each sale. And a team that decides every week what to push, what to switch off and where to put budget, and answers when something burns out. <strong>The medical training case (24,000 € in ads, 210,000 € in sales) came from this.</strong>',
+    'dfy.h':'We run your marketing every week',
+    'dfy.k':'Full service · where the results are',
+    'f1.g':'If within 14 days none brings cheaper leads than your best current ad, 10 more for free or your money back. If you continue, what you paid is credited.',
+    'f1.gk':'Guarantee',
+    'f1.p':'Made by our team with our system, loaded with your business. It\u2019s fast and shows you how we work. <strong>They are pieces: on their own they are not the result.</strong>',
+    'f1.h':'10 new ads',
+    'f1.k':'Phase 1 · 7 days · to try us',
+    'dos.lead':'You can try us with a 7-day first phase. But let\u2019s be clear about where the value is.',
+    'dos.h2':'Start fast. <em>Results come from the full service.</em>',
+    'dos.eyebrow':'Two ways to work with us',
     'ag.c':'The system we work with',
     'ag.5':'Videos',
     'ag.4':'Scripts',
