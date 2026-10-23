@@ -466,6 +466,11 @@ html.static .hero{min-height:880px}
 .case-c .big{font-size:clamp(24px,2.1vw,32px);font-weight:600;letter-spacing:-.04em;line-height:1.05;background:linear-gradient(135deg,#fff,var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent}
 .case-c p{color:var(--mute);font-size:15.5px;line-height:1.55}
 .cta-mid{display:flex;justify-content:center;margin-top:clamp(32px,4vw,48px)}
+.ui-hero{width:100%;max-width:900px;margin:34px auto 0;text-align:left}
+.ui-cap{margin-top:12px;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--mute)}
+.cierre .wrap{display:flex;flex-direction:column;align-items:center;text-align:center}
+.cierre-t{font-size:clamp(26px,3vw,40px);letter-spacing:-.03em;font-weight:600;max-width:24ch;line-height:1.15}
+.cierre-t em{font-family:var(--serif);font-style:italic;font-weight:400;color:var(--gold)}
 .hero h1{max-width:22ch;font-size:clamp(38px,5.4vw,82px)}
 </style>
 </head>
@@ -497,10 +502,22 @@ html.static .hero{min-height:880px}
     <span class="eyebrow pill" data-i18n="hero.eyebrow"></span>
     <h1 id="heroTitle" data-i18n-html="hero.h1"></h1>
     <p class="lead" data-i18n-html="hero.lead"></p>
-    <div class="vsl">
-      <video autoplay muted loop playsinline preload="metadata" poster="assets/posters/showreel.jpg" src="assets/videos/showreel.mp4" aria-label="Showreel de Acceler MKT"></video>
-      <span class="lbl" data-i18n="work.reel">Showreel · 25 s</span>
+    <div class="ui ui-hero" aria-label="Ejemplo de la pantalla del cerebro de marketing">
+      <div class="ui-top"><i></i><i></i><i></i><b data-i18n="ui1.t"></b><em data-i18n="ui.ej"></em></div>
+      <div class="ui-body">
+        <div class="ui-side"><span class="on" data-i18n="ui1.s1"></span><span data-i18n="ui1.s2"></span><span data-i18n="ui1.s3"></span><span data-i18n="ui1.s4"></span><span data-i18n="ui1.s5"></span></div>
+        <div class="ui-main">
+          <div class="ui-msg ui-you" data-i18n="ui1.you"></div>
+          <div class="ui-msg ui-ai" data-i18n="ui1.ai"></div>
+          <div class="ui-ads">
+            <div class="ui-ad"><div class="img"></div><b data-i18n="ui1.a1"></b><small data-i18n="ui1.f"></small></div>
+            <div class="ui-ad"><div class="img"></div><b data-i18n="ui1.a2"></b><small data-i18n="ui1.f2"></small></div>
+            <div class="ui-ad"><div class="img"></div><b data-i18n="ui1.a3"></b><small data-i18n="ui1.f"></small></div>
+          </div>
+        </div>
+      </div>
     </div>
+    <p class="ui-cap" data-i18n="ui.cap"></p>
     <div class="hero-cta">
       <a class="btn btn-wa wa-link" href="#" target="_blank" rel="noopener"><svg><use href="#wa"/></svg><span data-i18n="hero.cta1"></span></a>
     </div>
@@ -567,18 +584,11 @@ html.static .hero{min-height:880px}
   </div>
 </section>
 
-<section class="section cta" id="contacto">
+<section class="section center cierre" id="contacto" style="padding-top:0">
   <div class="wrap">
-    <div class="box">
-      <span class="eyebrow" data-i18n="cta.eyebrow"></span>
-      <h2 class="reveal" data-i18n-html="cta.h2"></h2>
-      <p class="lead reveal" data-i18n="cta.lead"></p>
-      <div class="cta-row reveal">
-        <a class="btn btn-wa wa-link" href="#" target="_blank" rel="noopener" style="padding:20px 30px;font-size:17px"><svg><use href="#wa"/></svg><span data-i18n="cta.btn"></span></a>
-        <span class="num">+34 647 82 98 54</span>
-      </div>
-      <p class="reassure reveal" data-i18n="cta.fit"></p>
-    </div>
+    <p class="cierre-t" data-i18n-html="cta.h2"></p>
+    <div class="cta-mid" style="margin-top:20px"><a class="btn btn-wa wa-link" href="#" target="_blank" rel="noopener"><svg><use href="#wa"/></svg><span data-i18n="cta.btn"></span></a></div>
+    <p class="reassure" data-i18n="cta.fit"></p>
   </div>
 </section>
 
@@ -644,7 +654,7 @@ const MECH = [
 
 const FAQ = [
   {q:{es:'¿Para qué tipo de negocio es esto?',en:'What kind of business is this for?'}, a:{es:'Para negocios de formación, servicios o programas de más de 1.000 € que ya venden y ya invierten en anuncios de Meta. Si empiezas de cero o buscas a alguien que te suba posts, no es para ti.',en:'For training, service or programme businesses above 1,000 € that already sell and already invest in Meta ads. If you\u2019re starting from zero or want someone to post for you, it\u2019s not for you.'}},
-  {q:{es:'¿Qué es la fase 1?',en:'What is phase 1?'}, a:{es:'La versión reducida del servicio: en 7 días cargamos tu negocio en nuestro sistema y te hacemos 10 anuncios nuevos, con el mismo equipo. Sirve para probarnos. Los resultados vienen del servicio completo, y si sigues, lo que pagaste se descuenta.',en:'The reduced version of the service: in 7 days we load your business into our system and make you 10 new ads, with the same team. It\u2019s a way to try us. Results come from the full service, and if you continue, what you paid is credited.'}},
+  {q:{es:'¿Qué es el cerebro de marketing?',en:'What is the marketing brain?'}, a:{es:'Es nuestro sistema cargado con todo lo que sabe tu negocio: tu web, tus servicios, tus reseñas y lo que te preguntan tus clientes antes de comprar. Con él producimos anuncios, contenido y emails en minutos y con tu forma de hablar. Lo montamos en la fase 1, en 7 días, junto a tus 10 primeros anuncios, y si sigues con el servicio completo lo que pagaste se descuenta.',en:'It\u2019s our system loaded with everything your business knows: your website, services, reviews and what customers ask before they buy. With it we produce ads, content and emails in minutes and in your voice. We build it in phase 1, in 7 days, together with your first 10 ads, and if you continue with the full service what you paid is credited.'}},
   {q:{es:'¿Cómo funciona la garantía?',en:'How does the guarantee work?'}, a:{es:'En la fase 1, la Garantía Otra Ronda: si en 14 días ninguno de los 10 anuncios trae leads más baratos que tu mejor anuncio de ahora, te hacemos otros 10 gratis o, si lo prefieres, te devolvemos el dinero. Solo pedimos tu material en 48 horas y el presupuesto mínimo que acordemos. En el servicio completo: si el día 30 no está produciendo cada semana, te devolvemos la instalación. No prometemos ventas: dependen también de tu oferta, tu precio y tu equipo.',en:'In phase 1: if within 14 days none of the 10 ads brings cheaper leads than your best current ad, we make 10 more for free or refund you. In the full service: if by day 30 it isn\u2019t producing every week, we refund the setup. We don\u2019t promise sales: they also depend on your offer, price and team.'}},
   {q:{es:'¿Cuándo veré resultados?',en:'When will I see results?'}, a:{es:'Los anuncios nuevos, en 7 días. Con dos o tres semanas de datos ya sabemos qué anuncio funciona y cuál apagar. Las ventas dependen también de tu oferta y de cómo atiendes a quien te escribe, y por eso las medimos contigo cada semana.',en:'New ads within 7 days. With two or three weeks of data we know which ad works and which to switch off. Sales also depend on your offer and how you handle enquiries, which is why we measure them with you every week.'}},
   {q:{es:'¿Cómo funciona el precio?',en:'How does pricing work?'}, a:{es:'Se empieza con la fase 1, un pago único pequeño que se descuenta si sigues. El servicio completo tiene una instalación y una cuota mensual, sin permanencia. Te damos los números exactos en una llamada de 20 minutos.',en:'You start with phase 1, a small one-off payment credited if you continue. The full service has a setup and a monthly fee, with no lock-in. We give you exact figures on a 20-minute call.'}},
@@ -668,6 +678,7 @@ const PIECES = [
 
 const I18N = {
   es:{
+    'ui.cap':'Así es el cerebro de marketing de tu negocio',
     'work.reel':'Showreel · 25 s',
     'res.cta':'Quiero ser el siguiente',
     'res.h2':'Lo que conseguimos <em>llevando nosotros el marketing.</em>',
@@ -676,16 +687,16 @@ const I18N = {
     'dfy.g':'Lo montamos en 30 días. Si el día 30 no está produciendo cada semana, te devolvemos la instalación. Después, sin permanencia.',
     'dfy.gk':'Garantía Día 30',
     'dfy.p':'Anuncios nuevos cada semana, contenido orgánico, embudos y el seguimiento de cada lead por email y WhatsApp, con un informe de qué trajo cada venta. Y un equipo que decide cada semana qué subir, qué apagar y dónde meter el esfuerzo, y que responde cuando algo se quema. <strong>El caso de formación médica (210.000 € en ventas con 24.000 € invertidos en anuncios) salió de aquí.</strong>',
-    'dfy.h':'Llevamos tu marketing cada semana',
+    'dfy.h':'Lo operamos cada semana',
     'dfy.k':'Servicio completo · donde están los resultados',
     'f1.g':'Si en 14 días ninguno trae leads más baratos que tu mejor anuncio de ahora, te hacemos otros 10 gratis o, si lo prefieres, te devolvemos el dinero. Si sigues, lo que pagaste se descuenta.',
     'f1.gk':'Garantía Otra Ronda',
-    'f1.p':'Los hace nuestro equipo con nuestro sistema, cargado con tu negocio. Es rápido y te sirve para ver cómo trabajamos. <strong>Son piezas: por sí solas no son el resultado.</strong>',
-    'f1.h':'10 anuncios nuevos',
-    'f1.k':'Fase 1 · 7 días · para probarnos',
-    'dos.lead':'Puedes probarnos con una primera fase de 7 días. Pero que quede claro dónde está el valor.',
-    'dos.h2':'Empieza rápido. <em>Los resultados vienen del servicio completo.</em>',
-    'dos.eyebrow':'Dos formas de trabajar con nosotros',
+    'f1.p':'Metemos en nuestro sistema todo lo que sabe tu negocio (la web, tus servicios, las reseñas y lo que te preguntan tus clientes) y te damos tu pantalla para verlo. Con él te hacemos los 10 primeros anuncios. <strong>Sin esta base, cualquier marketing suena genérico.</strong>',
+    'f1.h':'Tu cerebro de marketing y 10 anuncios',
+    'f1.k':'Fase 1 · 7 días · la base',
+    'dos.lead':'El cerebro es la base. Los resultados llegan cuando lo operamos contigo.',
+    'dos.h2':'Primero, tu cerebro de marketing. <em>Después, lo llevamos cada semana.</em>',
+    'dos.eyebrow':'Cómo se empieza',
     'ag.c':'El sistema con el que trabajamos',
     'ag.5':'Vídeos',
     'ag.4':'Guiones',
@@ -700,8 +711,8 @@ const I18N = {
     'nav.services':'Resultados','nav.work':'Trabajo','nav.how':'Cómo trabajamos','nav.faq':'Preguntas','nav.contact':'Contacto','nav.cta':'Hablar por WhatsApp',
     'hero.eyebrow':'Solo para negocios que ya venden e invierten en marketing',
     'hero.h1':'Leads más baratos en <span style="white-space:nowrap">14 días.</span> <em>O te devolvemos el dinero.</em>',
-    'hero.lead':'Somos tu departamento de marketing: anuncios nuevos cada semana, contenido orgánico, embudos y el seguimiento de cada lead por email y WhatsApp hasta la venta. Y cada semana te decimos qué trajo cada venta. Así, una formación médica facturó 210.000 € con 24.000 € invertidos en anuncios.',
-    'hero.cta1':'Empezar con la fase 1','hero.cta2':'Ver qué hacemos','hero.reassure':'Fase 1: 10 anuncios nuevos en 7 días. Si en 14 días ninguno bate a tu mejor anuncio, otra ronda gratis o tu dinero de vuelta.',
+    'hero.lead':'Empezamos montando el cerebro de marketing de tu negocio y desde ahí lo llevamos todo: anuncios, contenido, embudos y seguimiento de cada lead. Así, una formación médica facturó 210.000 € con 24.000 € invertidos en anuncios.',
+    'hero.cta1':'Quiero mi cerebro de marketing','hero.cta2':'Ver qué hacemos','hero.reassure':'Fase 1: tu cerebro de marketing y 10 anuncios nuevos en 7 días. Si en 14 días ninguno bate a tu mejor anuncio, otra ronda gratis o tu dinero de vuelta.',
     'proof.k':'Caso real · Meta Ads','proof.who':'<strong>Formación médica de ticket alto, operando nosotros sus anuncios.</strong> Inversión en anuncios y matrículas generadas. Primera promoción llena: 30 de 30.','proof.k2':'Miguel Sierra · YouTube','proof.v2':'+8.000 suscriptores en menos de 4 meses',
     'wall.cap':'Cuentas con las que trabajamos y hemos trabajado',
     'pain.eyebrow':'¿Te suena?','pain.h2':'No tienes marketing. <em>Tienes gastos.</em>',
@@ -713,10 +724,11 @@ const I18N = {
     'mas.eyebrow':'Y si quieres más','mas.h2':'Tu departamento de marketing, <em>en tu empresa en 30 días.</em>','mas.lead':'Con tu cerebro ya funcionando, montamos el resto y lo ves todo en un mismo panel: los anuncios de la semana, el contenido del mes, el embudo y qué anuncio trajo cada venta. Lo que pagaste por el cerebro se descuenta, y las 5 primeras empresas tienen precio de fundador.',
     'no.eyebrow':'Para quién no es','no.h2':'Mejor decírtelo <em>ahora.</em>',
     'faq.eyebrow':'Preguntas frecuentes','faq.h2':'Todo lo que <em>necesitas saber.</em>',
-    'cta.eyebrow':'Empieza por la fase 1','cta.h2':'Marketing que se mide <em>en ventas.</em>','cta.lead':'Escríbenos qué vendes. Si encajamos, te mandamos un vídeo con lo que cambiaríamos en tus anuncios y tres anuncios nuevos hechos con tu web. Si no encajamos, te lo decimos.','cta.btn':'Empezar con la fase 1','cta.fit':'Garantía Otra Ronda: si en 14 días ninguno bate a tu mejor anuncio, otros 10 gratis o tu dinero de vuelta',
+    'cta.eyebrow':'Empieza por la fase 1','cta.h2':'¿Empezamos por <em>tu cerebro de marketing?</em>','cta.lead':'Escríbenos qué vendes. Si encajamos, te mandamos un vídeo con lo que cambiaríamos en tus anuncios y tres anuncios nuevos hechos con tu web. Si no encajamos, te lo decimos.','cta.btn':'Quiero mi cerebro de marketing','cta.fit':'Garantía Otra Ronda: si en 14 días ninguno bate a tu mejor anuncio, otros 10 gratis o tu dinero de vuelta',
     'ftr.tag':'Marketing con IA · Tenerife, España','ftr.legal':'Aviso legal y privacidad','lb.yt':'Ver completo en YouTube'
   },
   en:{
+    'ui.cap':'This is your business\u2019s marketing brain',
     'work.reel':'Showreel · 25 s',
     'res.cta':'I want to be next',
     'res.h2':'What we achieve <em>running the marketing ourselves.</em>',
@@ -725,16 +737,16 @@ const I18N = {
     'dfy.g':'We set it up in 30 days. If by day 30 it isn\u2019t producing every week, we refund the setup. After that, no lock-in.',
     'dfy.gk':'Day 30 guarantee',
     'dfy.p':'New ads every week, organic content, funnels and follow-up of every lead by email and WhatsApp, with a report of what brought each sale. And a team that decides every week what to push, what to switch off and where to put the effort, and answers when something burns out. <strong>The medical training case (210,000 € in sales from 24,000 € invested in ads) came from this.</strong>',
-    'dfy.h':'We run your marketing every week',
+    'dfy.h':'We run it every week',
     'dfy.k':'Full service · where the results are',
     'f1.g':'If within 14 days none brings cheaper leads than your best current ad, we make 10 more for free or, if you prefer, refund you. If you continue, what you paid is credited.',
     'f1.gk':'Another Round guarantee',
-    'f1.p':'Made by our team with our system, loaded with your business. It\u2019s fast and shows you how we work. <strong>They are pieces: on their own they are not the result.</strong>',
-    'f1.h':'10 new ads',
-    'f1.k':'Phase 1 · 7 days · to try us',
-    'dos.lead':'You can try us with a 7-day first phase. But let\u2019s be clear about where the value is.',
-    'dos.h2':'Start fast. <em>Results come from the full service.</em>',
-    'dos.eyebrow':'Two ways to work with us',
+    'f1.p':'We load everything your business knows into our system (website, services, reviews and what your customers ask) and give you your own screen to see it. With it we make your first 10 ads. <strong>Without this foundation, any marketing sounds generic.</strong>',
+    'f1.h':'Your marketing brain and 10 ads',
+    'f1.k':'Phase 1 · 7 days · the foundation',
+    'dos.lead':'The brain is the foundation. Results come when we run it with you.',
+    'dos.h2':'First, your marketing brain. <em>Then we run it every week.</em>',
+    'dos.eyebrow':'How you start',
     'ag.c':'The system we work with',
     'ag.5':'Videos',
     'ag.4':'Scripts',
@@ -749,8 +761,8 @@ const I18N = {
     'nav.services':'Results','nav.work':'Work','nav.how':'How we work','nav.faq':'Questions','nav.contact':'Contact','nav.cta':'Chat on WhatsApp',
     'hero.eyebrow':'Only for businesses that already sell and invest in marketing',
     'hero.h1':'Cheaper leads in <span style="white-space:nowrap">14 days.</span> <em>Or your money back.</em>',
-    'hero.lead':'We are your marketing department: new ads every week, organic content, funnels and follow-up of every lead by email and WhatsApp all the way to the sale. And every week we tell you what brought each sale. That\u2019s how a medical training business made 210,000 € in sales from 24,000 € invested in ads.',
-    'hero.cta1':'Start with phase 1','hero.cta2':'See what we do','hero.reassure':'Phase 1: 10 new ads in 7 days. If within 14 days none beats your best ad, another round for free or your money back.',
+    'hero.lead':'We start by building your business\u2019s marketing brain and from there we run it all: ads, content, funnels and follow-up of every lead. That\u2019s how a medical training business made 210,000 € in sales from 24,000 € invested in ads.',
+    'hero.cta1':'I want my marketing brain','hero.cta2':'See what we do','hero.reassure':'Phase 1: your marketing brain and 10 new ads in 7 days. If within 14 days none beats your best ad, another round for free or your money back.',
     'proof.k':'Real case · Meta Ads','proof.who':'<strong>High-ticket medical training, with us running their ads.</strong> Ad spend and enrolments generated. First intake full: 30 out of 30.','proof.k2':'Miguel Sierra · YouTube','proof.v2':'+8,000 subscribers in under 4 months',
     'wall.cap':'Accounts we work and have worked with',
     'pain.eyebrow':'Sound familiar?','pain.h2':'You don\u2019t have marketing. <em>You have expenses.</em>',
@@ -762,7 +774,7 @@ const I18N = {
     'mas.eyebrow':'If you want more','mas.h2':'Your marketing department, <em>in your business in 30 days.</em>','mas.lead':'With your brain already working, we build the rest and you see it all in one panel: the week\u2019s ads, the month\u2019s content, the funnel and which ad brought each sale. What you paid for the brain is credited, and the first 5 companies get a founder price.',
     'no.eyebrow':'Who it\u2019s not for','no.h2':'Better to say it <em>now.</em>',
     'faq.eyebrow':'FAQ','faq.h2':'Everything <em>you need to know.</em>',
-    'cta.eyebrow':'Start with phase 1','cta.h2':'Marketing measured <em>in sales.</em>','cta.lead':'Tell us what you sell. If we’re a fit, we send you a video with what we would change in your ads and three new ads made from your website. If we’re not, we’ll tell you.','cta.btn':'Start with phase 1','cta.fit':'Another Round guarantee: if within 14 days none beats your best ad, 10 more for free or your money back',
+    'cta.eyebrow':'Start with phase 1','cta.h2':'Shall we start with <em>your marketing brain?</em>','cta.lead':'Tell us what you sell. If we’re a fit, we send you a video with what we would change in your ads and three new ads made from your website. If we’re not, we’ll tell you.','cta.btn':'I want my marketing brain','cta.fit':'Another Round guarantee: if within 14 days none beats your best ad, 10 more for free or your money back',
     'ftr.tag':'AI-driven marketing · Tenerife, Spain','ftr.legal':'Legal notice and privacy','lb.yt':'Watch the full video on YouTube'
   }
 };
@@ -905,7 +917,7 @@ function init(){
         const split = new SplitText('#heroTitle',{type:'lines',mask:'lines'});
         gsap.from(split.lines,{yPercent:110,duration:1.2,stagger:.09,ease:'power4.out',delay:.15});
         gsap.from('.hero .eyebrow',{opacity:0,y:10,duration:.8,delay:.1});
-        gsap.from('.hero .lead, .vsl, .hero-cta, .hero .reassure',{opacity:0,y:20,duration:1,stagger:.1,delay:.55,ease:'power3.out'});
+        gsap.from('.hero .lead, .ui-hero, .hero-cta, .hero .reassure',{opacity:0,y:20,duration:1,stagger:.1,delay:.55,ease:'power3.out'});
       });
     }
     setupReveal(false);
