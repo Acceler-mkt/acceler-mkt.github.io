@@ -445,6 +445,27 @@ html.static .hero{min-height:880px}
 @media(min-width:900px){.dos{grid-template-columns:minmax(0,1fr) minmax(0,1.25fr)}}
 .dos .for b{display:block;font-weight:400;color:var(--mute);font-size:14.5px;line-height:1.5}
 .dos-nota{margin-top:24px;max-width:70ch}
+.hero.hero-c{min-height:auto;display:block;padding:clamp(120px,14vw,170px) 0 clamp(32px,5vw,56px);text-align:center}
+.hero-c .wrap{display:flex;flex-direction:column;align-items:center}
+.hero-c h1{margin:22px auto 18px;max-width:19ch!important;font-size:clamp(36px,5.2vw,72px)!important}
+.hero-c .lead{margin:0 auto;max-width:56ch}
+.hero-c .hero-cta{justify-content:center;margin-top:28px}
+.eyebrow.pill{border:1px solid var(--line);border-radius:999px;padding:8px 14px;background:rgba(20,18,16,.6)}
+.vsl{position:relative;width:100%;max-width:900px;margin:34px auto 0;border-radius:22px;overflow:hidden;border:1px solid var(--line2);background:#000;aspect-ratio:16/9;box-shadow:0 50px 120px -50px rgba(222,98,98,.55)}
+.vsl video{width:100%;height:100%;object-fit:cover}
+.vsl .lbl{position:absolute;left:16px;top:16px;font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;background:rgba(12,11,10,.55);backdrop-filter:blur(8px);border:1px solid var(--line);border-radius:999px;padding:7px 11px;color:#fff}
+.center .sec-head{justify-items:center;text-align:center}
+.center .sec-head .lead{justify-self:center!important;text-align:center}
+@media(min-width:900px){.center .sec-head{grid-template-columns:1fr}}
+.cases{display:grid;gap:14px}
+@media(min-width:900px){.cases{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.case-c{border:1px solid var(--line2);background:var(--bg2);border-radius:22px;padding:26px;display:grid;gap:10px;align-content:start;text-align:left}
+.case-c.hl{border-color:rgba(222,98,98,.5);box-shadow:0 40px 90px -40px rgba(222,98,98,.5)}
+.case-c .n{font-family:var(--mono);font-size:12px;letter-spacing:.12em;color:var(--coral)}
+.case-c h3{font-size:clamp(20px,1.8vw,24px);letter-spacing:-.03em;font-weight:600}
+.case-c .big{font-size:clamp(24px,2.1vw,32px);font-weight:600;letter-spacing:-.04em;line-height:1.05;background:linear-gradient(135deg,#fff,var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent}
+.case-c p{color:var(--mute);font-size:15.5px;line-height:1.55}
+.cta-mid{display:flex;justify-content:center;margin-top:clamp(32px,4vw,48px)}
 .hero h1{max-width:22ch;font-size:clamp(38px,5.4vw,82px)}
 </style>
 </head>
@@ -459,8 +480,7 @@ html.static .hero{min-height:880px}
       <span>acceler mkt<b>.</b></span>
     </a>
     <nav class="nav">
-      <a href="#recibes" data-i18n="nav.services">Qué recibes</a>
-      <a href="#trabajo" data-i18n="nav.work">Trabajo</a>
+      <a href="#resultados" data-i18n="nav.services">Resultados</a>
       <a href="#como" data-i18n="nav.how">Cómo trabajamos</a>
       <a href="#faq" data-i18n="nav.faq">Preguntas</a>
       <a href="#contacto" data-i18n="nav.contact">Contacto</a>
@@ -472,55 +492,30 @@ html.static .hero{min-height:880px}
   </div>
 </header>
 
-<section class="hero">
-  <div class="hero-media">
-    <video id="heroVideo" autoplay muted loop playsinline preload="auto" poster="assets/posters/showreel-bg.jpg" aria-hidden="true">
-      <source src="assets/videos/showreel-bg.mp4" type="video/mp4">
-    </video>
-  </div>
+<section class="hero hero-c">
   <div class="wrap">
-    <div class="hero-grid">
-      <div>
-        <span class="eyebrow" data-i18n="hero.eyebrow">Acceler MKT · Marketing con IA · Más de 2 años</span>
-        <h1 id="heroTitle" data-i18n-html="hero.h1">No tienes marketing. <em>Tienes gastos.</em></h1>
-        <p class="lead" data-i18n-html="hero.lead">Si no sabes qué anuncio te trajo el último cliente, es esto. <strong>Llevamos tus anuncios, tu contenido y tu YouTube con nuestro sistema de IA, medidos hasta la venta. Funcionando en 21 días.</strong></p>
-        <div class="hero-cta">
-          <a class="btn btn-wa wa-link" href="#" target="_blank" rel="noopener"><svg><use href="#wa"/></svg><span data-i18n="hero.cta1">Cuéntanos tu caso por WhatsApp</span></a>
-          <a class="btn btn-ghost" href="#recibes" data-i18n="hero.cta2">Ver casos</a>
-        </div>
-        <p class="reassure" data-i18n="hero.reassure">Sin compromiso · Una empresa nueva por semana · Solo marcas que ya facturan</p>
-      </div>
-      <aside class="proof">
-        <div class="agent" aria-hidden="true">
-          <svg viewBox="0 0 320 320">
-            <defs>
-              <radialGradient id="agGlow" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#de6262" stop-opacity=".55"/><stop offset=".6" stop-color="#e8a048" stop-opacity=".12"/><stop offset="1" stop-color="#e8a048" stop-opacity="0"/></radialGradient>
-            </defs>
-            <circle cx="160" cy="160" r="150" fill="url(#agGlow)"/>
-            <g class="ag-ring"><circle cx="160" cy="160" r="118" fill="none" stroke="rgba(246,245,244,.16)" stroke-dasharray="3 7"/></g>
-            <g class="ag-links" stroke="rgba(232,160,72,.45)" stroke-width="1.2">
-              <line x1="160" y1="160" x2="160" y2="42"/><line x1="160" y1="160" x2="272" y2="124"/><line x1="160" y1="160" x2="229" y2="256"/><line x1="160" y1="160" x2="91" y2="256"/><line x1="160" y1="160" x2="48" y2="124"/>
-            </g>
-            <g class="ag-core">
-              <circle cx="160" cy="160" r="54" fill="#7a2a2a"/><circle cx="176" cy="144" r="43" fill="#e8a048"/><circle cx="169" cy="154" r="36" fill="#c24a4a"/><circle cx="178" cy="149" r="27" fill="#de6262"/><circle cx="184" cy="145" r="16" fill="#f1b76f"/>
-            </g>
-          </svg>
-          <span class="ag-node n1" data-i18n="ag.1">Anuncios</span>
-          <span class="ag-node n2" data-i18n="ag.2">Carruseles</span>
-          <span class="ag-node n3" data-i18n="ag.3">Emails</span>
-          <span class="ag-node n4" data-i18n="ag.4">Guiones</span>
-          <span class="ag-node n5" data-i18n="ag.5">Vídeos</span>
-          <span class="ag-label" data-i18n="ag.c">Tu cerebro de marketing</span>
-        </div>
-        <div class="proof-card">
-          <div class="k" data-i18n="proof.k">Caso real · Meta Ads</div>
-          <div class="row"><span class="from">24.000 €</span><span class="arrow">→</span><span class="to">210.000 €</span></div>
-          <div class="who" data-i18n-html="proof.who"></div>
-        </div>
-      </aside>
+    <span class="eyebrow pill" data-i18n="hero.eyebrow"></span>
+    <h1 id="heroTitle" data-i18n-html="hero.h1"></h1>
+    <p class="lead" data-i18n-html="hero.lead"></p>
+    <div class="vsl">
+      <video autoplay muted loop playsinline preload="metadata" poster="assets/posters/showreel.jpg" src="assets/videos/showreel.mp4" aria-label="Showreel de Acceler MKT"></video>
+      <span class="lbl" data-i18n="work.reel">Showreel · 25 s</span>
     </div>
+    <div class="hero-cta">
+      <a class="btn btn-wa wa-link" href="#" target="_blank" rel="noopener"><svg><use href="#wa"/></svg><span data-i18n="hero.cta1"></span></a>
+    </div>
+    <p class="reassure" data-i18n="hero.reassure"></p>
   </div>
-  <div class="giant" aria-hidden="true">acceler mkt<b>.</b></div>
+</section>
+
+<section class="section center" id="resultados" style="padding-top:clamp(40px,5vw,72px)">
+  <div class="wrap">
+    <div class="sec-head"><div><span class="eyebrow" data-i18n="res.eyebrow"></span><h2 class="reveal" data-i18n-html="res.h2"></h2></div></div>
+    <div class="cases" id="cases"></div>
+    <div class="sec-head" style="margin-top:clamp(48px,6vw,80px)"><div><span class="eyebrow" data-i18n="work.eyebrow"></span><h2 class="reveal" data-i18n-html="work.h2"></h2></div></div>
+    <div class="pieces" id="pieces"></div>
+    <div class="cta-mid"><a class="btn btn-wa wa-link" href="#" target="_blank" rel="noopener"><svg><use href="#wa"/></svg><span data-i18n="res.cta"></span></a></div>
+  </div>
 </section>
 
 <section class="wall" id="clientes">
@@ -539,33 +534,7 @@ html.static .hero{min-height:880px}
   </div>
 </section>
 
-<section class="section" id="recibes" style="padding-top:0">
-  <div class="wrap">
-    <div class="sec-head">
-      <div><span class="eyebrow" data-i18n="rec.eyebrow"></span><h2 class="reveal" data-i18n-html="rec.h2"></h2></div>
-      <p class="lead reveal" data-i18n="rec.lead"></p>
-    </div>
-    <div class="ui reveal" aria-label="Ejemplo de la interfaz del Cerebro de Marketing">
-      <div class="ui-top"><i></i><i></i><i></i><b data-i18n="ui1.t">Cerebro de Academia Ejemplo</b><em data-i18n="ui.ej">Ejemplo</em></div>
-      <div class="ui-body">
-        <div class="ui-side"><span class="on" data-i18n="ui1.s1">Anuncios</span><span data-i18n="ui1.s2">Carruseles</span><span data-i18n="ui1.s3">Guiones</span><span data-i18n="ui1.s4">Emails</span><span data-i18n="ui1.s5">Lo que sabe</span></div>
-        <div class="ui-main">
-          <div class="ui-msg ui-you" data-i18n="ui1.you">Hazme 3 anuncios para la promoción de enero, para quien ya nos ha escrito y no se ha matriculado.</div>
-          <div class="ui-msg ui-ai" data-i18n="ui1.ai">Aquí tienes 3, con lo que más os preguntan en las llamadas:</div>
-          <div class="ui-ads">
-            <div class="ui-ad"><div class="img"></div><b data-i18n="ui1.a1">«¿Y si no tengo experiencia?» Por eso hay prácticas desde el primer mes.</b><small data-i18n="ui1.f">Estático · 1080×1350</small></div>
-            <div class="ui-ad"><div class="img"></div><b data-i18n="ui1.a2">Quedan 9 plazas para enero. Esto es lo que harás la primera semana.</b><small data-i18n="ui1.f2">Vídeo animado · 15 s</small></div>
-            <div class="ui-ad"><div class="img"></div><b data-i18n="ui1.a3">Lo que nos preguntó Laura antes de matricularse.</b><small data-i18n="ui1.f">Estático · 1080×1350</small></div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="models" id="recibesList"></div>
-    <div class="extras" id="ganas"></div>
-  </div>
-</section>
-
-<section class="section" id="como" style="padding-top:0">
+<section class="section center" id="como">
   <div class="wrap">
     <div class="sec-head"><div><span class="eyebrow" data-i18n="mech.eyebrow"></span><h2 class="reveal" data-i18n-html="mech.h2"></h2></div></div>
     <div class="models" id="mech"></div>
@@ -591,35 +560,9 @@ html.static .hero{min-height:880px}
   </div>
 </section>
 
-<section class="section" id="trabajo">
+<section class="section center" id="faq" style="padding-top:0">
   <div class="wrap">
-    <div class="sec-head">
-      <div>
-        <span class="eyebrow" data-i18n="work.eyebrow">Trabajo</span>
-        <h2 class="reveal" data-i18n-html="work.h2">¿Cara de IA? <em>Júzgalo tú.</em></h2>
-      </div>
-      <p class="lead reveal" data-i18n="work.lead"></p>
-    </div>
-    <div class="pieces" id="pieces"></div>
-    <div class="stats" id="stats" style="margin-top:16px"></div>
-  </div>
-</section>
-
-<section class="section" id="paraquien" style="padding-top:0">
-  <div class="wrap">
-    <div class="sec-head"><div><span class="eyebrow" data-i18n="no.eyebrow"></span><h2 class="reveal" data-i18n-html="no.h2"></h2></div></div>
-    <ul class="nofor" id="nofor"></ul>
-  </div>
-</section>
-
-<section class="section" id="faq" style="padding-top:0">
-  <div class="wrap">
-    <div class="sec-head">
-      <div>
-        <span class="eyebrow" data-i18n="faq.eyebrow"></span>
-        <h2 class="reveal" data-i18n-html="faq.h2"></h2>
-      </div>
-    </div>
+    <div class="sec-head"><div><span class="eyebrow" data-i18n="faq.eyebrow"></span><h2 class="reveal" data-i18n-html="faq.h2"></h2></div></div>
     <div class="faq reveal" id="faqList"></div>
   </div>
 </section>
@@ -627,11 +570,11 @@ html.static .hero{min-height:880px}
 <section class="section cta" id="contacto">
   <div class="wrap">
     <div class="box">
-      <span class="eyebrow" data-i18n="cta.eyebrow">Contacto</span>
+      <span class="eyebrow" data-i18n="cta.eyebrow"></span>
       <h2 class="reveal" data-i18n-html="cta.h2"></h2>
       <p class="lead reveal" data-i18n="cta.lead"></p>
       <div class="cta-row reveal">
-        <a class="btn btn-wa wa-link" href="#" target="_blank" rel="noopener" style="padding:20px 30px;font-size:17px"><svg><use href="#wa"/></svg><span data-i18n="cta.btn">Abrir WhatsApp</span></a>
+        <a class="btn btn-wa wa-link" href="#" target="_blank" rel="noopener" style="padding:20px 30px;font-size:17px"><svg><use href="#wa"/></svg><span data-i18n="cta.btn"></span></a>
         <span class="num">+34 647 82 98 54</span>
       </div>
       <p class="reassure reveal" data-i18n="cta.fit"></p>
@@ -687,10 +630,10 @@ const FACES = [
   {img:'f-josep-baixas.jpg', n:'Josep Baixas', r:{es:'Coach de montaña',en:'Mountain coach'}}
 ];
 
-const STATS = [
-  {hl:true, big:'24.000 € → 210.000 €', k:{es:'Formación médica de ticket alto · Meta Ads',en:'High-ticket medical training · Meta Ads'}, p:{es:'Operando nosotros sus anuncios: por cada euro en anuncios, 8,75 € en matrículas. Primera promoción llena: 30 de 30 plazas.',en:'With us running their ads: for every euro in ads, 8.75 € in enrolments. First intake full: 30 out of 30 places.'}},
-  {big:'+8.000', k:{es:'Miguel Sierra · YouTube',en:'Miguel Sierra · YouTube'}, p:{es:'Suscriptores en menos de 4 meses, con el contenido que producimos y editamos nosotros.',en:'Subscribers in under 4 months, with the content we produce and edit.'}},
-  {big:{es:'Decenas de millones',en:'Tens of millions'}, k:{es:'Miguel Sierra · reels y vídeos',en:'Miguel Sierra · reels and videos'}, p:{es:'De visualizaciones en total. Su reel más visto: 1,4 millones.',en:'Views in total. His most-watched reel: 1.4 million.'}}
+const CASES = [
+  {hl:true, n:'01', h:{es:'Formación médica de ticket alto',en:'High-ticket medical training'}, big:'24.000 € → 210.000 €', p:{es:'En anuncios y en matrículas. Primera promoción llena: 30 de 30 plazas. Llevamos sus anuncios y su embudo.',en:'In ads and in enrolments. First intake full: 30 out of 30 places. We ran their ads and funnel.'}},
+  {n:'02', h:{es:'Miguel Sierra · empresario y divulgador',en:'Miguel Sierra · entrepreneur and educator'}, big:{es:'+8.000 suscriptores',en:'+8,000 subscribers'}, p:{es:'En YouTube en menos de 4 meses, y decenas de millones de visualizaciones entre vídeos y reels. Producimos y editamos su contenido.',en:'On YouTube in under 4 months, and tens of millions of views across videos and reels. We produce and edit his content.'}},
+  {n:'03', h:{es:'Álex Mestres · GLA Patrimonio',en:'Álex Mestres · GLA Patrimonio'}, big:{es:'Cada semana',en:'Every week'}, p:{es:'Carruseles y reels con un formato propio que ya reconocen sus seguidores. Los hacemos nosotros, de la idea a la publicación.',en:'Carousels and reels in a format his followers already recognise. We make them, from idea to publishing.'}}
 ];
 
 const MECH = [
@@ -699,32 +642,13 @@ const MECH = [
   {k:{es:'03 · Decidimos',en:'03 · We decide'}, h:{es:'Medimos y decidimos contigo',en:'We measure and decide with you'}, p:{es:'Cada semana te decimos qué anuncio trajo cada venta, apagamos lo que no funciona y metemos presupuesto en lo que sí.',en:'Every week we tell you which ad brought each sale, switch off what doesn\u2019t work and put budget behind what does.'}}
 ];
 
-const RECIBES = [
-  {h:{es:'Nunca te quedas sin anuncios que funcionen',en:'You never run out of ads that work'}, p:{es:'Cada semana tienes anuncios nuevos, probados antes de que el anterior se queme. Los hacemos nosotros, con lo que de verdad te preguntan tus clientes.',en:'Every week you have new ads, tested before the last one burns out. We make them, built on what your customers really ask.'}},
-  {h:{es:'Te escribe gente que ya sabe a qué viene',en:'People who message you already know what they want'}, p:{es:'Anuncios, contenido y embudo (landing, vídeo de ventas y emails) que responden a las dudas antes de que te escriban. Menos curiosos, más clientes.',en:'Ads, content and a funnel (landing page, sales video and emails) that answer doubts before people message you. Fewer tyre-kickers, more customers.'}, hl:true},
-  {h:{es:'Sabes qué anuncio trae cada venta',en:'You know which ad brings each sale'}, p:{es:'Cada semana, un informe de qué anuncio te trajo cada venta y un responsable que apaga lo que no funciona y mete presupuesto en lo que sí.',en:'Every week, a report of which ad brought each sale and someone who switches off what doesn\u2019t work and puts budget behind what does.'}}
-];
-
-const GANAS = [
-  {h:{es:'Gastas menos',en:'You spend less'}, p:{es:'Producimos con IA, así que cada anuncio cuesta mucho menos que en una agencia tradicional.',en:'We produce with AI, so each ad costs far less than at a traditional agency.'}},
-  {h:{es:'Ganas horas',en:'You win back hours'}, p:{es:'No explicas tu negocio cada vez ni persigues a nadie: tienes un responsable para tu cuenta.',en:'No explaining your business every time or chasing anyone: you have one person responsible for your account.'}},
-  {h:{es:'Siempre tienes anuncios nuevos',en:'You always have new ads'}, p:{es:'Cuando un anuncio se cansa, ya tenemos el siguiente probado.',en:'When an ad wears out, we already have the next one tested.'}}
-];
-
-const NOFOR = [
-  {es:'Negocios que empiezan de cero o que todavía no venden.',en:'Businesses starting from zero or not selling yet.'},
-  {es:'Quien no invierte en anuncios ni quiere hacerlo.',en:'Anyone not investing in ads and not planning to.'},
-  {es:'Quien no quiere enseñarnos sus ventas: sin eso no se puede medir nada.',en:'Anyone who won\u2019t show us their sales: without that, nothing can be measured.'},
-  {es:'Quien busca el más barato o alguien que le suba posts.',en:'Anyone looking for the cheapest option or someone to post for them.'}
-];
-
 const FAQ = [
-  {q:{es:'¿Cuánto cuesta?',en:'How much is it?'}, a:{es:'Se empieza con una primera fase pequeña que ves funcionar en una semana. Te decimos el número exacto en una llamada de 20 minutos, cuando sepamos qué material tenéis.',en:'You start with a small first phase you see working within a week. We give you the exact figure on a 20-minute call, once we know what material you have.'}},
-  {q:{es:'¿Qué es la fase 1?',en:'What is phase 1?'}, a:{es:'La versión reducida del servicio: en 7 días cargamos tu negocio en nuestro sistema y te hacemos 10 anuncios nuevos, con el mismo equipo del servicio completo. Si sigues, lo que pagaste se descuenta.',en:'The reduced version of the service: in 7 days we load your business into our system and make you 10 new ads, with the same team as the full service. If you continue, what you paid is credited.'}},
-  {q:{es:'¿Y si los anuncios no funcionan?',en:'What if the ads don\u2019t work?'}, a:{es:'Si en 14 días ninguno de los 10 te trae leads más baratos que tu mejor anuncio de ahora, te hacemos otros 10 gratis o te devolvemos el dinero. Solo pedimos que los pongas en marcha con el presupuesto mínimo que acordemos.',en:'If within 14 days none of the 10 brings cheaper leads than your best current ad, we make 10 more for free or refund you. We only ask that you run them with the minimum budget we agree.'}},
-  {q:{es:'¿Y si lo uso yo solo con el cerebro?',en:'What if I just use the brain myself?'}, a:{es:'Puedes, y te saldrán piezas. Pero los resultados que enseñamos no salen de las piezas: salen de operarlo nosotros, con un informe semanal de qué anuncio vende y alguien que decide cada semana qué subir, qué apagar y qué escalar.',en:'You can, and you\u2019ll get pieces. But the results we show don\u2019t come from pieces: they come from us running it, with a weekly report of which ad sells and someone deciding every week what to push, switch off and scale.'}},
-  {q:{es:'¿Hay permanencia?',en:'Is there a lock-in?'}, a:{es:'No. Tus cuentas y tu material están a tu nombre, así que nunca estás atrapado. Y si un mes no entregamos lo pactado, ese mes no lo pagas.',en:'No. Your accounts and material are in your name, so you\u2019re never trapped. And if one month we don\u2019t deliver what we agreed, you don\u2019t pay that month.'}},
-  {q:{es:'¿Tengo que grabar mucho?',en:'Do I have to film a lot?'}, a:{es:'No. Con 20 minutos a la semana con el móvil basta, o empezamos con lo que ya tenéis grabado. Nosotros no grabamos: editamos y producimos.',en:'No. 20 minutes a week on your phone is enough, or we start with what you already have. We don\u2019t film: we edit and produce.'}}
+  {q:{es:'¿Para qué tipo de negocio es esto?',en:'What kind of business is this for?'}, a:{es:'Para negocios de formación, servicios o programas de más de 1.000 € que ya venden y ya invierten en anuncios de Meta. Si empiezas de cero o buscas a alguien que te suba posts, no es para ti.',en:'For training, service or programme businesses above 1,000 € that already sell and already invest in Meta ads. If you\u2019re starting from zero or want someone to post for you, it\u2019s not for you.'}},
+  {q:{es:'¿Qué es la fase 1?',en:'What is phase 1?'}, a:{es:'La versión reducida del servicio: en 7 días cargamos tu negocio en nuestro sistema y te hacemos 10 anuncios nuevos, con el mismo equipo. Sirve para probarnos. Los resultados vienen del servicio completo, y si sigues, lo que pagaste se descuenta.',en:'The reduced version of the service: in 7 days we load your business into our system and make you 10 new ads, with the same team. It\u2019s a way to try us. Results come from the full service, and if you continue, what you paid is credited.'}},
+  {q:{es:'¿Cómo funciona la garantía?',en:'How does the guarantee work?'}, a:{es:'En la fase 1: si en 14 días ninguno de los 10 anuncios trae leads más baratos que tu mejor anuncio de ahora, te hacemos otros 10 gratis o te devolvemos el dinero. En el servicio completo: si el día 30 no está produciendo cada semana, te devolvemos la instalación. No prometemos ventas: dependen también de tu oferta, tu precio y tu equipo.',en:'In phase 1: if within 14 days none of the 10 ads brings cheaper leads than your best current ad, we make 10 more for free or refund you. In the full service: if by day 30 it isn\u2019t producing every week, we refund the setup. We don\u2019t promise sales: they also depend on your offer, price and team.'}},
+  {q:{es:'¿Cuándo veré resultados?',en:'When will I see results?'}, a:{es:'Los anuncios nuevos, en 7 días. Con dos o tres semanas de datos ya sabemos qué anuncio funciona y cuál apagar. Las ventas dependen también de tu oferta y de cómo atiendes a quien te escribe, y por eso las medimos contigo cada semana.',en:'New ads within 7 days. With two or three weeks of data we know which ad works and which to switch off. Sales also depend on your offer and how you handle enquiries, which is why we measure them with you every week.'}},
+  {q:{es:'¿Cómo funciona el precio?',en:'How does pricing work?'}, a:{es:'Se empieza con la fase 1, un pago único pequeño que se descuenta si sigues. El servicio completo tiene una instalación y una cuota mensual, sin permanencia. Te damos los números exactos en una llamada de 20 minutos.',en:'You start with phase 1, a small one-off payment credited if you continue. The full service has a setup and a monthly fee, with no lock-in. We give you exact figures on a 20-minute call.'}},
+  {q:{es:'¿Y si lo uso yo solo con el cerebro?',en:'What if I just use the brain myself?'}, a:{es:'Puedes, y te saldrán piezas. Pero los resultados que enseñamos no salen de las piezas: salen de operarlo nosotros, con un informe semanal de qué anuncio vende y alguien que decide cada semana qué subir, qué apagar y qué escalar.',en:'You can, and you\u2019ll get pieces. But the results we show don\u2019t come from pieces: they come from us running it, with a weekly report of which ad sells and someone deciding every week what to push, switch off and scale.'}}
 ];
 
 const WORKS = [
@@ -744,6 +668,10 @@ const PIECES = [
 
 const I18N = {
   es:{
+    'work.reel':'Showreel · 25 s',
+    'res.cta':'Quiero ser el siguiente',
+    'res.h2':'Lo que conseguimos <em>llevando nosotros el marketing.</em>',
+    'res.eyebrow':'Resultados reales',
     'dos.nota':'La IA nos hace rápidos y nos deja producir mucho. <strong>Los resultados los pone el equipo que mira tus números cada semana y decide.</strong>',
     'dfy.g':'Lo montamos en 30 días. Si el día 30 no está produciendo cada semana, te devolvemos la instalación. Después, sin permanencia.',
     'dfy.gk':'Garantía Día 30',
@@ -769,11 +697,11 @@ const I18N = {
     'ui1.a1':'«¿Esto es para mí?» Te lo explicamos en dos minutos, sin compromiso.','ui1.a2':'La oferta de enero acaba el día 31. Esto es lo que te llevas.','ui1.a3':'Lo que nos preguntó Laura antes de comprar.','ui1.f':'Estático · 1080×1350','ui1.f2':'Vídeo animado · 15 s',
     'ui2.t':'Departamento de marketing · esta semana','ui2.s1':'Resumen','ui2.s3':'Contenido','ui2.s4':'Embudo','ui2.s5':'Ventas','ui2.k1':'Anuncios nuevos','ui2.k2':'Piezas de contenido','ui2.k3':'Ventas atribuidas','ui2.h':'Qué anuncio trajo cada venta',
     'ui2.r1':'«Prácticas desde el mes 1»','ui2.r2':'«Quedan 9 plazas»','ui2.r3':'«Lo que preguntó Laura»','ui2.r4':'«Horario compatible» · se apaga',
-    'nav.services':'Qué cambia','nav.work':'Trabajo','nav.how':'Cómo funciona','nav.faq':'Preguntas','nav.contact':'Contacto','nav.cta':'Hablar por WhatsApp',
-    'hero.eyebrow':'Agencia de marketing de rendimiento · Para negocios que ya invierten en anuncios',
+    'nav.services':'Resultados','nav.work':'Trabajo','nav.how':'Cómo trabajamos','nav.faq':'Preguntas','nav.contact':'Contacto','nav.cta':'Hablar por WhatsApp',
+    'hero.eyebrow':'Solo para negocios que ya invierten en anuncios de Meta',
     'hero.h1':'Más ventas con lo que ya inviertes en anuncios. <em>Y sabiendo qué anuncio trae cada una.</em>',
-    'hero.lead':'Somos una agencia de marketing de rendimiento: hacemos tus anuncios nuevos cada semana, tu contenido y tu embudo, y cada semana decidimos contigo qué subir y qué apagar. Así, una formación médica convirtió 24.000 € en anuncios en 210.000 € en ventas. <strong>Empieza con la fase 1: anuncios nuevos funcionando en 7 días.</strong>',
-    'hero.cta1':'Empezar con la fase 1','hero.cta2':'Ver qué hacemos','hero.reassure':'Fase 1: 10 anuncios nuevos en 7 días, con garantía de rendimiento · Sin permanencia',
+    'hero.lead':'Llevamos tus anuncios, tu contenido y tu embudo cada semana, y decidimos contigo qué subir y qué apagar. Mira cómo trabajamos.',
+    'hero.cta1':'Empezar con la fase 1','hero.cta2':'Ver qué hacemos','hero.reassure':'Fase 1: 10 anuncios nuevos en 7 días, con garantía · Sin permanencia',
     'proof.k':'Caso real · Meta Ads','proof.who':'<strong>Formación médica de ticket alto, operando nosotros sus anuncios.</strong> Inversión en anuncios y matrículas generadas. Primera promoción llena: 30 de 30.','proof.k2':'Miguel Sierra · YouTube','proof.v2':'+8.000 suscriptores en menos de 4 meses',
     'wall.cap':'Cuentas con las que trabajamos y hemos trabajado',
     'pain.eyebrow':'¿Te suena?','pain.h2':'No tienes marketing. <em>Tienes gastos.</em>',
@@ -781,14 +709,18 @@ const I18N = {
     'mech.eyebrow':'Cómo trabajamos','mech.h2':'Tus clientes ya te han dicho por qué te compran. <em>Lo convertimos en anuncios.</em>',
     'g.k':'días · fase 1','g.p':'<strong>Empieza con la fase 1: en 7 días te hacemos 10 anuncios nuevos, con el mismo sistema y el mismo equipo del servicio completo.</strong> Si en 14 días ninguno te trae leads más baratos que tu mejor anuncio de ahora, te hacemos otros 10 gratis o te devolvemos el dinero. Si sigues, lo que pagaste se descuenta, y en la instalación completa, si el día 30 no está produciendo cada semana, te devolvemos la instalación.',
     'ob.p1':'O bien en dos semanas tienes anuncios que traen contactos más baratos y un cerebro que te hace más cuando los necesitas, <em>o bien te hacemos otros 10 o recuperas lo que pagaste.</em>','ob.p2':'Piensa en esto como contratar a alguien que se ha leído todo tu negocio, escribe como tú y no se va cuando deja de cobrar.',
-    'work.eyebrow':'Trabajo','work.h2':'¿Cara de IA? <em>Júzgalo tú.</em>','work.lead':'Piezas de las cuentas que llevamos. Haz clic en cada una para verla en grande.',
+    'work.eyebrow':'El trabajo','work.h2':'Así se ve <em>por dentro.</em>','work.lead':'Piezas de las cuentas que llevamos. Haz clic en cada una para verla en grande.',
     'mas.eyebrow':'Y si quieres más','mas.h2':'Tu departamento de marketing, <em>en tu empresa en 30 días.</em>','mas.lead':'Con tu cerebro ya funcionando, montamos el resto y lo ves todo en un mismo panel: los anuncios de la semana, el contenido del mes, el embudo y qué anuncio trajo cada venta. Lo que pagaste por el cerebro se descuenta, y las 5 primeras empresas tienen precio de fundador.',
     'no.eyebrow':'Para quién no es','no.h2':'Mejor decírtelo <em>ahora.</em>',
-    'faq.eyebrow':'Preguntas','faq.h2':'Lo que preguntarías <em>en la llamada.</em>',
+    'faq.eyebrow':'Preguntas frecuentes','faq.h2':'Todo lo que <em>necesitas saber.</em>',
     'cta.eyebrow':'Empieza por la fase 1','cta.h2':'Marketing que se mide <em>en ventas.</em>','cta.lead':'Escríbenos qué vendes. Si encajamos, te mandamos un vídeo con lo que cambiaríamos en tus anuncios y tres anuncios nuevos hechos con tu web. Si no encajamos, te lo decimos.','cta.btn':'Empezar con la fase 1','cta.fit':'10 anuncios en 7 días · Si en 14 no mejoran, otros 10 o tu dinero',
     'ftr.tag':'Marketing con IA · Tenerife, España','ftr.legal':'Aviso legal y privacidad','lb.yt':'Ver completo en YouTube'
   },
   en:{
+    'work.reel':'Showreel · 25 s',
+    'res.cta':'I want to be next',
+    'res.h2':'What we achieve <em>running the marketing ourselves.</em>',
+    'res.eyebrow':'Real results',
     'dos.nota':'AI makes us fast and lets us produce a lot. <strong>The results come from the team that looks at your numbers every week and decides.</strong>',
     'dfy.g':'We set it up in 30 days. If by day 30 it isn\u2019t producing every week, we refund the setup. After that, no lock-in.',
     'dfy.gk':'Day 30 guarantee',
@@ -814,11 +746,11 @@ const I18N = {
     'ui1.a1':'“Is this for me?” We explain it in two minutes, no strings.','ui1.a2':'The January offer ends on the 31st. Here\u2019s what you get.','ui1.a3':'What Laura asked us before buying.','ui1.f':'Static · 1080×1350','ui1.f2':'Animated video · 15 s',
     'ui2.t':'Marketing department · this week','ui2.s1':'Overview','ui2.s3':'Content','ui2.s4':'Funnel','ui2.s5':'Sales','ui2.k1':'New ads','ui2.k2':'Content pieces','ui2.k3':'Attributed sales','ui2.h':'Which ad brought each sale',
     'ui2.r1':'“Practice from month 1”','ui2.r2':'“9 places left”','ui2.r3':'“What Laura asked”','ui2.r4':'“Flexible schedule” · switched off',
-    'nav.services':'What changes','nav.work':'Work','nav.how':'How it works','nav.faq':'Questions','nav.contact':'Contact','nav.cta':'Chat on WhatsApp',
-    'hero.eyebrow':'Performance marketing agency · For businesses already investing in ads',
+    'nav.services':'Results','nav.work':'Work','nav.how':'How we work','nav.faq':'Questions','nav.contact':'Contact','nav.cta':'Chat on WhatsApp',
+    'hero.eyebrow':'Only for businesses already running Meta ads',
     'hero.h1':'More sales from what you already spend on ads. <em>And knowing which ad brings each one.</em>',
-    'hero.lead':'We are a performance marketing agency: we make your new ads every week, your content and your funnel, and every week we decide with you what to push and what to switch off. That’s how a medical training business turned 24,000 € in ads into 210,000 € in sales. <strong>Start with phase 1: new ads running in 7 days.</strong>',
-    'hero.cta1':'Start with phase 1','hero.cta2':'See what we do','hero.reassure':'Phase 1: 10 new ads in 7 days, with a performance guarantee · No lock-in',
+    'hero.lead':'We run your ads, content and funnel every week, and decide with you what to push and what to switch off. See how we work.',
+    'hero.cta1':'Start with phase 1','hero.cta2':'See what we do','hero.reassure':'Phase 1: 10 new ads in 7 days, with a guarantee · No lock-in',
     'proof.k':'Real case · Meta Ads','proof.who':'<strong>High-ticket medical training, with us running their ads.</strong> Ad spend and enrolments generated. First intake full: 30 out of 30.','proof.k2':'Miguel Sierra · YouTube','proof.v2':'+8,000 subscribers in under 4 months',
     'wall.cap':'Accounts we work and have worked with',
     'pain.eyebrow':'Sound familiar?','pain.h2':'You don\u2019t have marketing. <em>You have expenses.</em>',
@@ -826,10 +758,10 @@ const I18N = {
     'mech.eyebrow':'How we work','mech.h2':'Your customers already told you why they buy. <em>We turn it into ads.</em>',
     'g.k':'days · phase 1','g.p':'<strong>Start with phase 1: in 7 days we make you 10 new ads, with the same system and the same team as the full service.</strong> If within 14 days none brings cheaper leads than your best current ad, we make 10 more for free or refund you. If you continue, what you paid is credited, and in the full setup, if by day 30 it isn’t producing every week, we refund the setup.',
     'ob.p1':'Either in two weeks you have ads bringing cheaper leads and a brain that makes more whenever you need them, <em>or we make 10 more or you get your money back.</em>','ob.p2':'Think of it as hiring someone who has read your whole business, writes like you and doesn\u2019t leave when the pay stops.',
-    'work.eyebrow':'Work','work.h2':'Looks like AI? <em>Judge for yourself.</em>','work.lead':'Pieces from the accounts we run. Click any piece to see it large.',
+    'work.eyebrow':'The work','work.h2':'What it looks like <em>inside.</em>','work.lead':'Pieces from the accounts we run. Click any piece to see it large.',
     'mas.eyebrow':'If you want more','mas.h2':'Your marketing department, <em>in your business in 30 days.</em>','mas.lead':'With your brain already working, we build the rest and you see it all in one panel: the week\u2019s ads, the month\u2019s content, the funnel and which ad brought each sale. What you paid for the brain is credited, and the first 5 companies get a founder price.',
     'no.eyebrow':'Who it\u2019s not for','no.h2':'Better to say it <em>now.</em>',
-    'faq.eyebrow':'Questions','faq.h2':'What you would ask <em>on the call.</em>',
+    'faq.eyebrow':'FAQ','faq.h2':'Everything <em>you need to know.</em>',
     'cta.eyebrow':'Start with phase 1','cta.h2':'Marketing measured <em>in sales.</em>','cta.lead':'Tell us what you sell. If we’re a fit, we send you a video with what we would change in your ads and three new ads made from your website. If we’re not, we’ll tell you.','cta.btn':'Start with phase 1','cta.fit':'10 ads in 7 days · If they don’t improve in 14, 10 more or your money back',
     'ftr.tag':'AI-driven marketing · Tenerife, Spain','ftr.legal':'Legal notice and privacy','lb.yt':'Watch the full video on YouTube'
   }
@@ -869,12 +801,9 @@ function render(){
     const url=f.h?`https://www.instagram.com/${f.h}/`:(f.yt||'');
     return url?`<a class="face" href="${url}" target="_blank" rel="noopener">${inner}</a>`:`<div class="face">${inner}</div>`;
   }).join('');
-  document.getElementById('stats').innerHTML = STATS.map(s=>`<div class="stat reveal${s.hl?' hl':''}"><div class="k">${esc(L(s.k))}</div><div class="big">${esc(L(s.big))}</div><p>${esc(L(s.p))}</p></div>`).join('');
   document.getElementById('mech').innerHTML = MECH.map(m=>`<div class="model reveal${m.hl?' hl':''}"><div class="k">${esc(L(m.k))}</div><h3>${esc(L(m.h))}</h3><p>${esc(L(m.p))}</p></div>`).join('');
   const card = (h,p,hl)=>`<div class="pain reveal"${hl?' style="border-color:rgba(222,98,98,.5)"':''}><h3>${esc(L(h))}</h3><p>${esc(L(p))}</p></div>`;
-  document.getElementById('recibesList').innerHTML = RECIBES.map(m=>`<div class="model reveal${m.hl?' hl':''}"><h3>${esc(L(m.h))}</h3><p>${esc(L(m.p))}</p></div>`).join('');
-  document.getElementById('ganas').innerHTML = GANAS.map(x=>card(x.h,x.p)).join('');
-  document.getElementById('nofor').innerHTML = NOFOR.map(x=>`<li>${esc(L(x))}</li>`).join('');
+  document.getElementById('cases').innerHTML = CASES.map(c=>`<div class="case-c reveal${c.hl?' hl':''}"><div class="n">${c.n} —</div><h3>${esc(L(c.h))}</h3><div class="big">${esc(L(c.big))}</div><p>${esc(L(c.p))}</p></div>`).join('');
   document.getElementById('faqList').innerHTML = FAQ.map(f=>`<details><summary>${esc(L(f.q))}</summary><div class="a">${esc(L(f.a))}</div></details>`).join('');
   document.getElementById('pieces').innerHTML = WORKS.filter(w=>w.r==='h').map(w=>cardHTML(w,'wide')).join('') + PIECES.map(p=>p.work ? cardHTML(WORKS.find(w=>w.id===p.work)) : imgHTML(p)).join('');
   bindCards();
@@ -976,9 +905,7 @@ function init(){
         const split = new SplitText('#heroTitle',{type:'lines',mask:'lines'});
         gsap.from(split.lines,{yPercent:110,duration:1.2,stagger:.09,ease:'power4.out',delay:.15});
         gsap.from('.hero .eyebrow',{opacity:0,y:10,duration:.8,delay:.1});
-        gsap.from('.hero .lead, .hero-cta, .hero .reassure, .proof',{opacity:0,y:20,duration:1,stagger:.1,delay:.55,ease:'power3.out'});
-        gsap.from('.giant',{yPercent:30,opacity:0,duration:1.6,delay:.4,ease:'power4.out'});
-        gsap.to('.giant',{yPercent:18,ease:'none',scrollTrigger:{trigger:'.hero',start:'top top',end:'bottom top',scrub:true}});
+        gsap.from('.hero .lead, .vsl, .hero-cta, .hero .reassure',{opacity:0,y:20,duration:1,stagger:.1,delay:.55,ease:'power3.out'});
       });
     }
     setupReveal(false);
