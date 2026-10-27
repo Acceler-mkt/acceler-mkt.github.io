@@ -560,17 +560,17 @@ html.static .hero{min-height:880px}
       <p class="lead reveal" data-i18n="dos.lead"></p>
     </div>
     <div class="dos">
-      <div class="model reveal">
-        <div class="k" data-i18n="f1.k"></div>
-        <h3 data-i18n="f1.h"></h3>
-        <p data-i18n-html="f1.p"></p>
-        <div class="for"><span data-i18n="f1.gk"></span><b data-i18n="f1.g"></b></div>
-      </div>
       <div class="model hl reveal">
         <div class="k" data-i18n="dfy.k"></div>
         <h3 data-i18n="dfy.h"></h3>
         <p data-i18n-html="dfy.p"></p>
         <div class="for"><span data-i18n="dfy.gk"></span><b data-i18n="dfy.g"></b></div>
+      </div>
+      <div class="model reveal">
+        <div class="k" data-i18n="f1.k"></div>
+        <h3 data-i18n="f1.h"></h3>
+        <p data-i18n-html="f1.p"></p>
+        <div class="for"><span data-i18n="f1.gk"></span><b data-i18n="f1.g"></b></div>
       </div>
     </div>
     <p class="lead reveal dos-nota" data-i18n-html="dos.nota"></p>
@@ -618,8 +618,8 @@ html.static .hero{min-height:880px}
 (function(){
 const WA_NUMBER = '34647829854';
 const WA_TEXT = {
-  es: 'Hola Alfonso, quiero empezar con la fase 1. Mi empresa es: ',
-  en: 'Hi Alfonso, I\'d like to start with phase 1. My company is: '
+  es: 'Hola Alfonso, quiero información sobre Agenda Llena. Vendo: ',
+  en: 'Hi Alfonso, I\'d like to know more about Full Calendar. I sell: '
 };
 
 const FACES = [
@@ -641,24 +641,25 @@ const FACES = [
 ];
 
 const CASES = [
-  {hl:true, n:'01', h:{es:'Formación médica de ticket alto',en:'High-ticket medical training'}, big:{es:'210.000 € en ventas',en:'210,000 € in sales'}, p:{es:'Con 24.000 € invertidos en anuncios: 8,75 € de venta por cada euro. Primera promoción llena (30 de 30 plazas). Llevamos sus anuncios, su embudo y el seguimiento de cada lead.',en:'From 24,000 € invested in ads: 8.75 € in sales for every euro. First intake full (30 out of 30 places). We ran their ads, funnel and the follow-up of every lead.'}},
+  {hl:true, n:'01', h:{es:'Formación de ticket alto en salud · marca nueva',en:'High-ticket health training · brand-new brand'}, big:{es:'210.000 € facturados',en:'210,000 € in sales'}, p:{es:'Con 24.000 € invertidos en anuncios, empezando de cero y en un mercado hipersaturado. Vendieron 30 de 30. Llevamos sus anuncios, su embudo y el seguimiento de cada lead.',en:'From 24,000 € invested in ads, starting from zero in a saturated market. They sold 30 out of 30. We ran their ads, funnel and the follow-up of every lead.'}},
   {n:'02', h:{es:'Miguel Sierra · empresario y divulgador',en:'Miguel Sierra · entrepreneur and educator'}, big:{es:'+8.000 suscriptores',en:'+8,000 subscribers'}, p:{es:'En YouTube en menos de 4 meses, y decenas de millones de visualizaciones entre vídeos y reels. Producimos y editamos su contenido.',en:'On YouTube in under 4 months, and tens of millions of views across videos and reels. We produce and edit his content.'}},
   {n:'03', h:{es:'Álex Mestres · GLA Patrimonio',en:'Álex Mestres · GLA Patrimonio'}, big:{es:'Cada semana',en:'Every week'}, p:{es:'Carruseles y reels con un formato propio que ya reconocen sus seguidores. Los hacemos nosotros, de la idea a la publicación.',en:'Carousels and reels in a format his followers already recognise. We make them, from idea to publishing.'}}
 ];
 
 const MECH = [
-  {k:{es:'01 · Escuchamos',en:'01 · We listen'}, h:{es:'Escuchamos a tus clientes',en:'We listen to your customers'}, p:{es:'Cargamos en nuestro sistema lo que ya sabe tu negocio: la web, tus servicios, las reseñas y, sobre todo, lo que te preguntan tus clientes antes de comprar.',en:'We load what your business already knows into our system: the website, your services, reviews and, above all, what customers ask before they buy.'}},
-  {k:{es:'02 · Producimos',en:'02 · We produce'}, h:{es:'Lo convertimos en marketing que vende',en:'We turn it into marketing that sells'}, p:{es:'Anuncios nuevos cada semana, contenido orgánico, embudos y el seguimiento de cada lead por email y WhatsApp, todo con tu forma de hablar.',en:'New ads every week, organic content, funnels and follow-up of every lead by email and WhatsApp, all in your voice.'}, hl:true},
-  {k:{es:'03 · Decidimos',en:'03 · We decide'}, h:{es:'Medimos y decidimos contigo',en:'We measure and decide with you'}, p:{es:'Cada semana te decimos qué trajo cada venta, apagamos lo que no funciona y metemos el esfuerzo y el presupuesto en lo que sí.',en:'Every week we tell you what brought each sale, switch off what doesn\u2019t work and put effort and budget behind what does.'}}
+  {k:{es:'01 · Atraer',en:'01 · Attract'}, h:{es:'Anuncios nuevos cada semana',en:'New ads every week'}, p:{es:'De 20 a 30 al mes, hechos con lo que te preguntan tus clientes y con el material que ya tienes grabado. Tú no grabas: los apruebas desde el móvil. Y un filtro antes del contacto para que solo te escriba quien puede pagar.',en:'20 to 30 a month, built on what your customers ask and on footage you already have. You don\'t film: you approve from your phone. Plus a filter before contact so only people who can pay reach you.'}},
+  {k:{es:'02 · Calentar',en:'02 · Warm up'}, h:{es:'Nadie se enfría esperando',en:'Nobody goes cold waiting'}, p:{es:'Cada lead recibe un mensaje en el primer minuto y un seguimiento por email y WhatsApp, escrito por nosotros, hasta que habla con tu equipo. Tu comercial recibe el aviso al instante y un guion para la primera llamada.',en:'Every lead gets a message in the first minute and email and WhatsApp follow-up, written by us, until they talk to your team. Your sales rep is alerted instantly and gets a script for the first call.'}, hl:true},
+  {k:{es:'03 · Enseñar',en:'03 · Teach'}, h:{es:'Meta aprende de quién te compra',en:'Meta learns from who buys'}, p:{es:'Conectamos tu CRM con Meta (o te montamos uno) para que la campaña busque compradores y no a quien rellena formularios. Y cada semana apagamos lo que no vende y subimos lo que sí.',en:'We connect your CRM to Meta (or set one up) so the campaign looks for buyers, not form-fillers. And every week we switch off what doesn\'t sell and push what does.'}}
 ];
 
 const FAQ = [
-  {q:{es:'¿Para qué tipo de negocio es esto?',en:'What kind of business is this for?'}, a:{es:'Para negocios de formación, servicios o programas de más de 1.000 € que ya venden y ya invierten en anuncios de Meta. Si empiezas de cero o buscas a alguien que te suba posts, no es para ti.',en:'For training, service or programme businesses above 1,000 € that already sell and already invest in Meta ads. If you\u2019re starting from zero or want someone to post for you, it\u2019s not for you.'}},
-  {q:{es:'¿Qué es el cerebro de marketing?',en:'What is the marketing brain?'}, a:{es:'Es nuestro sistema cargado con todo lo que sabe tu negocio: tu web, tus servicios, tus reseñas y lo que te preguntan tus clientes antes de comprar. Con él producimos anuncios, contenido y emails en minutos y con tu forma de hablar. Lo montamos en la fase 1, en 7 días, junto a tus 10 primeros anuncios, y si sigues con el servicio completo lo que pagaste se descuenta.',en:'It\u2019s our system loaded with everything your business knows: your website, services, reviews and what customers ask before they buy. With it we produce ads, content and emails in minutes and in your voice. We build it in phase 1, in 7 days, together with your first 10 ads, and if you continue with the full service what you paid is credited.'}},
-  {q:{es:'¿Cómo funciona la garantía?',en:'How does the guarantee work?'}, a:{es:'En la fase 1, la Garantía Otra Ronda: si en 14 días ninguno de los 10 anuncios trae leads más baratos que tu mejor anuncio de ahora, te hacemos otros 10 gratis o, si lo prefieres, te devolvemos el dinero. Solo pedimos tu material en 48 horas y el presupuesto mínimo que acordemos. En el servicio completo: si el día 30 no está produciendo cada semana, te devolvemos la instalación. No prometemos ventas: dependen también de tu oferta, tu precio y tu equipo.',en:'In phase 1: if within 14 days none of the 10 ads brings cheaper leads than your best current ad, we make 10 more for free or refund you. In the full service: if by day 30 it isn\u2019t producing every week, we refund the setup. We don\u2019t promise sales: they also depend on your offer, price and team.'}},
-  {q:{es:'¿Cuándo veré resultados?',en:'When will I see results?'}, a:{es:'Los anuncios nuevos, en 7 días. Con dos o tres semanas de datos ya sabemos qué anuncio funciona y cuál apagar. Las ventas dependen también de tu oferta y de cómo atiendes a quien te escribe, y por eso las medimos contigo cada semana.',en:'New ads within 7 days. With two or three weeks of data we know which ad works and which to switch off. Sales also depend on your offer and how you handle enquiries, which is why we measure them with you every week.'}},
-  {q:{es:'¿Cómo funciona el precio?',en:'How does pricing work?'}, a:{es:'Se empieza con la fase 1, un pago único pequeño que se descuenta si sigues. El servicio completo tiene una instalación y una cuota mensual, sin permanencia. Te damos los números exactos en una llamada de 20 minutos.',en:'You start with phase 1, a small one-off payment credited if you continue. The full service has a setup and a monthly fee, with no lock-in. We give you exact figures on a 20-minute call.'}},
-  {q:{es:'¿Y si lo uso yo solo con el cerebro?',en:'What if I just use the brain myself?'}, a:{es:'Puedes, y te saldrán piezas. Pero los resultados que enseñamos no salen de las piezas: salen de operarlo nosotros, con un informe semanal de qué anuncio vende y alguien que decide cada semana qué subir, qué apagar y qué escalar.',en:'You can, and you\u2019ll get pieces. But the results we show don\u2019t come from pieces: they come from us running it, with a weekly report of which ad sells and someone deciding every week what to push, switch off and scale.'}}
+  {q:{es:'¿Para quién es?',en:'Who is it for?'}, a:{es:'Para negocios de formación y servicios online de 1.000 € o más que venden por llamada o por asesor, ya venden y ya invierten en anuncios (desde 1.500 € al mes). No es para quien todavía no ha vendido su programa, para productos baratos que se venden sin llamada ni para quien no tiene a nadie que atienda las conversaciones. Tampoco trabajamos con dos competidores del mismo sector a la vez.',en:'For online training and service businesses selling at 1,000 € or more by call or advisor, that already sell and already invest in ads (from 1,500 € a month). Not for those who haven\'t sold their programme yet, cheap products sold without a call, or anyone with nobody to handle sales conversations. We don\'t work with two competitors in the same niche at once.'}},
+  {q:{es:'¿Cómo funciona la garantía?',en:'How does the guarantee work?'}, a:{es:'<strong>Agenda Llena o Gratis:</strong> el primer día pactamos por escrito una cifra de conversaciones cualificadas para 90 días, según tu presupuesto y tu histórico. Si no llegamos, seguimos trabajando sin cobrarte la cuota hasta llegar. Y si en 14 días el sistema no está funcionando, el primer mes no se paga. Te pedimos el presupuesto pactado, una oferta que ya vende, responder a los leads y aprobar los anuncios en 48 horas. Las ventas no las prometemos: las cierra tu equipo, con tu oferta y tu precio.',en:'<strong>Full Calendar or Free:</strong> on day one we agree in writing a number of qualified conversations for 90 days, based on your budget and history. If we don\'t get there, we keep working without charging the fee until we do. And if the system isn\'t running within 14 days, the first month is free. We ask for the agreed budget, an offer that already sells, replying to leads and approving ads within 48 hours. We don\'t promise sales: your team closes them, with your offer and price.'}},
+  {q:{es:'¿Qué es una conversación cualificada?',en:'What is a qualified conversation?'}, a:{es:'Un lead que encaja en el perfil que definimos contigo, responde y acepta hablar con tu equipo: una llamada agendada o una conversación con tu asesor. No contamos formularios.',en:'A lead who fits the profile we define with you, replies and agrees to talk to your team: a booked call or a conversation with your advisor. We don\'t count form fills.'}},
+  {q:{es:'¿Tengo que grabar?',en:'Do I have to film?'}, a:{es:'No. Usamos lo que ya tienes grabado. Como mucho, 30 minutos al mes con el móvil, y solo si quieres. Nada se publica sin tu OK.',en:'No. We use what you already have. At most 30 minutes a month on your phone, and only if you want to. Nothing goes live without your OK.'}},
+  {q:{es:'¿Qué es el Cerebro de tu negocio?',en:'What is the Brain of your business?'}, a:{es:'Es la IA que entrenamos con todo lo que sabe tu negocio: tu programa, tus clientes, sus preguntas y objeciones y tu forma de hablar. Dentro tienes tu panel de ventas: cada lead, de qué anuncio viene, en qué punto está y cuánto cuesta cada conversación. Te lo quedas para siempre, aunque dejes de trabajar con nosotros. Los resultados, eso sí, salen de operarlo nosotros cada semana.',en:'It\'s the AI we train on everything your business knows: your programme, your customers, their questions and objections, and your voice. Inside is your sales panel: every lead, which ad it came from, where it stands and what each conversation costs. You keep it forever, even if you stop working with us. The results, though, come from us running it every week.'}},
+  {q:{es:'¿Cuánto cuesta?',en:'How much does it cost?'}, a:{es:'Una instalación y una cuota mensual durante los 90 días que cubre la garantía. Después, mes a mes y sin permanencia. Los anuncios se los pagas tú directamente a Meta. Ahora hay 3 plazas al precio inicial. Te damos los números exactos en una llamada de 20 minutos.',en:'A setup fee and a monthly fee for the 90 days the guarantee covers. After that, month to month with no lock-in. You pay Meta for the ads directly. There are 3 places at the launch price right now. We give you exact figures on a 20-minute call.'}},
+  {q:{es:'Ya me engañó otra agencia. ¿Por qué vosotros?',en:'Another agency already burned me. Why you?'}, a:{es:'Porque si no llegamos a la cifra pactada trabajamos gratis hasta llegar, porque ves en tu móvil qué anuncio trae cada conversación desde el primer día y porque tus cuentas y tu material están siempre a tu nombre. Nunca te quedas atrapado.',en:'Because if we don\'t hit the agreed number we work for free until we do, because you see on your phone which ad brings each conversation from day one, and because your accounts and material are always in your name. You\'re never trapped.'}}
 ];
 
 const WORKS = [
@@ -678,103 +679,103 @@ const PIECES = [
 
 const I18N = {
   es:{
-    'ui.cap':'Así es el cerebro de marketing de tu negocio',
+    'ui.cap':'El Cerebro de tu negocio, con tu panel de ventas dentro (ejemplo)',
     'work.reel':'Showreel · 25 s',
-    'res.cta':'Quiero ser el siguiente',
+    'res.cta':'Quiero llenar mi agenda',
     'res.h2':'Lo que conseguimos <em>llevando nosotros el marketing.</em>',
     'res.eyebrow':'Resultados reales',
-    'dos.nota':'La IA nos hace rápidos y nos deja producir mucho. <strong>Los resultados los pone el equipo que mira tus números cada semana y decide.</strong>',
-    'dfy.g':'Lo montamos en 30 días. Si el día 30 no está produciendo cada semana, te devolvemos la instalación. Después, sin permanencia.',
-    'dfy.gk':'Garantía Día 30',
-    'dfy.p':'Anuncios nuevos cada semana, contenido orgánico, embudos y el seguimiento de cada lead por email y WhatsApp, con un informe de qué trajo cada venta. Y un equipo que decide cada semana qué subir, qué apagar y dónde meter el esfuerzo, y que responde cuando algo se quema. <strong>El caso de formación médica (210.000 € en ventas con 24.000 € invertidos en anuncios) salió de aquí.</strong>',
-    'dfy.h':'Lo operamos cada semana',
-    'dfy.k':'Servicio completo · donde están los resultados',
-    'f1.g':'Si en 14 días ninguno trae leads más baratos que tu mejor anuncio de ahora, te hacemos otros 10 gratis o, si lo prefieres, te devolvemos el dinero. Si sigues, lo que pagaste se descuenta.',
-    'f1.gk':'Garantía Otra Ronda',
-    'f1.p':'Metemos en nuestro sistema todo lo que sabe tu negocio (la web, tus servicios, las reseñas y lo que te preguntan tus clientes) y te damos tu pantalla para verlo. Con él te hacemos los 10 primeros anuncios. <strong>Sin esta base, cualquier marketing suena genérico.</strong>',
-    'f1.h':'Tu cerebro de marketing y 10 anuncios',
-    'f1.k':'Fase 1 · 7 días · la base',
-    'dos.lead':'El cerebro es la base. Los resultados llegan cuando lo operamos contigo.',
-    'dos.h2':'Primero, tu cerebro de marketing. <em>Después, lo llevamos cada semana.</em>',
-    'dos.eyebrow':'Cómo se empieza',
+    'dos.nota':'La IA nos hace rápidos. <strong>Los resultados los pone el equipo que mira tus números cada semana y decide.</strong> Nada se publica sin tu OK, y tus cuentas y tu material están siempre a tu nombre.',
+    'dfy.g':'Si en 90 días no llegamos a la cifra de conversaciones cualificadas que pactamos por escrito, seguimos sin cobrarte la cuota hasta llegar. Y si en 14 días el sistema no funciona, el primer mes no se paga.',
+    'dfy.gk':'Garantía Agenda Llena o Gratis',
+    'dfy.p':'De 20 a 30 anuncios nuevos al mes con tu material, filtro de curiosos, tu CRM conectado con Meta, seguimiento de cada lead por email y WhatsApp, aviso y guion para tu equipo, y cada semana la decisión de qué apagar y qué subir, con un informe de una página. <strong>Sistema funcionando en 14 días.</strong>',
+    'dfy.h':'Tu departamento de captación',
+    'dfy.k':'Agenda Llena · 90 días',
+    'f1.g':'al precio inicial. Después de los 90 días, mes a mes y sin permanencia.',
+    'f1.gk':'Solo 3 plazas',
+    'f1.p':'<strong>1 · El Cerebro de tu negocio:</strong> la IA entrenada con tu negocio, con tu panel de ventas dentro. Te lo quedas para siempre.<br><strong>2 · Reactivación en 7 días:</strong> escribimos a los leads que nunca compraron para reabrir la conversación.<br><strong>3 · Kit de Cierre:</strong> guion de primera llamada, respuestas a tus 10 objeciones y revisión de 5 llamadas.',
+    'f1.h':'Tres bonus',
+    'f1.k':'Además, te llevas',
+    'dos.lead':'Lo montamos y lo operamos nosotros. Tú apruebas desde el móvil y tu equipo habla con quien está listo.',
+    'dos.h2':'Agenda Llena: <em>un departamento de captación que llena tu agenda de gente que puede comprar.</em>',
+    'dos.eyebrow':'La oferta',
     'ag.c':'El sistema con el que trabajamos',
     'ag.5':'Vídeos',
     'ag.4':'Guiones',
     'ag.3':'Emails',
     'ag.2':'Carruseles',
     'ag.1':'Anuncios',
-    'ui.ej':'Ejemplo','ui1.t':'Cerebro de Tu Negocio','ui1.s1':'Anuncios','ui1.s2':'Carruseles','ui1.s3':'Guiones','ui1.s4':'Emails','ui1.s5':'Lo que sabe',
-    'ui1.you':'Hazme 3 anuncios para la oferta de enero, para quien ya nos ha escrito y no ha comprado.','ui1.ai':'Aquí tienes 3, con lo que más te preguntan antes de comprar:',
-    'ui1.a1':'«¿Esto es para mí?» Te lo explicamos en dos minutos, sin compromiso.','ui1.a2':'La oferta de enero acaba el día 31. Esto es lo que te llevas.','ui1.a3':'Lo que nos preguntó Laura antes de comprar.','ui1.f':'Estático · 1080×1350','ui1.f2':'Vídeo animado · 15 s',
+    'ui.ej':'Ejemplo','ui1.t':'Cerebro de tu negocio','ui1.s1':'Panel de ventas','ui1.s2':'Leads','ui1.s3':'Anuncios','ui1.s4':'Seguimiento','ui1.s5':'Lo que sabe',
+    'ui1.you':'¿Qué anuncio ha traído más conversaciones esta semana?','ui1.ai':'«Lo que nos preguntó Laura» va primero. Estos son los tres que siguen activos:',
+    'ui1.a1':'«¿Esto es para mí?» Te lo explicamos en dos minutos.','ui1.a2':'Lo que nadie te cuenta antes de apuntarte.','ui1.a3':'Lo que nos preguntó Laura antes de comprar.','ui1.f':'Activo · trae conversaciones','ui1.f2':'Nuevo esta semana',
     'ui2.t':'Departamento de marketing · esta semana','ui2.s1':'Resumen','ui2.s3':'Contenido','ui2.s4':'Embudo','ui2.s5':'Ventas','ui2.k1':'Anuncios nuevos','ui2.k2':'Piezas de contenido','ui2.k3':'Ventas atribuidas','ui2.h':'Qué anuncio trajo cada venta',
-    'ui2.r1':'«Prácticas desde el mes 1»','ui2.r2':'«Quedan 9 plazas»','ui2.r3':'«Lo que preguntó Laura»','ui2.r4':'«Horario compatible» · se apaga',
+    'ui2.r1':'«Prácticas desde el mes 1»','ui2.r2':'«Últimos días»','ui2.r3':'«Lo que preguntó Laura»','ui2.r4':'«Horario compatible» · se apaga',
     'nav.services':'Resultados','nav.work':'Trabajo','nav.how':'Cómo trabajamos','nav.faq':'Preguntas','nav.contact':'Contacto','nav.cta':'Hablar por WhatsApp',
-    'hero.eyebrow':'Solo para negocios que ya venden e invierten en marketing',
-    'hero.h1':'Leads más baratos en <span style="white-space:nowrap">14 días.</span> <em>O te devolvemos el dinero.</em>',
-    'hero.lead':'Empezamos montando el cerebro de marketing de tu negocio y desde ahí lo llevamos todo: anuncios, contenido, embudos y seguimiento de cada lead. Así, una formación médica facturó 210.000 € con 24.000 € invertidos en anuncios.',
-    'hero.cta1':'Quiero mi cerebro de marketing','hero.cta2':'Ver qué hacemos','hero.reassure':'Fase 1: tu cerebro de marketing y 10 anuncios nuevos en 7 días. Si en 14 días ninguno bate a tu mejor anuncio, otra ronda gratis o tu dinero de vuelta.',
-    'proof.k':'Caso real · Meta Ads','proof.who':'<strong>Formación médica de ticket alto, operando nosotros sus anuncios.</strong> Inversión en anuncios y matrículas generadas. Primera promoción llena: 30 de 30.','proof.k2':'Miguel Sierra · YouTube','proof.v2':'+8.000 suscriptores en menos de 4 meses',
+    'hero.eyebrow':'Formación y servicios online que ya venden e invierten en anuncios',
+    'hero.h1':'Tu agenda comercial llena <span style="white-space:nowrap">en 90 días.</span> <em>O seguimos gratis hasta llenarla.</em>',
+    'hero.lead':'Anuncios nuevos cada semana, seguimiento de cada lead por email y WhatsApp y Meta aprendiendo de quién te compra. Lo montamos y lo operamos nosotros. Así facturó 210.000 € una marca nueva en un mercado hipersaturado, con 24.000 € en anuncios.',
+    'hero.cta1':'Quiero llenar mi agenda','hero.cta2':'Ver qué hacemos','hero.reassure':'Garantía Agenda Llena o Gratis · Sistema funcionando en 14 días · Solo 3 plazas al precio inicial',
+    'proof.k':'Caso real · Meta Ads','proof.who':'<strong>Formación de ticket alto en salud, operando nosotros sus anuncios.</strong> Inversión en anuncios y ventas generadas. 30 de 30 vendidas.','proof.k2':'Miguel Sierra · YouTube','proof.v2':'+8.000 suscriptores en menos de 4 meses',
     'wall.cap':'Cuentas con las que trabajamos y hemos trabajado',
     'pain.eyebrow':'¿Te suena?','pain.h2':'No tienes marketing. <em>Tienes gastos.</em>',
     'rec.eyebrow':'Qué cambia en tus ventas','rec.h2':'Lo que notas <em>desde la primera semana.</em>','rec.lead':'Lo hacemos todo nosotros, con un sistema propio de IA que se sabe tu negocio de memoria y un equipo que responde de los resultados.',
-    'mech.eyebrow':'Cómo trabajamos','mech.h2':'Tus clientes ya te han dicho por qué te compran. <em>Lo convertimos en marketing que vende.</em>',
-    'g.k':'días · fase 1','g.p':'<strong>Empieza con la fase 1: en 7 días te hacemos 10 anuncios nuevos, con el mismo sistema y el mismo equipo del servicio completo.</strong> Si en 14 días ninguno te trae leads más baratos que tu mejor anuncio de ahora, te hacemos otros 10 gratis o te devolvemos el dinero. Si sigues, lo que pagaste se descuenta, y en la instalación completa, si el día 30 no está produciendo cada semana, te devolvemos la instalación.',
+    'mech.eyebrow':'Método Señal de Compra','mech.h2':'Atraer, calentar y enseñar. <em>De llenar formularios a llenar tu agenda.</em>',
+    'g.k':'días · sistema funcionando','g.p':'<strong>En 14 días tienes anuncios publicados, el filtro, la señal de venta y el seguimiento activos.</strong> Si no, el primer mes no se paga.',
     'ob.p1':'O bien en dos semanas tienes anuncios que traen contactos más baratos y un cerebro que te hace más cuando los necesitas, <em>o bien te hacemos otros 10 o recuperas lo que pagaste.</em>','ob.p2':'Piensa en esto como contratar a alguien que se ha leído todo tu negocio, escribe como tú y no se va cuando deja de cobrar.',
     'work.eyebrow':'El trabajo','work.h2':'Así se ve <em>por dentro.</em>','work.lead':'Piezas de las cuentas que llevamos. Haz clic en cada una para verla en grande.',
     'mas.eyebrow':'Y si quieres más','mas.h2':'Tu departamento de marketing, <em>en tu empresa en 30 días.</em>','mas.lead':'Con tu cerebro ya funcionando, montamos el resto y lo ves todo en un mismo panel: los anuncios de la semana, el contenido del mes, el embudo y qué anuncio trajo cada venta. Lo que pagaste por el cerebro se descuenta, y las 5 primeras empresas tienen precio de fundador.',
     'no.eyebrow':'Para quién no es','no.h2':'Mejor decírtelo <em>ahora.</em>',
     'faq.eyebrow':'Preguntas frecuentes','faq.h2':'Todo lo que <em>necesitas saber.</em>',
-    'cta.eyebrow':'Empieza por la fase 1','cta.h2':'¿Empezamos por <em>tu cerebro de marketing?</em>','cta.lead':'Escríbenos qué vendes. Si encajamos, te mandamos un vídeo con lo que cambiaríamos en tus anuncios y tres anuncios nuevos hechos con tu web. Si no encajamos, te lo decimos.','cta.btn':'Quiero mi cerebro de marketing','cta.fit':'Garantía Otra Ronda: si en 14 días ninguno bate a tu mejor anuncio, otros 10 gratis o tu dinero de vuelta',
+    'cta.eyebrow':'Agenda Llena','cta.h2':'¿Llenamos <em>tu agenda?</em>','cta.lead':'Escríbenos qué vendes. Si encajamos, en 20 minutos te contamos la cifra que pactaríamos contigo. Si no encajamos, te lo decimos.','cta.btn':'Quiero llenar mi agenda','cta.fit':'Agenda Llena o Gratis · Solo 3 plazas al precio inicial',
     'ftr.tag':'Marketing con IA · Tenerife, España','ftr.legal':'Aviso legal y privacidad','lb.yt':'Ver completo en YouTube'
   },
   en:{
-    'ui.cap':'This is your business\u2019s marketing brain',
+    'ui.cap':'The Brain of your business, with your sales panel inside (example)',
     'work.reel':'Showreel · 25 s',
-    'res.cta':'I want to be next',
+    'res.cta':'I want a full calendar',
     'res.h2':'What we achieve <em>running the marketing ourselves.</em>',
     'res.eyebrow':'Real results',
-    'dos.nota':'AI makes us fast and lets us produce a lot. <strong>The results come from the team that looks at your numbers every week and decides.</strong>',
-    'dfy.g':'We set it up in 30 days. If by day 30 it isn\u2019t producing every week, we refund the setup. After that, no lock-in.',
-    'dfy.gk':'Day 30 guarantee',
-    'dfy.p':'New ads every week, organic content, funnels and follow-up of every lead by email and WhatsApp, with a report of what brought each sale. And a team that decides every week what to push, what to switch off and where to put the effort, and answers when something burns out. <strong>The medical training case (210,000 € in sales from 24,000 € invested in ads) came from this.</strong>',
-    'dfy.h':'We run it every week',
-    'dfy.k':'Full service · where the results are',
-    'f1.g':'If within 14 days none brings cheaper leads than your best current ad, we make 10 more for free or, if you prefer, refund you. If you continue, what you paid is credited.',
-    'f1.gk':'Another Round guarantee',
-    'f1.p':'We load everything your business knows into our system (website, services, reviews and what your customers ask) and give you your own screen to see it. With it we make your first 10 ads. <strong>Without this foundation, any marketing sounds generic.</strong>',
-    'f1.h':'Your marketing brain and 10 ads',
-    'f1.k':'Phase 1 · 7 days · the foundation',
-    'dos.lead':'The brain is the foundation. Results come when we run it with you.',
-    'dos.h2':'First, your marketing brain. <em>Then we run it every week.</em>',
-    'dos.eyebrow':'How you start',
+    'dos.nota':'AI makes us fast. <strong>The results come from the team that looks at your numbers every week and decides.</strong> Nothing goes live without your OK, and your accounts and material are always in your name.',
+    'dfy.g':'If within 90 days we don\'t reach the number of qualified conversations we agree in writing, we keep working without charging the fee until we do. And if the system isn\'t running within 14 days, the first month is free.',
+    'dfy.gk':'Full Calendar or Free guarantee',
+    'dfy.p':'20 to 30 new ads a month from your material, a filter for tyre-kickers, your CRM connected to Meta, follow-up of every lead by email and WhatsApp, alerts and a script for your team, and every week the call on what to switch off and what to push, with a one-page report. <strong>System running in 14 days.</strong>',
+    'dfy.h':'Your acquisition department',
+    'dfy.k':'Full Calendar · 90 days',
+    'f1.g':'at the launch price. After the 90 days, month to month with no lock-in.',
+    'f1.gk':'Only 3 places',
+    'f1.p':'<strong>1 · The Brain of your business:</strong> the AI trained on your business, with your sales panel inside. Yours forever.<br><strong>2 · 7-day Reactivation:</strong> we message the leads who never bought to reopen the conversation.<br><strong>3 · Closing Kit:</strong> first-call script, answers to your 10 objections and a review of 5 calls.',
+    'f1.h':'Three bonuses',
+    'f1.k':'On top, you get',
+    'dos.lead':'We build it and run it. You approve from your phone and your team talks to people who are ready.',
+    'dos.h2':'Full Calendar: <em>an acquisition department that fills your calendar with people who can buy.</em>',
+    'dos.eyebrow':'The offer',
     'ag.c':'The system we work with',
     'ag.5':'Videos',
     'ag.4':'Scripts',
     'ag.3':'Emails',
     'ag.2':'Carousels',
     'ag.1':'Ads',
-    'ui.ej':'Example','ui1.t':'Brain of Your Business','ui1.s1':'Ads','ui1.s2':'Carousels','ui1.s3':'Scripts','ui1.s4':'Emails','ui1.s5':'What it knows',
-    'ui1.you':'Make me 3 ads for the January offer, for people who already messaged us but didn\u2019t buy.','ui1.ai':'Here are 3, built on what you get asked most before people buy:',
-    'ui1.a1':'“Is this for me?” We explain it in two minutes, no strings.','ui1.a2':'The January offer ends on the 31st. Here\u2019s what you get.','ui1.a3':'What Laura asked us before buying.','ui1.f':'Static · 1080×1350','ui1.f2':'Animated video · 15 s',
+    'ui.ej':'Example','ui1.t':'Brain of your business','ui1.s1':'Sales panel','ui1.s2':'Leads','ui1.s3':'Ads','ui1.s4':'Follow-up','ui1.s5':'What it knows',
+    'ui1.you':'Which ad brought the most conversations this week?','ui1.ai':'“What Laura asked us” is first. These are the three still running:',
+    'ui1.a1':'“Is this for me?” We explain it in two minutes.','ui1.a2':'What nobody tells you before you sign up.','ui1.a3':'What Laura asked us before buying.','ui1.f':'Live · bringing conversations','ui1.f2':'New this week',
     'ui2.t':'Marketing department · this week','ui2.s1':'Overview','ui2.s3':'Content','ui2.s4':'Funnel','ui2.s5':'Sales','ui2.k1':'New ads','ui2.k2':'Content pieces','ui2.k3':'Attributed sales','ui2.h':'Which ad brought each sale',
-    'ui2.r1':'“Practice from month 1”','ui2.r2':'“9 places left”','ui2.r3':'“What Laura asked”','ui2.r4':'“Flexible schedule” · switched off',
+    'ui2.r1':'“Practice from month 1”','ui2.r2':'“Last days”','ui2.r3':'“What Laura asked”','ui2.r4':'“Flexible schedule” · switched off',
     'nav.services':'Results','nav.work':'Work','nav.how':'How we work','nav.faq':'Questions','nav.contact':'Contact','nav.cta':'Chat on WhatsApp',
-    'hero.eyebrow':'Only for businesses that already sell and invest in marketing',
-    'hero.h1':'Cheaper leads in <span style="white-space:nowrap">14 days.</span> <em>Or your money back.</em>',
-    'hero.lead':'We start by building your business\u2019s marketing brain and from there we run it all: ads, content, funnels and follow-up of every lead. That\u2019s how a medical training business made 210,000 € in sales from 24,000 € invested in ads.',
-    'hero.cta1':'I want my marketing brain','hero.cta2':'See what we do','hero.reassure':'Phase 1: your marketing brain and 10 new ads in 7 days. If within 14 days none beats your best ad, another round for free or your money back.',
-    'proof.k':'Real case · Meta Ads','proof.who':'<strong>High-ticket medical training, with us running their ads.</strong> Ad spend and enrolments generated. First intake full: 30 out of 30.','proof.k2':'Miguel Sierra · YouTube','proof.v2':'+8,000 subscribers in under 4 months',
+    'hero.eyebrow':'Online training and services that already sell and invest in ads',
+    'hero.h1':'Your sales calendar full <span style="white-space:nowrap">in 90 days.</span> <em>Or we keep going for free until it is.</em>',
+    'hero.lead':'New ads every week, email and WhatsApp follow-up of every lead and Meta learning from who buys. We build it and run it. That\'s how a brand-new brand in a saturated market made 210,000 € in sales from 24,000 € in ads.',
+    'hero.cta1':'I want a full calendar','hero.cta2':'See what we do','hero.reassure':'Full Calendar or Free guarantee · System running in 14 days · Only 3 places at the launch price',
+    'proof.k':'Real case · Meta Ads','proof.who':'<strong>High-ticket health training, with us running their ads.</strong> Ad spend and sales generated. 30 out of 30 sold.','proof.k2':'Miguel Sierra · YouTube','proof.v2':'+8,000 subscribers in under 4 months',
     'wall.cap':'Accounts we work and have worked with',
     'pain.eyebrow':'Sound familiar?','pain.h2':'You don\u2019t have marketing. <em>You have expenses.</em>',
     'rec.eyebrow':'What changes in your sales','rec.h2':'What you notice <em>from week one.</em>','rec.lead':'We do it all, with our own AI system that knows your business by heart and a team that answers for the results.',
-    'mech.eyebrow':'How we work','mech.h2':'Your customers already told you why they buy. <em>We turn it into marketing that sells.</em>',
-    'g.k':'days · phase 1','g.p':'<strong>Start with phase 1: in 7 days we make you 10 new ads, with the same system and the same team as the full service.</strong> If within 14 days none brings cheaper leads than your best current ad, we make 10 more for free or refund you. If you continue, what you paid is credited, and in the full setup, if by day 30 it isn’t producing every week, we refund the setup.',
+    'mech.eyebrow':'Buying Signal Method','mech.h2':'Attract, warm up and teach. <em>From filling forms to filling your calendar.</em>',
+    'g.k':'days · system running','g.p':'<strong>Within 14 days you have ads live, the filter, the sales signal and follow-up running.</strong> If not, the first month is free.',
     'ob.p1':'Either in two weeks you have ads bringing cheaper leads and a brain that makes more whenever you need them, <em>or we make 10 more or you get your money back.</em>','ob.p2':'Think of it as hiring someone who has read your whole business, writes like you and doesn\u2019t leave when the pay stops.',
     'work.eyebrow':'The work','work.h2':'What it looks like <em>inside.</em>','work.lead':'Pieces from the accounts we run. Click any piece to see it large.',
     'mas.eyebrow':'If you want more','mas.h2':'Your marketing department, <em>in your business in 30 days.</em>','mas.lead':'With your brain already working, we build the rest and you see it all in one panel: the week\u2019s ads, the month\u2019s content, the funnel and which ad brought each sale. What you paid for the brain is credited, and the first 5 companies get a founder price.',
     'no.eyebrow':'Who it\u2019s not for','no.h2':'Better to say it <em>now.</em>',
     'faq.eyebrow':'FAQ','faq.h2':'Everything <em>you need to know.</em>',
-    'cta.eyebrow':'Start with phase 1','cta.h2':'Shall we start with <em>your marketing brain?</em>','cta.lead':'Tell us what you sell. If we’re a fit, we send you a video with what we would change in your ads and three new ads made from your website. If we’re not, we’ll tell you.','cta.btn':'I want my marketing brain','cta.fit':'Another Round guarantee: if within 14 days none beats your best ad, 10 more for free or your money back',
+    'cta.eyebrow':'Full Calendar','cta.h2':'Shall we fill <em>your calendar?</em>','cta.lead':'Tell us what you sell. If we\'re a fit, in 20 minutes we tell you the number we\'d commit to. If not, we\'ll say so.','cta.btn':'I want a full calendar','cta.fit':'Full Calendar or Free · Only 3 places at the launch price',
     'ftr.tag':'AI-driven marketing · Tenerife, Spain','ftr.legal':'Legal notice and privacy','lb.yt':'Watch the full video on YouTube'
   }
 };
@@ -834,7 +835,7 @@ function applyI18n(){
   document.getElementById('langBtn').textContent = lang==='es' ? 'EN' : 'ES';
   const wa = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(WA_TEXT[lang])}`;
   document.querySelectorAll('.wa-link').forEach(a=>a.href=wa);
-  document.title = lang==='es' ? 'Acceler MKT · Leads más baratos en 14 días' : 'Acceler MKT · Cheaper leads in 14 days';
+  document.title = lang==='es' ? 'Acceler MKT · Tu agenda llena en 90 días' : 'Acceler MKT · A full sales calendar in 90 days';
 }
 
 /* cards */
