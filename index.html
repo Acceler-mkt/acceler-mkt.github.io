@@ -149,8 +149,8 @@ h2{font-size:clamp(30px,4.2vw,52px)}
 .pain h3{font-size:clamp(22px,2vw,26px)}
 .pain p{color:var(--mute);font-size:16px}
 /* cómo funciona */
-.pipe{display:grid;gap:18px;max-width:1040px;margin:0 auto clamp(36px,4vw,52px)}
-@media(min-width:860px){.pipe{grid-template-columns:repeat(4,1fr);gap:0}}
+.pipe{display:grid;gap:18px;max-width:1120px;margin:0 auto clamp(36px,4vw,52px)}
+@media(min-width:860px){.pipe{grid-template-columns:repeat(5,1fr);gap:0}}
 .pn{position:relative;text-align:center;padding:0 10px}
 .pn .c{width:76px;height:76px;margin:0 auto 14px;border-radius:50%;background:#181613;color:var(--amber);display:grid;place-items:center;font-size:32px;position:relative;z-index:1}
 .pn.last .c{background:var(--amber);color:#181613}
@@ -158,7 +158,7 @@ h2{font-size:clamp(30px,4.2vw,52px)}
 .pn small{display:block;color:var(--mute);font-size:14px;margin-top:4px}
 @media(min-width:860px){.pn:not(:last-child)::after{content:"";position:absolute;top:37px;left:calc(50% + 40px);width:calc(100% - 80px);border-top:2px dashed rgba(24,22,19,.28)}
 .pn:not(:last-child)::before{content:"";position:absolute;top:32px;left:calc(50% + 40px);width:10px;height:10px;border-radius:50%;background:var(--coral);z-index:2;animation:flow 2.8s linear infinite}
-.pn:nth-child(2)::before{animation-delay:.9s}.pn:nth-child(3)::before{animation-delay:1.8s}}
+.pn:nth-child(2)::before{animation-delay:.7s}.pn:nth-child(3)::before{animation-delay:1.4s}.pn:nth-child(4)::before{animation-delay:2.1s}}
 @keyframes flow{0%{transform:translateX(0);opacity:0}15%{opacity:1}85%{opacity:1}100%{transform:translateX(calc(100% * 0 + 150px));opacity:0}}
 .steps{display:grid;gap:14px;max-width:1040px;margin:0 auto}
 @media(min-width:860px){.steps{grid-template-columns:repeat(3,1fr)}}
@@ -289,6 +289,7 @@ dialog.lb::backdrop{background:rgba(0,0,0,.9)}
 <symbol id="wa" viewBox="0 0 24 24"><path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.5 4.1 1.6 5.9L.2 24l6.5-1.7a11.8 11.8 0 0 0 5.4 1.4c6.5 0 11.8-5.3 11.8-11.8 0-3.2-1.2-6.1-3.4-8.4ZM12.1 21.7c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.8 1 1-3.7-.2-.4a9.7 9.7 0 0 1-1.5-5.2c0-5.4 4.4-9.8 9.9-9.8 2.6 0 5.1 1 6.9 2.9a9.7 9.7 0 0 1 2.9 6.9c0 5.4-4.4 9.9-9.8 9.9Zm5.4-7.3c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1l-.9 1.2c-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4Z"/></symbol>
 <symbol id="i-ads" viewBox="0 0 24 24"><path d="M3 10v4h3l8 4V6L6 10H3zM17 9a4 4 0 0 1 0 6"/></symbol>
 <symbol id="i-lead" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></symbol>
+<symbol id="i-nurture" viewBox="0 0 24 24"><path d="M3 4h18l-7 8v6l-4 2v-8L3 4z"/></symbol>
 <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4V5z"/></symbol>
 <symbol id="i-call" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></symbol>
 <symbol id="i-down" viewBox="0 0 24 24"><path d="M3 4v16h18M6 8l4 4 3-3 5 6"/></symbol>
@@ -369,6 +370,7 @@ dialog.lb::backdrop{background:rgba(0,0,0,.9)}
     <div class="pipe reveal">
       <div class="pn"><div class="c"><svg class="ico"><use href="#i-ads"/></svg></div><b data-i18n="f1"></b><small data-i18n="f1s"></small></div>
       <div class="pn"><div class="c"><svg class="ico"><use href="#i-lead"/></svg></div><b data-i18n="f2"></b><small data-i18n="f2s"></small></div>
+      <div class="pn"><div class="c"><svg class="ico"><use href="#i-nurture"/></svg></div><b data-i18n="f2b"></b><small data-i18n="f2bs"></small></div>
       <div class="pn"><div class="c"><svg class="ico"><use href="#i-chat"/></svg></div><b data-i18n="f3"></b><small data-i18n="f3s"></small></div>
       <div class="pn last"><div class="c"><svg class="ico"><use href="#i-call"/></svg></div><b data-i18n="f4"></b><small data-i18n="f4s"></small></div>
     </div>
@@ -463,7 +465,7 @@ const WA_TEXT={es:'Hola Alfonso, quiero saber si encajamos. Mi empresa: ',en:'Hi
 const FACES=[
  {img:'f-miguel-sierra.jpg',n:'Miguel Sierra'},{img:'f-fixcal.jpg',n:'Fixcal'},{img:'f-alex-mestres.jpg',n:'Álex Mestres'},
  {img:'f-gla.jpg',n:'GLA Patrimonio'},{img:'f-vas.jpg',n:'VAS'},{img:'f-edtuhogar.jpg',n:'ED Tu Hogar'},{img:'f-pedro-redes.jpg',n:'Pedro Redes'}];
-const MARQ=['portfolio/gla-carrusel.jpg','posters/ms-holding.jpg','portfolio/ms-carrusel.jpg','posters/gla-oro.jpg','posters/ms-3casos.jpg','posters/gla-40k.jpg','posters/fixcal-seleccionarte.jpg','posters/ms-3errores.jpg','posters/gla-herencia.jpg','posters/ms-irpf.jpg'];
+const MARQ=['portfolio/v6-acceler-agencia.jpg','portfolio/v6-ms-miniatura.jpg','portfolio/v6-gla-60k.jpg','portfolio/v6-ms-cientos.jpg','portfolio/v6-ed-anuncio.jpg','portfolio/v6-acceler-leads.jpg','portfolio/v6-ms-millones.jpg','portfolio/v6-gla-herencia.jpg','portfolio/v6-ms-errores.jpg'];
 const WORKS=[
  {id:'ms-holding',r:'h',type:{es:'YouTube',en:'YouTube'},client:'Miguel Sierra',dur:'12:55',yt:'Kn4E_a7r0iQ',title:{es:'Holding y venta de empresa',en:'Holding structures and selling your company'}},
  {id:'gla-oro',r:'v',type:{es:'Reel',en:'Reel'},client:'GLA Patrimonio',dur:'0:41',title:{es:'Si tienes oro, no hagas esto ahora',en:'If you own gold, don’t do this now'}}];
@@ -512,9 +514,9 @@ const I18N={es:{
  'pn.2h':'Publicas y las llamadas van a rachas','pn.2p':'Cuando paras, se acaban. Tu presencia depende de ti.',
  'pn.3h':'Tu equipo espera y los leads no se presentan','pn.3p':'Nadie los atiende a tiempo ni les recuerda por qué reservaron.',
  'h.h':'Cómo <span class="hl">funciona</span>','h.p':'Lo llevamos todo desde que alguien te ve hasta que reserva y se presenta. La venta la haces tú.',
- 'f1':'Anuncios y contenido','f1s':'todos los días','f2':'Interesados','f2s':'filtrados antes de llamar','f3':'Seguimiento','f3s':'por email y WhatsApp','f4':'Llamada cualificada','f4s':'en el calendario de tu equipo',
+ 'f1':'Anuncios y contenido','f1s':'todos los días','f2':'Interesados','f2s':'entran por anuncio o contenido','f2b':'Nurturing y filtro','f2bs':'lead magnets, comunidades y email','f3':'Seguimiento','f3s':'setting por WhatsApp hasta que reserva','f4':'Llamada cualificada','f4s':'en el calendario de tu equipo',
  's1h':'Aprendemos tu negocio','s1p':'Fijamos contigo, por escrito, qué es una llamada cualificada.',
- 's2h':'Te ponemos delante de tu mercado','s2p':'Cada día, en anuncios y en contenido, y atendemos a cada interesado.',
+ 's2h':'Te ponemos delante de tu mercado','s2p':'Cada día, en anuncios y en contenido. Y calentamos y filtramos a cada interesado hasta que reserva.',
  's3h':'Firmamos tu cifra y decidimos cada lunes','s3p':'Con tus datos, la cifra de 90 días. Y una decisión por escrito cada lunes.',
  'c.h':'Que tu mercado piense en ti <span class="hl">antes que en nadie</span>','c.p':'Tu mercado compra a quien ve. Para estar delante cada día sin sonar a todo el mundo hacen falta dos cosas.',
  'c.b1':'El Cerebro de tu negocio','c.b1p':'Un sistema cargado con todo lo que sabe tu negocio. Por eso suena a ti y no a todo el mundo. Lo opera nuestro equipo y nada sale sin tu visto bueno.',
@@ -549,9 +551,9 @@ const I18N={es:{
  'pn.2h':'You post and calls come in waves','pn.2p':'When you stop, they dry up. Your presence depends on you.',
  'pn.3h':'Your team waits and leads don\'t show up','pn.3p':'Nobody answers them in time or reminds them why they booked.',
  'h.h':'How it <span class="hl">works</span>','h.p':'We run everything from the moment someone sees you until they book and show up. The sale is yours.',
- 'f1':'Ads and content','f1s':'every single day','f2':'Leads','f2s':'filtered before the call','f3':'Follow-up','f3s':'by email and WhatsApp','f4':'Qualified call','f4s':'in your team\'s calendar',
+ 'f1':'Ads and content','f1s':'every single day','f2':'Leads','f2s':'come in through ads or content','f2b':'Nurturing and filtering','f2bs':'lead magnets, communities and email','f3':'Follow-up','f3s':'setting on WhatsApp until they book','f4':'Qualified call','f4s':'in your team\'s calendar',
  's1h':'We learn your business','s1p':'We agree with you, in writing, what a qualified call is.',
- 's2h':'We put you in front of your market','s2p':'Every day, in ads and content, and we follow up every lead.',
+ 's2h':'We put you in front of your market','s2p':'Every day, in ads and content. And we nurture and filter every lead until they book.',
  's3h':'We sign your number and decide every Monday','s3p':'With your data, the 90-day number. And a written decision every Monday.',
  'c.h':'So your market thinks of you <span class="hl">before anyone else</span>','c.p':'Your market buys from who it sees. To be in front of it every day without sounding like everyone else, two things are needed.',
  'c.b1':'Your business Brain','c.b1p':'A system loaded with everything your business knows. That\'s why it sounds like you and not like everyone else. Our team runs it and nothing goes live without your OK.',
