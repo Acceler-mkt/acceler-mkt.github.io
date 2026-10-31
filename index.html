@@ -4,20 +4,20 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Acceler MKT · Dos o tres llamadas cualificadas más cada semana</title>
-<meta name="description" content="Dos o tres llamadas cualificadas más cada semana para empresas de servicios y formación online. Volumen de calidad en anuncios y contenido, e inteligencia de ventas. En 14 días, con tus datos, te firmamos la cifra de los 90 días siguientes.">
+<meta name="description" content="Dos o tres llamadas cualificadas más cada semana para empresas de formación y servicios online. Anuncios y contenido nuevos cada día, cada interesado atendido hasta que reserva y una decisión por escrito cada lunes. En 14 días, con tus datos, te firmamos la cifra de los 90 siguientes.">
 <meta name="robots" content="index,follow">
 <link rel="canonical" href="https://acceler-mkt.github.io/">
 <meta property="og:url" content="https://acceler-mkt.github.io/">
 <meta property="og:site_name" content="Acceler MKT">
 <meta property="og:locale" content="es_ES">
 <meta property="og:title" content="Acceler MKT · Dos o tres llamadas cualificadas más cada semana">
-<meta property="og:description" content="Dos o tres llamadas cualificadas más cada semana para empresas de servicios y formación online. Volumen de calidad en anuncios y contenido, e inteligencia de ventas. En 14 días, con tus datos, te firmamos la cifra de los 90 días siguientes.">
+<meta property="og:description" content="Dos o tres llamadas cualificadas más cada semana para empresas de formación y servicios online. Anuncios y contenido nuevos cada día, cada interesado atendido hasta que reserva y una decisión por escrito cada lunes. En 14 días, con tus datos, te firmamos la cifra de los 90 siguientes.">
 <meta property="og:image" content="https://acceler-mkt.github.io/assets/img/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Acceler MKT · Dos o tres llamadas cualificadas más cada semana">
-<meta name="twitter:description" content="Dos o tres llamadas cualificadas más cada semana para empresas de servicios y formación online. Volumen de calidad en anuncios y contenido, e inteligencia de ventas. En 14 días, con tus datos, te firmamos la cifra de los 90 días siguientes.">
+<meta name="twitter:description" content="Dos o tres llamadas cualificadas más cada semana para empresas de formación y servicios online. Anuncios y contenido nuevos cada día, cada interesado atendido hasta que reserva y una decisión por escrito cada lunes. En 14 días, con tus datos, te firmamos la cifra de los 90 siguientes.">
 <meta name="twitter:image" content="https://acceler-mkt.github.io/assets/img/og.jpg">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#0c0b0a">
@@ -388,6 +388,69 @@ html.static .hero{min-height:880px}
 .reveal{opacity:0;transform:translateY(28px)}
 .reveal.in{opacity:1;transform:none}
 @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}}
+
+/* v5 · Messaging SOP: etiquetas en dorado (el coral solo en logo e iconos), tarjetas, visión, formulario */
+.eyebrow,.stat .k,.pain .x,.case-c .n{color:var(--gold)}
+.suena{display:grid;gap:14px;text-align:left}
+@media(min-width:900px){.suena{grid-template-columns:repeat(3,1fr)}}
+.suena .pain{padding:28px 26px;gap:14px}
+.suena .pain p{font-size:15.5px}
+.suena .want{color:var(--ink);font-size:15px;line-height:1.5;border-top:1px solid var(--line2);padding-top:14px;margin-top:auto}
+.visionq{font-size:clamp(24px,3vw,40px);letter-spacing:-.03em;font-weight:600;line-height:1.22;max-width:30ch;margin:0 auto}
+.steps{display:grid;gap:14px;text-align:left}
+@media(min-width:900px){.steps{grid-template-columns:repeat(3,1fr)}}
+.chain{max-width:64ch;margin:clamp(24px,3vw,36px) auto 0;color:var(--mute);font-size:clamp(16px,1.3vw,18px);line-height:1.6}
+.chain strong{color:var(--ink);font-weight:500}
+.apply{max-width:680px;margin:0 auto;text-align:left;border:1px solid var(--line2);background:var(--bg2);border-radius:24px;padding:clamp(22px,3vw,36px)}
+.ap-prog{display:grid;gap:10px;margin-bottom:22px;color:var(--mute);font-size:14px}
+.ap-prog .bar{height:3px;background:var(--line2);border-radius:3px;overflow:hidden}
+.ap-prog .bar i{display:block;height:100%;background:var(--gold);width:0;transition:width .35s ease}
+.apply fieldset{border:0;margin:0 0 20px;padding:0;min-width:0}
+.apply legend,.apply .fld>label{display:block;font-size:clamp(18px,1.7vw,22px);font-weight:500;letter-spacing:-.02em;line-height:1.3;margin-bottom:12px;padding:0}
+.apply .fld{margin-bottom:20px}
+.opts{display:grid;gap:10px}
+.opt{display:block;cursor:pointer}
+.opt input{position:absolute;opacity:0;pointer-events:none}
+.opt span{display:block;padding:14px 18px;border:1px solid var(--line);border-radius:14px;color:var(--ink);font-size:16px;line-height:1.4;transition:border-color .2s,background .2s}
+.opt:hover span{border-color:var(--mute)}
+.opt input:checked+span{border-color:var(--gold);background:rgba(241,183,111,.08)}
+.opt input:focus-visible+span{outline:2px solid var(--gold);outline-offset:2px}
+.apply input[type=text],.apply input[type=email]{width:100%;padding:14px 16px;border:1px solid var(--line);border-radius:14px;background:var(--bg);color:var(--ink);font:inherit;font-size:16px}
+.apply input[type=text]:focus,.apply input[type=email]:focus{outline:2px solid var(--gold);outline-offset:2px}
+.ap-nav{display:flex;gap:12px;justify-content:space-between;margin-top:8px}
+.ap-nav .btn{cursor:pointer}
+.ap-nav [hidden]{display:none}
+.ap-err{color:var(--ink);background:rgba(222,98,98,.14);border-radius:12px;padding:10px 14px;font-size:14.5px;margin:0 0 14px}
+.apply-done{max-width:680px;margin:0 auto;text-align:center;border:1px solid var(--line2);background:var(--bg2);border-radius:24px;padding:clamp(28px,4vw,48px)}
+.apply-done h3{font-size:clamp(26px,3vw,36px);letter-spacing:-.03em;margin-bottom:12px}
+.apply-done p{color:var(--mute);max-width:46ch;margin:0 auto 24px;line-height:1.55}
+.apply-done .acts{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+
+/* v5.1 · estructura tipo landing de captación (barra de prueba, panel, cerebro, comparativa, llamada) */
+.hero-q{margin-top:10px;font-size:14px;color:var(--mute);letter-spacing:0}
+.proofbar{display:flex;flex-wrap:wrap;gap:6px 22px;justify-content:center;align-items:center;margin:26px auto 0;padding:12px 20px;border:1px solid var(--line2);border-radius:999px;background:var(--bg2);font-size:14.5px;color:var(--mute);max-width:min(100%,860px);text-align:center}
+.proofbar b{color:var(--gold);font-weight:600}
+.hero-c .ui-hero{margin-top:34px}
+.ui-hero,.cer-ui{width:100%;max-width:900px;margin-left:auto;margin-right:auto;text-align:left}
+.cer-grid{display:grid;gap:14px;text-align:left;margin-bottom:clamp(28px,4vw,44px)}
+@media(min-width:900px){.cer-grid{grid-template-columns:repeat(2,1fr)}}
+.cer-grid .model .cap{margin-top:auto;padding-top:12px;border-top:1px solid var(--line2);font-size:14px;color:var(--ink)}
+.cer-note{max-width:60ch;margin:18px auto 0;color:var(--mute);font-size:16px;line-height:1.55}
+.cmpv{max-width:900px;margin:0 auto;display:grid;gap:10px;text-align:left}
+.cmpv .row{display:grid;gap:10px}
+@media(min-width:760px){.cmpv .row{grid-template-columns:1fr 1fr}}
+.cmpv .c{border:1px solid var(--line2);border-radius:16px;padding:16px 18px;font-size:16px;line-height:1.45;background:var(--bg2);color:var(--mute)}
+.cmpv .c.new{color:var(--ink);border-color:rgba(241,183,111,.45)}
+.cmpv .hd{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--mute);padding:0 4px}
+.cmpv .hd.new{color:var(--gold)}
+.cmpv .row.h{display:none}
+@media(min-width:760px){.cmpv .row.h{display:grid}}
+.cmpv .c::before{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--mute2);margin-bottom:6px}
+@media(min-width:760px){.cmpv .c::before{display:none}}
+.cmpv .c.old::before{content:attr(data-l)}
+.cmpv .c.new::before{content:attr(data-l);color:var(--gold)}
+.llamada{display:grid;gap:14px;text-align:left}
+@media(min-width:900px){.llamada{grid-template-columns:repeat(3,1fr)}}
 </style>
 <style>
 .cards4{display:grid;gap:14px}
@@ -540,15 +603,15 @@ em{font-style:normal;font-weight:inherit;color:inherit}
       <span>acceler mkt<b>.</b></span>
     </a>
     <nav class="nav">
-      <a href="#resultados" data-i18n="nav.services">Resultados</a>
-      <a href="#equipo" data-i18n="nav.team">Equipo</a>
-      <a href="#como" data-i18n="nav.how">Cómo trabajamos</a>
+      <a href="#como" data-i18n="nav.how">Cómo lo hacemos</a>
+      <a href="#cerebro" data-i18n="nav.cerebro">El Cerebro</a>
+      <a href="#resultados" data-i18n="nav.services">Prueba</a>
       <a href="#faq" data-i18n="nav.faq">Preguntas</a>
-      <a href="#contacto" data-i18n="nav.contact">Contacto</a>
+      <a href="#aplicar" data-i18n="nav.contact">Contacto</a>
     </nav>
     <div class="hdr-right">
       <button class="lang" id="langBtn" aria-label="Switch language">EN</button>
-      <a class="btn btn-pri" href="https://calendly.com/alfonsoaparicio2001/llamada-descubrimiento" target="_blank" rel="noopener"><span data-i18n="nav.cta">Solicitar diagnóstico</span></a>
+      <a class="btn btn-pri" href="#aplicar"><span data-i18n="nav.cta">Cuéntanos tu negocio</span></a>
     </div>
   </div>
 </header>
@@ -559,26 +622,87 @@ em{font-style:normal;font-weight:inherit;color:inherit}
     <h1 id="heroTitle" data-i18n-html="hero.h1"></h1>
     <p class="lead" data-i18n-html="hero.lead"></p>
     <div class="hero-cta">
-      <a class="btn btn-pri" href="https://calendly.com/alfonsoaparicio2001/llamada-descubrimiento" target="_blank" rel="noopener"><span data-i18n="hero.cta1"></span></a>
+      <a class="btn btn-pri" href="#aplicar"><span data-i18n="hero.cta1"></span></a>
       <a class="btn btn-sec wa-link" href="#" target="_blank" rel="noopener"><svg><use href="#wa"/></svg><span data-i18n="hero.cta2"></span></a>
     </div>
     <p class="hero-sub" data-i18n-html="hero.reassure"></p>
-    <div class="strip" aria-label="Trabajo real de nuestras cuentas">
-      <figure class="h"><img src="assets/posters/ms-holding.jpg" alt="Vídeo de YouTube de Miguel Sierra" loading="eager"></figure>
-      <figure><img src="assets/portfolio/gla-carrusel.jpg" alt="Carrusel de GLA Patrimonio" loading="eager"></figure>
-      <figure><img src="assets/portfolio/est-1.jpg" alt="Anuncio de DNA Formación" loading="eager"></figure>
-      <figure><img src="assets/portfolio/ms-carrusel.jpg" alt="Carrusel de Miguel Sierra" loading="eager"></figure>
+    <p class="hero-q" data-i18n="hero.q"></p>
+    <div class="proofbar reveal" aria-label="Caso real"><span data-i18n-html="proof.a"></span><span data-i18n="proof.b"></span><span data-i18n="proof.c"></span></div>
+    <div class="ui ui-hero" aria-label="Ejemplo del panel del negocio">
+      <div class="ui-top"><i></i><i></i><i></i><b data-i18n="ui2.t"></b><em data-i18n="ui.ej"></em></div>
+      <div class="ui-body">
+        <div class="ui-side"><span class="on" data-i18n="ui2.s1"></span><span data-i18n="ui2.s2"></span><span data-i18n="ui2.s3"></span><span data-i18n="ui2.s4"></span><span data-i18n="ui2.s5"></span></div>
+        <div class="ui-main">
+          <div class="ui-kpis">
+            <div class="ui-kpi"><small data-i18n="ui2.k1"></small><b>12</b></div>
+            <div class="ui-kpi"><small data-i18n="ui2.k2"></small><b>9</b></div>
+            <div class="ui-kpi"><small data-i18n="ui2.k3"></small><b>2</b></div>
+          </div>
+          <div class="ui-note" data-i18n="ui2.h"></div>
+          <div class="ui-rows">
+            <div class="ui-row"><span data-i18n="ui2.r1"></span><div class="bar"><i style="width:84%"></i></div><b>5</b></div>
+            <div class="ui-row"><span data-i18n="ui2.r2"></span><div class="bar"><i style="width:66%"></i></div><b>4</b></div>
+            <div class="ui-row"><span data-i18n="ui2.r3"></span><div class="bar"><i style="width:34%"></i></div><b>2</b></div>
+            <div class="ui-row"><span data-i18n="ui2.r4"></span><div class="bar"><i style="width:12%"></i></div><b>1</b></div>
+          </div>
+        </div>
+      </div>
     </div>
+    <p class="ui-cap" data-i18n="ui2.cap"></p>
   </div>
 </section>
 
-<section class="section center" id="resultados" style="padding-top:clamp(40px,5vw,72px)">
+<section class="section center" id="suena" style="padding-top:clamp(40px,5vw,72px)">
+  <div class="wrap">
+    <div class="sec-head"><div><span class="eyebrow" data-i18n="suena.eyebrow"></span><h2 class="reveal" data-i18n-html="suena.h2"></h2></div></div>
+    <div class="suena" id="suena"></div>
+  </div>
+</section>
+
+<section class="section center" id="cambia" style="padding-top:0">
+  <div class="wrap"><p class="visionq reveal" data-i18n-html="cambia.q"></p></div>
+</section>
+
+<section class="section center" id="como" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head"><div><span class="eyebrow" data-i18n="mech.eyebrow"></span><h2 class="reveal" data-i18n-html="mech.h2"></h2></div></div>
+    <div class="models steps" id="mech"></div>
+    <p class="chain reveal" data-i18n-html="chain.p"></p>
+  </div>
+</section>
+
+<section class="section center" id="cerebro" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head"><div><span class="eyebrow" data-i18n="cer.eyebrow"></span><h2 class="reveal" data-i18n-html="cer.h2"></h2></div><p class="lead reveal" data-i18n="cer.lead"></p></div>
+    <div class="cer-grid" id="cerGrid"></div>
+    <div class="ui cer-ui reveal" aria-label="Ejemplo del Cerebro del negocio">
+      <div class="ui-top"><i></i><i></i><i></i><b data-i18n="ui1.t"></b><em data-i18n="ui.ej"></em></div>
+      <div class="ui-body">
+        <div class="ui-side"><span class="on" data-i18n="ui1.s1"></span><span data-i18n="ui1.s2"></span><span data-i18n="ui1.s3"></span><span data-i18n="ui1.s4"></span><span data-i18n="ui1.s5"></span></div>
+        <div class="ui-main">
+          <div class="ui-msg ui-you" data-i18n="ui1.you"></div>
+          <div class="ui-msg ui-ai" data-i18n="ui1.ai"></div>
+          <div class="ui-ads">
+            <div class="ui-ad"><div class="img"></div><b data-i18n="ui1.a1"></b><small data-i18n="ui1.f"></small></div>
+            <div class="ui-ad"><div class="img"></div><b data-i18n="ui1.a2"></b><small data-i18n="ui1.f"></small></div>
+            <div class="ui-ad"><div class="img"></div><b data-i18n="ui1.a3"></b><small data-i18n="ui1.f"></small></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="ui-cap" style="text-align:center" data-i18n="ui1.cap"></p>
+    <p class="cer-note reveal" data-i18n="cer.note"></p>
+    <div class="cta-mid"><a class="btn btn-pri" href="#aplicar"><span data-i18n="res.cta"></span></a></div>
+  </div>
+</section>
+
+<section class="section center" id="resultados" style="padding-top:0">
   <div class="wrap">
     <div class="sec-head"><div><span class="eyebrow" data-i18n="res.eyebrow"></span><h2 class="reveal" data-i18n-html="res.h2"></h2></div></div>
     <div class="cases" id="cases"></div>
     <div class="sec-head" style="margin-top:clamp(48px,6vw,80px)"><div><span class="eyebrow" data-i18n="work.eyebrow"></span><h2 class="reveal" data-i18n-html="work.h2"></h2></div></div>
     <div class="pieces" id="pieces"></div>
-    <div class="cta-mid"><a class="btn btn-pri" href="https://calendly.com/alfonsoaparicio2001/llamada-descubrimiento" target="_blank" rel="noopener"><span data-i18n="res.cta"></span></a></div>
+    <div class="cta-mid"><a class="btn btn-pri" href="#aplicar"><span data-i18n="res.cta"></span></a></div>
   </div>
 </section>
 
@@ -598,7 +722,33 @@ em{font-style:normal;font-weight:inherit;color:inherit}
   </div>
 </section>
 
-<section class="section center" id="equipo">
+<section class="section center" id="diferencia" style="padding-top:clamp(40px,5vw,72px)">
+  <div class="wrap">
+    <div class="sec-head"><div><span class="eyebrow" data-i18n="cmp.eyebrow"></span><h2 class="reveal" data-i18n-html="cmp.h2"></h2></div></div>
+    <div class="cmpv reveal" id="cmpv"></div>
+  </div>
+</section>
+
+<section class="section center" id="garantia" style="padding-top:0">
+  <div class="wrap">
+    <div class="band reveal" style="margin-top:0">
+      <div class="guarantee">
+        <div class="d">14 <small data-i18n="g.k"></small></div>
+        <p data-i18n-html="g.p"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section center" id="llamada" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head"><div><span class="eyebrow" data-i18n="call.eyebrow"></span><h2 class="reveal" data-i18n-html="call.h2"></h2></div><p class="lead reveal" data-i18n="call.lead"></p></div>
+    <div class="models llamada" id="callGrid"></div>
+    <div class="cta-mid"><a class="btn btn-pri" href="#aplicar"><span data-i18n="res.cta"></span></a></div>
+  </div>
+</section>
+
+<section class="section center" id="equipo" style="padding-top:0">
   <div class="wrap">
     <div class="sec-head"><div><span class="eyebrow" data-i18n="team.eyebrow"></span><h2 class="reveal" data-i18n-html="team.h2"></h2></div></div>
     <div class="equipo">
@@ -619,38 +769,6 @@ em{font-style:normal;font-weight:inherit;color:inherit}
   </div>
 </section>
 
-<section class="section center" id="como">
-  <div class="wrap">
-    <div class="sec-head"><div><span class="eyebrow" data-i18n="mech.eyebrow"></span><h2 class="reveal" data-i18n-html="mech.h2"></h2></div></div>
-    <div class="models" id="mech"></div>
-    <div class="band reveal">
-      <div class="guarantee">
-        <div class="d">14 <small data-i18n="g.k"></small></div>
-        <p data-i18n-html="g.p"></p>
-      </div>
-    </div>
-    <div class="sec-head" style="margin-top:clamp(56px,7vw,96px)">
-      <div><span class="eyebrow" data-i18n="dos.eyebrow"></span><h2 class="reveal" data-i18n-html="dos.h2"></h2></div>
-      <p class="lead reveal" data-i18n="dos.lead"></p>
-    </div>
-    <div class="dos">
-      <div class="model hl reveal">
-        <div class="k" data-i18n="dfy.k"></div>
-        <h3 data-i18n="dfy.h"></h3>
-        <p data-i18n-html="dfy.p"></p>
-        <div class="for"><span data-i18n="dfy.gk"></span><b data-i18n="dfy.g"></b></div>
-      </div>
-      <div class="model reveal">
-        <div class="k" data-i18n="f1.k"></div>
-        <h3 data-i18n="f1.h"></h3>
-        <ol class="pasos-of" data-i18n-html="f1.p"></ol>
-        <div class="for"><span data-i18n="f1.gk"></span><b data-i18n="f1.g"></b></div>
-      </div>
-    </div>
-    <p class="lead reveal dos-nota" data-i18n-html="dos.nota"></p>
-  </div>
-</section>
-
 <section class="section center" id="no" style="padding-top:0">
   <div class="wrap">
     <div class="sec-head"><div><span class="eyebrow" data-i18n="no.eyebrow"></span><h2 class="reveal" data-i18n-html="no.h2"></h2></div></div>
@@ -665,11 +783,26 @@ em{font-style:normal;font-weight:inherit;color:inherit}
   </div>
 </section>
 
-<section class="section center cierre" id="contacto" style="padding-top:0">
+<section class="section center" id="aplicar" style="padding-top:0">
   <div class="wrap">
-    <p class="cierre-t" data-i18n-html="cta.h2"></p>
-    <div class="cta-mid" style="margin-top:20px;gap:12px;flex-wrap:wrap"><a class="btn btn-pri" href="https://calendly.com/alfonsoaparicio2001/llamada-descubrimiento" target="_blank" rel="noopener"><span data-i18n="cta.btn"></span></a><a class="btn btn-sec wa-link" href="#" target="_blank" rel="noopener"><svg><use href="#wa"/></svg><span data-i18n="hero.cta2"></span></a></div>
-    <p class="reassure" data-i18n="cta.fit"></p>
+    <div class="sec-head"><div><span class="eyebrow" data-i18n="ap.eyebrow"></span><h2 class="reveal" data-i18n-html="ap.h2"></h2></div><p class="lead" data-i18n="ap.lead"></p></div>
+    <form class="apply" id="applyForm" novalidate>
+      <div class="ap-prog"><span id="apStep"></span><div class="bar"><i id="apBar"></i></div></div>
+      <div id="apErr"></div>
+      <div id="apBody"></div>
+      <div class="ap-nav">
+        <button type="button" class="btn btn-sec" id="apBack"></button>
+        <button type="button" class="btn btn-pri" id="apNext"></button>
+      </div>
+    </form>
+    <div class="apply-done" id="apDone" hidden>
+      <h3 data-i18n="ap.doneH"></h3>
+      <p data-i18n="ap.doneP"></p>
+      <div class="acts">
+        <a class="btn btn-pri" id="apCal" href="https://calendly.com/alfonsoaparicio2001/llamada-descubrimiento" target="_blank" rel="noopener"><span data-i18n="ap.cal"></span></a>
+        <a class="btn btn-sec" id="apWa" href="#" target="_blank" rel="noopener"><svg><use href="#wa"/></svg><span data-i18n="ap.wa"></span></a>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -722,26 +855,84 @@ const FACES = [
 ];
 
 const CASES = [
-  {hl:true, h:{es:'Formación de ticket alto en salud · marca nueva',en:'High-ticket health training · brand-new brand'}, big:{es:'210.000 € facturados',en:'210,000 € in sales'}, p:{es:'Con 24.000 € invertidos en anuncios, empezando de cero en un mercado hipersaturado. Vendieron 30 de 30. Llevamos sus anuncios, su embudo y el seguimiento de cada lead.',en:'From 24,000 € invested in ads, starting from zero in a saturated market. They sold 30 out of 30. We ran their ads, funnel and the follow-up of every lead.'}},
-  {h:{es:'Miguel Sierra · empresario y divulgador',en:'Miguel Sierra · entrepreneur and educator'}, big:{es:'+8.000 suscriptores',en:'+8,000 subscribers'}, p:{es:'En YouTube en menos de 4 meses, y decenas de millones de visualizaciones entre vídeos y reels. Producimos y editamos su contenido.',en:'On YouTube in under 4 months, and tens of millions of views across videos and reels. We produce and edit his content.'}},
-  {h:{es:'Álex Mestres · GLA Patrimonio',en:'Álex Mestres · GLA Patrimonio'}, big:{es:'Cada semana',en:'Every week'}, p:{es:'Carruseles y reels con un formato propio que ya reconocen sus seguidores. Los hacemos nosotros, de la idea a la publicación.',en:'Carousels and reels in a format his followers already recognise. We make them, from idea to publishing.'}}
+  {hl:true, h:{es:'Formación de ticket alto en salud · marca nueva',en:'High-ticket health training · brand-new brand'}, big:{es:'210.000 € facturados',en:'210,000 € in sales'}, p:{es:'Con 24.000 € invertidos en anuncios, con una marca nueva en un mercado hipersaturado. Vendieron 30 de 30. Llevamos sus anuncios, su embudo y el seguimiento de cada lead.',en:'With 24,000 € invested in ads, a brand-new brand in a saturated market. They sold 30 out of 30. We ran their ads, funnel and the follow-up of every lead.'}},
+  {h:{es:'Miguel Sierra · empresario y divulgador',en:'Miguel Sierra · entrepreneur and educator'}, big:{es:'+8.000 suscriptores',en:'+8,000 subscribers'}, p:{es:'En YouTube en menos de 4 meses, y decenas de millones de visualizaciones entre vídeos y reels. Producimos y editamos su contenido.',en:'On YouTube in under 4 months, and tens of millions of views across videos and reels. We produce and edit his content.'}}
 ];
 
 const MECH = [
-  {k:{es:'Volumen de calidad',en:'Quality at volume'}, h:{es:'Delante de tu cliente, cada semana',en:'In front of your customer, every week'}, p:{es:'Anuncios y contenido nuevos cada semana, con nivel de marca y con tu voz, para que tu mercado te vea en todas partes. Grabas tú con nuestra guía o mandamos a nuestro filmmaker. Nada se publica sin tu visto bueno.',en:'New ads and content every week, brand-level and in your voice, so your market sees you everywhere. You film with our guide or we send our filmmaker. Nothing goes live without your OK.'}},
-  {k:{es:'Cada interesado, atendido',en:'Every lead, handled'}, h:{es:'Nadie se enfría esperando',en:'Nobody goes cold waiting'}, p:{es:'Un filtro antes del contacto y un seguimiento por email y WhatsApp desde el primer minuto, escrito por nosotros, hasta que reserva. Tu comercial recibe el aviso al instante y un guion para la primera llamada.',en:'A filter before contact and email and WhatsApp follow-up from the first minute, written by us, until they book. Your sales rep is alerted instantly and gets a script for the first call.'}},
-  {k:{es:'Inteligencia de ventas',en:'Sales intelligence'}, h:{es:'Cada euro, donde está la venta',en:'Every euro where the sales are'}, p:{es:'Conectamos tu CRM con Meta (o te montamos uno) para que aprenda de quién te compra, no de quién rellena formularios. Y cada lunes decidimos por escrito qué se apaga, qué se escala y qué se produce.',en:'We connect your CRM to Meta (or set one up) so it learns from who buys, not from form-fillers. And every Monday we decide in writing what to switch off, what to scale and what to produce.'}}
+  {k:{es:'Paso 1',en:'Step 1'}, h:{es:'Aprendemos tu negocio',en:'We learn your business'}, p:{es:'Entramos en tu negocio a fondo y fijamos contigo, por escrito, qué es una llamada cualificada.',en:'We get deep into your business and agree with you, in writing, what a qualified call is.'}},
+  {k:{es:'Paso 2',en:'Step 2'}, h:{es:'Ponemos tu marca delante de tu mercado',en:'We put your brand in front of your market'}, p:{es:'Cada día, en anuncios y en contenido, y atendemos a cada interesado hasta que reserva y se presenta.',en:'Every day, in ads and content, and we follow up every lead until they book and show up.'}},
+  {k:{es:'Paso 3',en:'Step 3'}, h:{es:'Firmamos tu cifra y decidimos cada lunes',en:'We sign your number and decide every Monday'}, p:{es:'Con tus datos, te firmamos la cifra de 90 días. Y cada lunes decidimos por escrito qué se escala, qué se apaga y qué se produce.',en:'With your data, we sign your 90-day number. And every Monday we decide in writing what to scale, what to switch off and what to produce.'}}
+];
+
+const CAPACITY_TXT = {es:'', en:''}; /* PENDIENTE: capacidad de producción semanal que sostiene el equipo, p. ej. «X piezas a la semana». Vacío = no se muestra cifra. */
+const CEREBRO = [
+  {k:{es:'Volumen de calidad',en:'Quality at volume'}, h:{es:'Delante de tu mercado, cada día',en:'In front of your market, every day'}, p:{es:'Producimos y publicamos todos los días, sin un solo día en blanco: anuncios y contenido, con tu voz y tu nivel de marca. Un anuncio se gasta en semanas: con volumen siempre hay uno fresco y los datos dicen cuál escalar. El ritmo se pacta por escrito contigo.',en:'We produce and publish every day, not a single day left blank: ads and content, in your voice and at your brand level. An ad wears out in weeks: with volume there is always a fresh one and the data says which to scale. The pace is agreed with you in writing.'}, cap:CAPACITY_TXT},
+  {k:{es:'El Cerebro de tu negocio',en:'Your business Brain'}, h:{es:'Un sistema que se sabe tu negocio de memoria',en:'A system that knows your business by heart'}, p:{es:'Cargamos tu oferta, tu voz, tus casos, tus objeciones y las preguntas reales de tus clientes y de tus llamadas. Por eso las piezas suenan a ti y no a todo el mundo, y por eso podemos producir a este ritmo sin que baje la calidad. Las hace y las revisa nuestro equipo, y nada sale sin tu visto bueno.',en:'We load your offer, your voice, your cases, your objections and the real questions from your customers and your calls. That is why the pieces sound like you and not like everyone else, and why we can produce at this pace without quality dropping. Our team makes and reviews them, and nothing goes live without your OK.'}}
+];
+const CMP = [
+  {o:{es:'Anuncios que se gastan en semanas',en:'Ads that wear out in weeks'}, n:{es:'Anuncios y contenido nuevos cada día',en:'New ads and content every day'}},
+  {o:{es:'Una campaña que aprende de quien rellena un formulario',en:'A campaign that learns from who fills in a form'}, n:{es:'Una campaña que aprende de quien compra',en:'A campaign that learns from who buys'}},
+  {o:{es:'Una agencia por un lado, tu equipo por otro, y nadie al mando entre el clic y la llamada',en:'An agency on one side, your team on the other, and nobody in charge between the click and the call'}, n:{es:'Una sola cadena desde que te ven hasta que reservan y se presentan',en:'One single chain from the moment they see you until they book and show up'}},
+  {o:{es:'Informes de alcance',en:'Reach reports'}, n:{es:'Una decisión por escrito cada lunes',en:'A written decision every Monday'}},
+  {o:{es:'Contenido genérico que suena a todo el mundo',en:'Generic content that sounds like everyone'}, n:{es:'Piezas con tu voz, tus casos y tu visto bueno',en:'Pieces with your voice, your cases and your OK'}},
+  {o:{es:'Una promesa de palabra',en:'A promise on trust'}, n:{es:'Una cifra firmada con tus datos',en:'A number signed with your data'}}
+];
+const CALL = [
+  {k:{es:'01',en:'01'}, h:{es:'Miramos tu captación por dentro',en:'We look at your lead generation from the inside'}, p:{es:'De dónde salen tus llamadas hoy, cuántas son cualificadas de verdad y cuánto cuesta cada una.',en:'Where your calls come from today, how many are truly qualified and what each one costs.'}},
+  {k:{es:'02',en:'02'}, h:{es:'Te enseñamos el sistema',en:'We show you the system'}, p:{es:'El panel, el Cerebro de tu negocio y cómo sería tu semana con nosotros.',en:'The dashboard, your business Brain and what your week would look like with us.'}},
+  {k:{es:'03',en:'03'}, h:{es:'Vemos si encajamos',en:'We see if we fit'}, p:{es:'Si encajamos, te proponemos cómo empezaríamos. Si no, te lo decimos en la propia llamada.',en:'If we fit, we propose how we would start. If not, we tell you on the call itself.'}}
 ];
 
 const FAQ = [
-  {q:{es:'¿Para quién es?',en:'Who is it for?'}, a:{es:'Para empresas de servicios y formación online que venden por llamada o por asesor, ya venden y ya invierten en anuncios (desde 1.500 € al mes), y quieren ser las primeras en la cabeza de su mercado. No es para quien todavía no ha vendido su producto, para quien busca lo más barato ni para quien no tiene a nadie que coja las llamadas. No trabajamos con dos competidores del mismo sector a la vez.',en:'For online service and training companies that sell by call or advisor, already sell and already invest in ads (from 1,500 € a month), and want to be first in their market\'s mind. Not for those who haven\'t sold their product yet, who are looking for the cheapest option, or who have nobody to take the calls. We don\'t work with two competitors in the same niche at once.'}},
-  {q:{es:'¿Cómo funciona la garantía?',en:'How does the guarantee work?'}, a:{es:'<strong>Cifra Firmada:</strong> no te prometemos un número de llamadas sin ver tus datos. En 14 días, con tu cuenta delante (coste por lead, cualificación y reservas), te firmamos la cifra de llamadas cualificadas de los 90 días siguientes. Si no llegamos, el mes siguiente no lo pagas. Y si en 14 días tu sistema no está funcionando, te devolvemos la fase de arranque. Las ventas no las prometemos: las cierra tu equipo, con tu oferta y tu precio.',en:'<strong>Signed Number:</strong> we don\'t promise a number of calls without seeing your data. Within 14 days, with your account in front of us (cost per lead, qualification and bookings), we sign the number of qualified calls for the next 90 days. If we miss it, you don\'t pay the following month. And if your system isn\'t running within 14 days, we refund the setup phase. We don\'t promise sales: your team closes them, with your offer and price.'}},
-  {q:{es:'¿Qué es una llamada cualificada?',en:'What is a qualified call?'}, a:{es:'Un lead que encaja en el perfil que definimos contigo, responde y reserva una llamada con tu equipo. No contamos formularios.',en:'A lead who fits the profile we define with you, replies and books a call with your team. We don\'t count form fills.'}},
-  {q:{es:'¿Tengo que grabar?',en:'Do I have to film?'}, a:{es:'Lo que necesitamos de ti es material. Grabas tú con nuestra guía, o mandamos a nuestro filmmaker a tu empresa (aparte). Nada se publica sin tu visto bueno.',en:'What we need from you is material. You film with our guide, or we send our filmmaker to your business (extra). Nothing goes live without your OK.'}},
-  {q:{es:'¿Usáis inteligencia artificial?',en:'Do you use AI?'}, a:{es:'Sí, como herramienta: nos deja producir y analizar a una velocidad que antes no era posible. Pero las piezas las hace y las revisa el equipo, y las decisiones las tomamos nosotros cada semana mirando tus números.',en:'Yes, as a tool: it lets us produce and analyse at a speed that wasn\'t possible before. But the team makes and reviews every piece, and we make the decisions every week looking at your numbers.'}},
-  {q:{es:'¿Qué pasa con mis cuentas si un día lo dejamos?',en:'What happens to my accounts if we stop?'}, a:{es:'Todo está a tu nombre desde el primer día: cuentas, píxel, CRM, el seguimiento y todas las piezas. Después de los 90 días, mes a mes y sin permanencia.',en:'Everything is in your name from day one: accounts, pixel, CRM, the follow-up and every piece. After the 90 days, month to month with no lock-in.'}},
-  {q:{es:'¿Cuánto cuesta?',en:'How much does it cost?'}, a:{es:'Una fase de arranque de 14 días y una cuota mensual. Los anuncios se los pagas tú directamente a Meta. Te damos los números exactos en el diagnóstico, cuando sepamos si encajamos.',en:'A 14-day setup phase and a monthly fee. You pay Meta for the ads directly. We give you exact figures in the diagnosis, once we know if we\'re a fit.'}},
-  {q:{es:'Ya me engañó otra agencia. ¿Por qué vosotros?',en:'Another agency already burned me. Why you?'}, a:{es:'No te pedimos que te lo creas: te firmamos una cifra con tus datos y, si no llegamos, ese mes no lo pagas. Cada lunes sabes qué trae llamadas y cuánto cuesta cada una. Y tus cuentas son siempre tuyas.',en:'We don\'t ask you to take our word for it: we sign a number based on your data and, if we miss it, you don\'t pay that month. Every Monday you know what brings calls and what each one costs. And your accounts are always yours.'}}
+  {q:{es:'Ya me quemó una agencia. ¿Qué cambia?',en:'An agency already burned me. What changes?'}, a:{es:'Antes de prometer nada vemos tus datos. A los 14 días firmamos una cifra de llamadas cualificadas, con una definición escrita de qué cuenta. Si no llegamos, el mes siguiente no lo pagas.',en:'Before promising anything we look at your data. Within 14 days we sign a number of qualified calls, with a written definition of what counts. If we miss it, you don\'t pay the following month.'}},
+  {q:{es:'Los leads que me llegaron eran basura.',en:'The leads I got were junk.'}, a:{es:'Por eso la cifra no es de formularios. Una llamada cualificada es un lead que encaja en el perfil que definimos contigo, responde y reserva una llamada con tu equipo.',en:'That\'s why the number isn\'t about form fills. A qualified call is a lead that fits the profile we define with you, replies and books a call with your team.'}},
+  {q:{es:'¿Quién decide qué es una llamada cualificada?',en:'Who decides what a qualified call is?'}, a:{es:'Se define contigo por escrito el primer día y se cuenta en tu propio CRM, que puedes ver cuando quieras.',en:'It is defined with you in writing on day one and counted in your own CRM, which you can check whenever you want.'}},
+  {q:{es:'¿Qué me queda si dejamos de trabajar juntos?',en:'What do I keep if we stop working together?'}, a:{es:'Tus cuentas, tu píxel, tu CRM y el seguimiento están a tu nombre desde el primer día. Y no hay permanencia pasados los 90 días.',en:'Your accounts, pixel, CRM and follow-up are in your name from day one. And there is no lock-in after the 90 days.'}},
+  {q:{es:'¿Qué es el Cerebro del negocio?',en:'What is the business Brain?'}, a:{es:'Nuestro sistema, cargado con todo lo que sabe tu negocio: tu oferta, tu voz, tus casos, tus objeciones y las preguntas reales de tus clientes. Es lo que nos permite producir a ritmo con tu voz. Lo opera nuestro equipo y nada sale sin tu visto bueno.',en:'Our system, loaded with everything your business knows: your offer, your voice, your cases, your objections and the real questions from your customers. It is what lets us produce at pace in your voice. Our team runs it and nothing goes live without your OK.'}},
+  {q:{es:'¿Cuánto contenido y cuántos anuncios haréis?',en:'How much content and how many ads will you make?'}, a:{es:'Producimos y publicamos todos los días, sin un solo día en blanco, anuncios y contenido. El ritmo exacto y el reparto de formatos se pactan contigo por escrito en el arranque.',en:'We produce and publish every day, not a single day without posts, ads and content. The exact pace and format mix are agreed with you in writing at the start.'}},
+  {q:{es:'¿Quién lleva de verdad mi cuenta?',en:'Who actually runs my account?'}, a:{es:'Los dos socios. Uno decide cada semana qué se produce, qué se escala y qué se apaga; el otro mantiene los sistemas.',en:'The two partners. One decides every week what is produced, scaled and switched off; the other maintains the systems.'}},
+  {q:{es:'¿Y si lo hago yo desde el administrador de anuncios?',en:'What if I do it myself in the ads manager?'}, a:{es:'Puedes. Lo que no tendrás es la cadena entera, la renovación cada día y una decisión por escrito cada lunes.',en:'You can. What you won\'t have is the whole chain, the daily renewal and a written decision every Monday.'}}
+];
+
+const SUENA = [
+  {h:{es:'Inviertes cada mes y no sabes qué funciona.',en:'You invest every month and don\'t know what works.'}, p:{es:'Probaste con un trafficker y con una agencia, y los informes hablan de alcance mientras tu calendario sigue medio vacío. Tus anuncios se gastan en semanas, tu campaña aprende de quien rellena y no de quien compra, y entre el clic y la llamada no manda nadie. Mientras, otros con peor producto ocupan el sitio que debería ser tuyo.',en:'You tried a freelancer and then an agency, and the reports talk about reach while your calendar stays half empty. Your ads wear out in weeks, your campaign learns from who fills in a form and not from who buys, and between the click and the call nobody is in charge. Meanwhile, others with a worse product take the spot that should be yours.'}, w:{es:'Lo que quieres: dos o tres llamadas cualificadas más cada semana y saber qué las trae.',en:'What you want: two or three more qualified calls every week and to know what brings them.'}},
+  {h:{es:'Cuando publicas, entran llamadas; cuando paras, se acaban.',en:'When you post, calls come in; when you stop, they dry up.'}, p:{es:'Crees que es el algoritmo, o que no tienes tiempo, o que los anuncios son para otros porque llegaban fríos. Lo que pasa es que tu presencia depende de ti, lo que publicas no engancha con ninguna captación y los anuncios iban sin tu marca detrás. Tu producto es mejor que el de muchos que venden más, y te ven menos.',en:'You think it\'s the algorithm, or that you have no time, or that ads are for other people because they came in cold. What\'s happening is that your presence depends on you, what you post connects to no lead capture and your ads ran without your brand behind them. Your product is better than many that sell more, and you get seen less.'}, w:{es:'Lo que quieres: un calendario estable y ser la referencia de tu sector sin ser el único motor.',en:'What you want: a steady calendar and to be your sector\'s reference without being the only engine.'}},
+  {h:{es:'Tu equipo espera llamadas y los leads no se presentan.',en:'Your team waits for calls and leads don\'t show up.'}, p:{es:'Marketing dice que son buenos, ventas dice que no, y nadie ha escrito qué es una llamada cualificada. El lead que rellenó ayer hoy no se acuerda, nadie lo atiende a tiempo y, cuando reserva, nadie le recuerda por qué. Pagas un equipo con el calendario medio vacío.',en:'Marketing says they\'re good, sales says they\'re not, and nobody has written down what a qualified call is. The lead who filled in the form yesterday doesn\'t remember today, nobody answers in time and, once they book, nobody reminds them why. You pay a team with a half-empty calendar.'}, w:{es:'Lo que quieres: que tu equipo venda sin perseguir a nadie.',en:'What you want: for your team to sell without chasing anyone.'}}
+];
+
+/* Formulario: 7 preguntas (Master Messaging SOP: primera pregunta fácil y que clasifica, contacto al final, precio directo,
+   sin preguntas de novato, de compromiso ni de pato). */
+const FORM_ENDPOINT = ''; /* PENDIENTE: URL de recogida (Formspree, GHL, Tally…). Sin ella, las respuestas se envían por WhatsApp. */
+const CAL_URL = 'https://calendly.com/alfonsoaparicio2001/llamada-descubrimiento';
+const PRICE_TXT = {es:'', en:''}; /* PENDIENTE: precio medio mensual, p. ej. «X € al mes». Vacío = frase sin cifra. */
+const PRICE_Q = {
+  es: (PRICE_TXT.es ? 'Nuestro servicio cuesta de media '+PRICE_TXT.es+', más la inversión en anuncios (mínimo 1.500 € al mes). ¿Puedes asumirlo?' : 'Nuestro servicio es una cuota mensual más la inversión en anuncios (mínimo 1.500 € al mes). El precio exacto lo vemos en la llamada. ¿Puedes asumir ese nivel de inversión?'),
+  en: (PRICE_TXT.en ? 'Our service costs on average '+PRICE_TXT.en+', plus ad spend (minimum 1,500 € a month). Can you take that on?' : 'Our service is a monthly fee plus ad spend (minimum 1,500 € a month). We go through the exact price on the call. Can you take on that level of investment?')
+};
+const APPLY = [
+  [{n:'bloqueo',k:'radio',q:{es:'Para empezar: ¿qué te frena más hoy para tener más llamadas cualificadas?',en:'To start: what holds you back most today from getting more qualified calls?'},o:[
+    {v:'a',es:'Invierto en anuncios y no sé qué funciona',en:'I invest in ads and don\'t know what works'},
+    {v:'b',es:'Mi presencia va a rachas y depende de mí',en:'My presence comes in waves and depends on me'},
+    {v:'c',es:'Mi equipo espera llamadas y los leads no se presentan',en:'My team waits for calls and leads don\'t show up'},
+    {v:'d',es:'Otra cosa',en:'Something else'}],other:true}],
+  [{n:'vende',k:'text',q:{es:'¿Qué vendes?',en:'What do you sell?'}},
+   {n:'ticket',k:'radio',q:{es:'¿A qué precio medio?',en:'At what average price?'},o:[
+    {v:'<1000',es:'Menos de 1.000 €',en:'Under 1,000 €'},{v:'1000-2500',es:'De 1.000 a 2.500 €',en:'1,000 to 2,500 €'},{v:'2500-7000',es:'De 2.500 a 7.000 €',en:'2,500 to 7,000 €'},{v:'>7000',es:'Más de 7.000 €',en:'Over 7,000 €'}]}],
+  [{n:'quien',k:'radio',q:{es:'¿Cómo vendes hoy?',en:'How do you sell today?'},o:[
+    {v:'yo',es:'Yo mismo',en:'Myself'},{v:'equipo',es:'Mi equipo',en:'My team'},{v:'mixto',es:'Mixto',en:'Mixed'}]},
+   {n:'llamadas',k:'radio',q:{es:'¿Cuántas llamadas reservadas tienes a la semana?',en:'How many booked calls do you have per week?'},o:[
+    {v:'0-5',es:'De 0 a 5',en:'0 to 5'},{v:'5-15',es:'De 5 a 15',en:'5 to 15'},{v:'>15',es:'Más de 15',en:'More than 15'}]}],
+  [{n:'anuncios',k:'radio',q:{es:'¿Cuánto inviertes hoy al mes en anuncios?',en:'How much do you invest in ads each month today?'},o:[
+    {v:'0',es:'Nada',en:'Nothing'},{v:'<1500',es:'Menos de 1.500 €',en:'Under 1,500 €'},{v:'1500-5000',es:'De 1.500 a 5.000 €',en:'1,500 to 5,000 €'},{v:'>5000',es:'Más de 5.000 €',en:'Over 5,000 €'}]}],
+  [{n:'precio',k:'radio',q:PRICE_Q,o:[
+    {v:'si',es:'Sí',en:'Yes'},{v:'financiacion',es:'Sí, con financiación',en:'Yes, with financing'},{v:'no',es:'No, es demasiado',en:'No, it\'s too much'}]}],
+  [{n:'decide',k:'radio',q:{es:'¿Quién toma la decisión?',en:'Who makes the decision?'},o:[
+    {v:'yo',es:'Yo',en:'Me'},{v:'socio',es:'Yo con mi socio',en:'Me with my partner'},{v:'otra',es:'Otra persona',en:'Someone else'}]}],
+  [{n:'nombre',k:'text',req:true,q:{es:'¿Cómo te llamas?',en:'What\'s your name?'}},
+   {n:'email',k:'email',req:true,q:{es:'Email',en:'Email'}},
+   {n:'whatsapp',k:'text',q:{es:'WhatsApp (opcional)',en:'WhatsApp (optional)'}},
+   {n:'web',k:'text',q:{es:'Web o Instagram (opcional)',en:'Website or Instagram (optional)'}}]
 ];
 
 const WORKS = [
@@ -761,120 +952,110 @@ const PIECES = [
 
 const I18N = {
   es:{
-    'ui.cap':'El Cerebro de tu negocio, con tu panel de ventas dentro (ejemplo)',
-    'work.reel':'Showreel · 25 s',
-    'res.cta':'Solicitar diagnóstico',
-    'res.h2':'Lo que pasa cuando llevamos el marketing.',
-    'res.eyebrow':'Resultados',
-    'dos.nota':'Nada se publica sin tu visto bueno, y tus cuentas y tu material están siempre a tu nombre.',
-    'dfy.g':'En 14 días, con tus datos, te firmamos la cifra de los 90 días siguientes. Si no llegamos, el mes siguiente no lo pagas. Y si en 14 días no está funcionando, te devolvemos la fase de arranque.',
-    'dfy.gk':'Garantía Cifra Firmada',
-    'dfy.p':'Anuncios y contenido nuevos cada semana, filtro de curiosos, tu CRM conectado con Meta, seguimiento de cada lead por email y WhatsApp, aviso y guion para tu equipo, Kit de Cierre (guion, objeciones y revisión de llamadas) y cada lunes una decisión por escrito. <strong>Funcionando en 14 días.</strong>',
-    'dfy.h':'Todo, operado por nosotros',
-    'dfy.k':'Qué incluye',
-    'f1.g':'Mes a mes y sin permanencia. Todo está a tu nombre.',
-    'f1.gk':'Después de 90 días',
-    'f1.p':'<li><b>Diagnóstico (20 min):</b> miramos tus números y te decimos si encajamos.</li><li><b>Arranque (14 días):</b> todo tu sistema funcionando.</li><li><b>Día 14:</b> te firmamos la cifra de los 90 días siguientes.</li><li><b>Cada semana:</b> volumen de calidad y una decisión por escrito cada lunes.</li>',
-    'f1.h':'Cuatro pasos',
-    'f1.k':'Cómo empezamos',
-    'dos.lead':'Lo montamos y lo operamos nosotros. Tú apruebas y tu equipo habla con quien está listo para comprar.',
-    'dos.h2':'Tu departamento de marketing, fuera de tu empresa.',
-    'dos.eyebrow':'La oferta',
-    'ag.c':'El sistema con el que trabajamos',
-    'ag.5':'Vídeos',
-    'ag.4':'Guiones',
-    'ag.3':'Emails',
-    'ag.2':'Carruseles',
-    'ag.1':'Anuncios',
-    
-    'ui2.t':'Departamento de marketing · esta semana','ui2.s1':'Resumen','ui2.s3':'Contenido','ui2.s4':'Embudo','ui2.s5':'Ventas','ui2.k1':'Anuncios nuevos','ui2.k2':'Piezas de contenido','ui2.k3':'Ventas atribuidas','ui2.h':'Qué anuncio trajo cada venta',
-    'ui2.r1':'«Prácticas desde el mes 1»','ui2.r2':'«Últimos días»','ui2.r3':'«Lo que preguntó Laura»','ui2.r4':'«Horario compatible» · se apaga',
-    'nav.services':'Resultados','nav.work':'Trabajo','nav.how':'Cómo trabajamos','nav.faq':'Preguntas','nav.contact':'Contacto','nav.cta':'Solicitar diagnóstico',
-    'hero.eyebrow':'Para empresas de servicios y formación online',
+    'nav.how':'Cómo lo hacemos','nav.services':'Prueba','nav.team':'Equipo','nav.faq':'Preguntas','nav.contact':'Contacto','nav.cta':'Cuéntanos tu negocio',
+    'hero.eyebrow':'Para empresas de formación y servicios online que ya venden y ya invierten',
     'hero.h1':'Dos o tres llamadas cualificadas más cada semana.',
-    'hero.lead':'Volumen de calidad en anuncios y contenido, cada semana, e inteligencia de ventas que pone cada euro donde está la venta. Para ser la primera empresa en la que piensa tu mercado, sin montar un departamento de marketing propio.',
-    'hero.cta1':'Solicitar diagnóstico','hero.cta2':'Escribir por WhatsApp','hero.reassure':'<b>En 14 días, con tus datos, te firmamos la cifra de los 90 días siguientes.</b> Si no llegamos, el mes siguiente no lo pagas.',
-    'no.l1':'Todavía no has vendido tu producto o servicio.','no.l2':'Buscas lo más barato.','no.l3':'No puedes invertir al menos 1.500 € al mes en anuncios.','no.l4':'No tienes a nadie que coja las llamadas.','no.l5':'Quieres resultados en una semana.',
-    'proof.k':'Caso real · Meta Ads','proof.who':'<strong>Formación de ticket alto en salud, operando nosotros sus anuncios.</strong> Inversión en anuncios y ventas generadas. 30 de 30 vendidas.','proof.k2':'Miguel Sierra · YouTube','proof.v2':'+8.000 suscriptores en menos de 4 meses',
-    'wall.cap':'Han confiado en nosotros',
-    'pain.eyebrow':'¿Te suena?','pain.h2':'No tienes marketing. <em>Tienes gastos.</em>',
-    'rec.eyebrow':'Qué cambia en tus ventas','rec.h2':'Lo que notas <em>desde la primera semana.</em>','rec.lead':'Lo hacemos todo nosotros, con un sistema propio de IA que se sabe tu negocio de memoria y un equipo que responde de los resultados.',
-    'mech.eyebrow':'Cómo trabajamos','mech.h2':'Volumen de calidad e inteligencia de ventas.',
-    'g.k':'días · Garantía Cifra Firmada','g.p':'<strong>No te prometemos un número sin ver tus datos.</strong> En 14 días, con tu cuenta delante, te firmamos la cifra de llamadas cualificadas de los 90 días siguientes. Si no llegamos, el mes siguiente no lo pagas.',
-    'ob.p1':'O bien en dos semanas tienes anuncios que traen contactos más baratos y un cerebro que te hace más cuando los necesitas, <em>o bien te hacemos otros 10 o recuperas lo que pagaste.</em>','ob.p2':'Piensa en esto como contratar a alguien que se ha leído todo tu negocio, escribe como tú y no se va cuando deja de cobrar.',
-    'work.eyebrow':'El trabajo','work.h2':'Así se ve por dentro.','work.lead':'Piezas de las cuentas que llevamos. Haz clic en cada una para verla en grande.',
+    'hero.lead':'Inviertes, publicas y tu equipo espera llamadas. Pero el calendario va a rachas y no sabes qué trae cada una.',
+    'hero.cta1':'Cuéntanos tu negocio','hero.cta2':'Escribir por WhatsApp',
+    'hero.reassure':'<b>En 14 días, con tus datos, te firmamos la cifra de los 90 siguientes.</b> Si no llegamos, el mes siguiente no lo pagas.',
+    'suena.eyebrow':'Dónde estás hoy','suena.h2':'¿Te suena alguna de estas?',
+    'cambia.q':'Imagina un lunes en que sabes de dónde sale cada llamada de la semana y cuánto cuesta. Tu marca se ve en tu mercado todos los días, sin que seas tú el motor, y tu equipo trabaja con el calendario lleno de gente que ya quiere hablar.',
+    'mech.eyebrow':'Cómo lo hacemos','mech.h2':'Tres pasos.',
+    'chain.p':'Llevamos todo lo que pasa desde que alguien te ve hasta que reserva y se presenta: contenido, anuncios, seguimiento por email y WhatsApp, comunidades, lead magnets y secuencias de setting. <strong>La venta la haces tú.</strong>',
+    'res.eyebrow':'Prueba','res.h2':'Lo que pasa cuando llevamos tu captación.','res.cta':'Cuéntanos tu negocio',
+    'work.eyebrow':'El trabajo','work.h2':'Así se ve por dentro.',
+    'wall.cap':'Cuentas con las que trabajamos y hemos trabajado',
+    'g.k':'días · Garantía Cifra Firmada',
+    'g.p':'<strong>Nadie serio te promete llamadas sin ver tus datos.</strong> A los 14 días, con tu cuenta delante, firmamos cuántas llamadas cualificadas vas a tener en los 90 días siguientes. Si no llegamos, el mes siguiente no lo pagas. Una llamada cualificada, por contrato, es un lead que encaja en el perfil que definimos contigo, responde y reserva una llamada con tu equipo. Los formularios no cuentan. Y si en 14 días el sistema no está funcionando, te devolvemos la fase de arranque.',
+    'team.eyebrow':'Equipo','team.h2':'Quién hay detrás.','team.foto':'Foto',
+    'team.r1':'Estrategia, marketing y ventas','team.p1':'Decide qué se produce, qué se escala y qué se apaga cada semana, y responde ante ti de los resultados.',
+    'team.n2':'Nombre del socio','team.r2':'Tecnología y sistemas','team.p2':'Construye y mantiene los sistemas con los que producimos, medimos y hacemos el seguimiento de cada lead.',
+    'team.nota':'Un equipo pequeño, con sistemas propios y un estándar alto. <strong>La IA es nuestra herramienta; las decisiones son nuestras.</strong>',
     'no.eyebrow':'Para quién no es','no.h2':'Mejor decírtelo ahora.',
+    'no.l1':'Si todavía no has vendido tu producto o servicio, aún no toca.',
+    'no.l2':'Si no puedes invertir al menos 1.500 € al mes en anuncios, ahora no encajamos.',
+    'no.l3':'Si no hay nadie que coja las llamadas, primero eso.',
+    'no.l4':'Si necesitas resultados en una semana, esto no es para ti: se afina en 90 días.',
+    'no.l5':'Si buscas el lead más barato en lugar de la llamada cualificada, no somos tu sitio.',
     'faq.eyebrow':'Preguntas frecuentes','faq.h2':'Lo que suelen preguntarnos.',
-    'cta.h2':'¿Vemos si encajamos?','cta.btn':'Solicitar diagnóstico','cta.fit':'Diagnóstico de 20 minutos con tus números. Si no encajamos, te lo decimos.',
-    'ftr.tag':'Tenerife, España','ftr.legal':'Aviso legal y privacidad','lb.yt':'Ver completo en YouTube',
-    'nav.team':'Equipo',
-    'team.eyebrow':'Equipo',
-    'team.h2':'Quién hay detrás.',
-    'team.foto':'Foto',
-    'team.r1':'Estrategia, marketing y ventas',
-    'team.p1':'Decide qué se produce, qué se escala y qué se apaga cada semana, y responde ante ti de los resultados.',
-    'team.n2':'Nombre del socio',
-    'team.r2':'Tecnología y sistemas',
-    'team.p2':'Construye y mantiene los sistemas con los que producimos, medimos y hacemos el seguimiento de cada lead.',
-    'team.nota':'Un equipo pequeño, con sistemas propios y un estándar alto. <strong>La IA es nuestra herramienta; las decisiones son nuestras.</strong>'
+    'ap.eyebrow':'Siguiente paso','ap.h2':'Cuéntanos tu negocio.',
+    'ap.lead':'Siete preguntas, dos minutos. Si encajamos, abrimos tus números en una llamada de 20 minutos. Si no, te lo decimos.',
+    'ap.step':'Pregunta {n} de {t}','ap.next':'Siguiente','ap.back':'Atrás','ap.send':'Enviar',
+    'ap.err':'Responde a esta pregunta para seguir.','ap.errEmail':'Escribe un email válido.',
+    'ap.doneH':'Recibido. Elige tu hora.','ap.doneP':'Miramos tus números en 20 minutos. Si encajamos, seguimos; si no, te lo decimos.',
+    'ap.cal':'Elegir hora en el calendario','ap.wa':'Enviar mis respuestas por WhatsApp',
+    'nav.cerebro':'El Cerebro',
+    'hero.q':'Sin permanencia tras 90 días · Todo a tu nombre · La venta la haces tú',
+    'proof.a':'<b>210.000 € facturados</b> con 24.000 € en anuncios','proof.b':'Marca nueva, mercado hipersaturado','proof.c':'30 de 30 vendidas',
+    'ui.ej':'Ejemplo',
+    'ui2.t':'Panel de tu negocio · esta semana','ui2.s1':'Resumen','ui2.s2':'Anuncios','ui2.s3':'Contenido','ui2.s4':'Seguimiento','ui2.s5':'Llamadas',
+    'ui2.k1':'Llamadas cualificadas','ui2.k2':'Piezas en marcha','ui2.k3':'Piezas que se escalan','ui2.h':'Qué pieza trajo cada llamada',
+    'ui2.r1':'«Lo que preguntó Laura»','ui2.r2':'«Cuánto cuesta no decidir»','ui2.r3':'«Cómo es una semana con nosotros»','ui2.r4':'«Horario compatible» · se apaga',
+    'ui2.cap':'Panel de ejemplo, con datos ficticios.',
+    'cer.eyebrow':'Lo que lo hace posible','cer.h2':'Que tu mercado piense en ti antes que en nadie.',
+    'cer.lead':'Tu mercado compra a quien ve. Para estar delante cada día sin sonar a todo el mundo hacen falta dos cosas.',
+    'ui1.t':'Cerebro de tu negocio','ui1.s1':'Tu oferta','ui1.s2':'Tu voz','ui1.s3':'Tus casos','ui1.s4':'Tus objeciones','ui1.s5':'Tus llamadas',
+    'ui1.you':'Prepara los anuncios de esta semana para quien duda por el precio.',
+    'ui1.ai':'Hecho. Uso tus casos, tu voz y lo que preguntó tu último lead en la llamada. Nada sale sin tu visto bueno.',
+    'ui1.a1':'«Cuánto cuesta no decidir»','ui1.a2':'«Lo que preguntó Laura»','ui1.a3':'«Cómo es una semana con nosotros»','ui1.f':'Pendiente de tu OK',
+    'ui1.cap':'El Cerebro de tu negocio, con ejemplos ilustrativos.',
+    'cer.note':'Y dentro del Cerebro, el panel que te dice cada lunes qué pieza trajo cada llamada y qué se escala.',
+    'cmp.eyebrow':'La diferencia','cmp.h2':'Lo que haces hoy y lo que cambia.','cmp.old':'Hoy','cmp.new':'Con Acceler',
+    'call.eyebrow':'Qué pasa después','call.h2':'La llamada, por dentro.','call.lead':'Veinte minutos con tus números.',
+    'ftr.tag':'Tenerife, España','ftr.legal':'Aviso legal y privacidad','lb.yt':'Ver completo en YouTube'
   },
   en:{
-    'ui.cap':'The Brain of your business, with your sales panel inside (example)',
-    'work.reel':'Showreel · 25 s',
-    'res.cta':'Request a diagnosis',
-    'res.h2':'What happens when we run the marketing.',
-    'res.eyebrow':'Results',
-    'dos.nota':'Nothing goes live without your OK, and your accounts and material are always in your name.',
-    'dfy.g':'Within 14 days, with your data, we sign the number for the next 90 days. If we miss it, you don\'t pay the following month. And if it isn\'t running within 14 days, we refund the setup phase.',
-    'dfy.gk':'Signed Number guarantee',
-    'dfy.p':'New ads and content every week, a filter for tyre-kickers, your CRM connected to Meta, follow-up of every lead by email and WhatsApp, alerts and a script for your team, a Closing Kit (script, objections and call reviews) and a written decision every Monday. <strong>Running in 14 days.</strong>',
-    'dfy.h':'Everything, run by us',
-    'dfy.k':'What\'s included',
-    'f1.g':'Month to month with no lock-in. Everything is in your name.',
-    'f1.gk':'After 90 days',
-    'f1.p':'<li><b>Diagnosis (20 min):</b> we look at your numbers and tell you if we\'re a fit.</li><li><b>Setup (14 days):</b> your whole system running.</li><li><b>Day 14:</b> we sign the number for the next 90 days.</li><li><b>Every week:</b> quality at volume and a written decision every Monday.</li>',
-    'f1.h':'Four steps',
-    'f1.k':'How we start',
-    'dos.lead':'We build it and run it. You approve, and your team talks to people who are ready to buy.',
-    'dos.h2':'Your marketing department, outside your company.',
-    'dos.eyebrow':'The offer',
-    'ag.c':'The system we work with',
-    'ag.5':'Videos',
-    'ag.4':'Scripts',
-    'ag.3':'Emails',
-    'ag.2':'Carousels',
-    'ag.1':'Ads',
-    
-    'ui2.t':'Marketing department · this week','ui2.s1':'Overview','ui2.s3':'Content','ui2.s4':'Funnel','ui2.s5':'Sales','ui2.k1':'New ads','ui2.k2':'Content pieces','ui2.k3':'Attributed sales','ui2.h':'Which ad brought each sale',
-    'ui2.r1':'“Practice from month 1”','ui2.r2':'“Last days”','ui2.r3':'“What Laura asked”','ui2.r4':'“Flexible schedule” · switched off',
-    'nav.services':'Results','nav.work':'Work','nav.how':'How we work','nav.faq':'Questions','nav.contact':'Contact','nav.cta':'Request a diagnosis',
-    'hero.eyebrow':'For online service and training companies',
+    'nav.how':'How we do it','nav.services':'Proof','nav.team':'Team','nav.faq':'Questions','nav.contact':'Contact','nav.cta':'Tell us about your business',
+    'hero.eyebrow':'For online training and service companies that already sell and already invest',
     'hero.h1':'Two or three more qualified calls every week.',
-    'hero.lead':'Quality at volume in ads and content, every week, and sales intelligence that puts every euro where the sales are. So your company is the first your market thinks of, without building an in-house marketing department.',
-    'hero.cta1':'Request a diagnosis','hero.cta2':'Message us on WhatsApp','hero.reassure':'<b>Within 14 days, with your data, we sign the number for the next 90 days.</b> If we miss it, you don\'t pay the following month.',
-    'no.l1':'You haven\'t sold your product or service yet.','no.l2':'You\'re looking for the cheapest option.','no.l3':'You can\'t invest at least 1,500 € a month in ads.','no.l4':'You have nobody to take the calls.','no.l5':'You want results in a week.',
-    'proof.k':'Real case · Meta Ads','proof.who':'<strong>High-ticket health training, with us running their ads.</strong> Ad spend and sales generated. 30 out of 30 sold.','proof.k2':'Miguel Sierra · YouTube','proof.v2':'+8,000 subscribers in under 4 months',
-    'wall.cap':'They trusted us',
-    'pain.eyebrow':'Sound familiar?','pain.h2':'You don\u2019t have marketing. <em>You have expenses.</em>',
-    'rec.eyebrow':'What changes in your sales','rec.h2':'What you notice <em>from week one.</em>','rec.lead':'We do it all, with our own AI system that knows your business by heart and a team that answers for the results.',
-    'mech.eyebrow':'How we work','mech.h2':'Quality at volume and sales intelligence.',
-    'g.k':'days · Signed Number guarantee','g.p':'<strong>We don\'t promise a number without seeing your data.</strong> Within 14 days, with your account in front of us, we sign the number of qualified calls for the next 90 days. If we miss it, you don\'t pay the following month.',
-    'ob.p1':'Either in two weeks you have ads bringing cheaper leads and a brain that makes more whenever you need them, <em>or we make 10 more or you get your money back.</em>','ob.p2':'Think of it as hiring someone who has read your whole business, writes like you and doesn\u2019t leave when the pay stops.',
-    'work.eyebrow':'The work','work.h2':'What it looks like inside.','work.lead':'Pieces from the accounts we run. Click any piece to see it large.',
-    'no.eyebrow':'Who it\'s not for','no.h2':'Better to say it now.',
-    'faq.eyebrow':'FAQ','faq.h2':'What people usually ask us.',
-    'cta.h2':'Shall we see if we\'re a fit?','cta.btn':'Request a diagnosis','cta.fit':'A 20-minute diagnosis with your numbers. If we\'re not a fit, we\'ll tell you.',
-    'ftr.tag':'Tenerife, Spain','ftr.legal':'Legal notice and privacy','lb.yt':'Watch the full video on YouTube',
-    'nav.team':'Team',
-    'team.eyebrow':'Team',
-    'team.h2':'Who\'s behind it.',
-    'team.foto':'Photo',
-    'team.r1':'Strategy, marketing and sales',
-    'team.p1':'Decides what gets produced, scaled and switched off every week, and answers to you for the results.',
-    'team.n2':'Partner\'s name',
-    'team.r2':'Technology and systems',
-    'team.p2':'Builds and maintains the systems we use to produce, measure and follow up on every lead.',
-    'team.nota':'A small team with its own systems and a high standard. <strong>AI is our tool; the decisions are ours.</strong>'
+    'hero.lead':'You invest, you post and your team waits for calls. But the calendar comes in waves and you don\'t know what brings each one.',
+    'hero.cta1':'Tell us about your business','hero.cta2':'Message us on WhatsApp',
+    'hero.reassure':'<b>Within 14 days, with your data, we sign the number for the next 90.</b> If we miss it, you don\'t pay the following month.',
+    'suena.eyebrow':'Where you are today','suena.h2':'Does any of this sound familiar?',
+    'cambia.q':'Picture a Monday when you know where every call this week came from and what it cost. Your brand shows up in your market every day, without you being the engine, and your team works with a calendar full of people who already want to talk.',
+    'mech.eyebrow':'How we do it','mech.h2':'Three steps.',
+    'chain.p':'We run everything that happens from the moment someone sees you until they book and show up: content, ads, email and WhatsApp follow-up, communities, lead magnets and setting sequences. <strong>The sale is yours.</strong>',
+    'res.eyebrow':'Proof','res.h2':'What happens when we run your lead generation.','res.cta':'Tell us about your business',
+    'work.eyebrow':'The work','work.h2':'This is what it looks like inside.',
+    'wall.cap':'Accounts we work with and have worked with',
+    'g.k':'days · Signed Number guarantee',
+    'g.p':'<strong>No serious provider promises calls without seeing your data.</strong> Within 14 days, with your account in front of us, we sign how many qualified calls you will have over the next 90 days. If we miss it, you don\'t pay the following month. By contract, a qualified call is a lead that fits the profile we define with you, replies and books a call with your team. Form fills don\'t count. And if the system isn\'t running within 14 days, we refund the setup phase.',
+    'team.eyebrow':'Team','team.h2':'Who is behind this.','team.foto':'Photo',
+    'team.r1':'Strategy, marketing and sales','team.p1':'Decides what is produced, scaled and switched off each week, and answers to you for the results.',
+    'team.n2':'Partner\'s name','team.r2':'Technology and systems','team.p2':'Builds and maintains the systems we use to produce, measure and follow up every lead.',
+    'team.nota':'A small team with its own systems and a high standard. <strong>AI is our tool; the decisions are ours.</strong>',
+    'no.eyebrow':'Who it\'s not for','no.h2':'Better to tell you now.',
+    'no.l1':'If you haven\'t sold your product or service yet, it\'s not time.',
+    'no.l2':'If you can\'t invest at least 1,500 € a month in ads, we\'re not a fit right now.',
+    'no.l3':'If nobody takes the calls, fix that first.',
+    'no.l4':'If you need results in a week, this isn\'t for you: it takes 90 days to fine-tune.',
+    'no.l5':'If you want the cheapest lead rather than the qualified call, we\'re not your place.',
+    'faq.eyebrow':'Frequently asked','faq.h2':'What people usually ask us.',
+    'ap.eyebrow':'Next step','ap.h2':'Tell us about your business.',
+    'ap.lead':'Seven questions, two minutes. If we\'re a fit, we open your numbers on a 20-minute call. If not, we\'ll tell you.',
+    'ap.step':'Question {n} of {t}','ap.next':'Next','ap.back':'Back','ap.send':'Send',
+    'ap.err':'Please answer to continue.','ap.errEmail':'Enter a valid email.',
+    'ap.doneH':'Received. Pick your time.','ap.doneP':'We go through your numbers in 20 minutes. If we\'re a fit, we continue; if not, we\'ll tell you.',
+    'ap.cal':'Pick a time in the calendar','ap.wa':'Send my answers on WhatsApp',
+    'nav.cerebro':'The Brain',
+    'hero.q':'No lock-in after 90 days · Everything in your name · The sale is yours',
+    'proof.a':'<b>210,000 € in sales</b> from 24,000 € in ads','proof.b':'Brand-new brand, saturated market','proof.c':'30 out of 30 sold',
+    'ui.ej':'Example',
+    'ui2.t':'Your business dashboard · this week','ui2.s1':'Overview','ui2.s2':'Ads','ui2.s3':'Content','ui2.s4':'Follow-up','ui2.s5':'Calls',
+    'ui2.k1':'Qualified calls','ui2.k2':'Pieces in motion','ui2.k3':'Pieces being scaled','ui2.h':'Which piece brought each call',
+    'ui2.r1':'“What Laura asked”','ui2.r2':'“What not deciding costs”','ui2.r3':'“What a week with us looks like”','ui2.r4':'“Compatible schedule” · switched off',
+    'ui2.cap':'Sample dashboard with made-up data.',
+    'cer.eyebrow':'What makes it possible','cer.h2':'So your market thinks of you before anyone else.',
+    'cer.lead':'Your market buys from who it sees. To be in front of it every day without sounding like everyone else, two things are needed.',
+    'ui1.t':'Your business Brain','ui1.s1':'Your offer','ui1.s2':'Your voice','ui1.s3':'Your cases','ui1.s4':'Your objections','ui1.s5':'Your calls',
+    'ui1.you':'Prepare this week\'s ads for people who hesitate over the price.',
+    'ui1.ai':'Done. I use your cases, your voice and what your last lead asked on the call. Nothing goes live without your OK.',
+    'ui1.a1':'“What not deciding costs”','ui1.a2':'“What Laura asked”','ui1.a3':'“What a week with us looks like”','ui1.f':'Awaiting your OK',
+    'ui1.cap':'Your business Brain, with illustrative examples.',
+    'cer.note':'And inside the Brain, the dashboard that tells you every Monday which piece brought each call and what gets scaled.',
+    'cmp.eyebrow':'The difference','cmp.h2':'What you do today and what changes.','cmp.old':'Today','cmp.new':'With Acceler',
+    'call.eyebrow':'What happens next','call.h2':'The call, from the inside.','call.lead':'Twenty minutes with your numbers.',
+    'ftr.tag':'Tenerife, Spain','ftr.legal':'Legal notice and privacy','lb.yt':'Watch the full video on YouTube'
   }
 };
 
@@ -912,14 +1093,80 @@ function render(){
     const url=f.h?`https://www.instagram.com/${f.h}/`:(f.yt||'');
     return url?`<a class="face" href="${url}" target="_blank" rel="noopener">${inner}</a>`:`<div class="face">${inner}</div>`;
   }).join('');
-  document.getElementById('mech').innerHTML = MECH.map(m=>`<div class="model reveal${m.hl?' hl':''}"><div class="k">${esc(L(m.k))}</div><h3>${esc(L(m.h))}</h3><p>${esc(L(m.p))}</p></div>`).join('');
-  const card = (h,p,hl)=>`<div class="pain reveal"${hl?' style="border-color:rgba(222,98,98,.5)"':''}><h3>${esc(L(h))}</h3><p>${esc(L(p))}</p></div>`;
+  document.getElementById('suena').innerHTML = SUENA.map(c=>`<div class="pain reveal"><h3>${esc(L(c.h))}</h3><p>${esc(L(c.p))}</p><div class="want">${esc(L(c.w))}</div></div>`).join('');
+  document.getElementById('mech').innerHTML = MECH.map(m=>`<div class="model reveal"><div class="k">${esc(L(m.k))}</div><h3>${esc(L(m.h))}</h3><p>${esc(L(m.p))}</p></div>`).join('');
+  document.getElementById('cerGrid').innerHTML = CEREBRO.map(m=>`<div class="model reveal"><div class="k">${esc(L(m.k))}</div><h3>${esc(L(m.h))}</h3><p>${esc(L(m.p))}</p>${(m.cap && L(m.cap))?`<div class="cap">${esc(L(m.cap))}</div>`:''}</div>`).join('');
+  document.getElementById('cmpv').innerHTML = `<div class="row h"><div class="hd">${esc(tr('cmp.old'))}</div><div class="hd new">${esc(tr('cmp.new'))}</div></div>` + CMP.map(r=>`<div class="row"><div class="c old" data-l="${esc(tr('cmp.old'))}">${esc(L(r.o))}</div><div class="c new" data-l="${esc(tr('cmp.new'))}">${esc(L(r.n))}</div></div>`).join('');
+  document.getElementById('callGrid').innerHTML = CALL.map(m=>`<div class="model reveal"><div class="k">${esc(L(m.k))}</div><h3>${esc(L(m.h))}</h3><p>${esc(L(m.p))}</p></div>`).join('');
   document.getElementById('cases').innerHTML = CASES.map(c=>`<div class="case-c reveal${c.hl?' hl':''}"><h3>${esc(L(c.h))}</h3><div class="big">${esc(L(c.big))}</div><p>${esc(L(c.p))}</p></div>`).join('');
   document.getElementById('nofor').innerHTML = [1,2,3,4,5].map(i=>`<li>${esc(tr('no.l'+i))}</li>`).join('');
   document.getElementById('faqList').innerHTML = FAQ.map(f=>`<details><summary>${esc(L(f.q))}</summary><div class="a">${L(f.a)}</div></details>`).join('');
   document.getElementById('pieces').innerHTML = WORKS.filter(w=>w.r==='h').map(w=>cardHTML(w,'wide')).join('') + PIECES.map(p=>p.work ? cardHTML(WORKS.find(w=>w.id===p.work)) : imgHTML(p)).join('');
   bindCards();
+  renderApply();
 }
+/* formulario de aplicación */
+const AP = {step:0, data:{}};
+function optLabel(f, v){ const o=(f.o||[]).find(x=>x.v===v); return o ? o[lang] : (v||''); }
+function fieldHTML(f){
+  const q = esc(L(f.q));
+  if(f.k==='radio'){
+    const cur = AP.data[f.n];
+    const opts = f.o.map(o=>`<label class="opt"><input type="radio" name="${f.n}" value="${esc(o.v)}"${cur===o.v?' checked':''}><span>${esc(o[lang])}</span></label>`).join('');
+    const other = (f.other && cur==='d') ? `<div class="fld" style="margin-top:12px"><input type="text" name="${f.n}_otro" value="${esc(AP.data[f.n+'_otro']||'')}" aria-label="${q}"></div>` : '';
+    return `<fieldset><legend>${q}</legend><div class="opts">${opts}</div>${other}</fieldset>`;
+  }
+  return `<div class="fld"><label for="f_${f.n}">${q}</label><input id="f_${f.n}" type="${f.k==='email'?'email':'text'}" name="${f.n}" value="${esc(AP.data[f.n]||'')}" autocomplete="${f.n==='email'?'email':(f.n==='nombre'?'given-name':'off')}"></div>`;
+}
+function renderApply(){
+  const form=document.getElementById('applyForm'); if(!form) return;
+  const fields=APPLY[AP.step], tot=APPLY.length;
+  document.getElementById('apStep').textContent = tr('ap.step').replace('{n}',AP.step+1).replace('{t}',tot);
+  document.getElementById('apBar').style.width = ((AP.step+1)/tot*100)+'%';
+  document.getElementById('apBody').innerHTML = fields.map(fieldHTML).join('');
+  document.getElementById('apBack').textContent = tr('ap.back');
+  document.getElementById('apBack').hidden = AP.step===0;
+  document.getElementById('apNext').textContent = AP.step===tot-1 ? tr('ap.send') : tr('ap.next');
+  document.getElementById('apBody').querySelectorAll('input').forEach(inp=>{
+    inp.addEventListener('input',()=>{ AP.data[inp.name]=inp.value; if(inp.type==='radio'){ AP.data[inp.name]=inp.value; if(inp.name==='bloqueo') renderApply(); } });
+    inp.addEventListener('change',()=>{ if(inp.type==='radio'){ AP.data[inp.name]=inp.value; if(inp.name==='bloqueo') renderApply(); } });
+  });
+}
+function validateStep(){
+  const err=document.getElementById('apErr'); err.innerHTML='';
+  for(const f of APPLY[AP.step]){
+    const v=AP.data[f.n];
+    const need = f.k==='radio' || f.req;
+    if(need && (!v || !String(v).trim())){ err.innerHTML=`<p class="ap-err" role="alert">${esc(tr('ap.err'))}</p>`; return false; }
+    if(f.k==='email' && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){ err.innerHTML=`<p class="ap-err" role="alert">${esc(tr('ap.errEmail'))}</p>`; return false; }
+  }
+  return true;
+}
+function summaryText(){
+  const flat = APPLY.flat(), d=AP.data, get=n=>flat.find(f=>f.n===n);
+  const lab=n=>optLabel(get(n), d[n]);
+  const bl = d.bloqueo==='d' && d.bloqueo_otro ? d.bloqueo_otro : lab('bloqueo');
+  return lang==='es'
+   ? `Hola Alfonso, soy ${d.nombre}. Acabo de rellenar el formulario. Me frena: ${bl}. Vendo: ${d.vende} (${lab('ticket')}). Vendo con: ${lab('quien')}, ${lab('llamadas')} llamadas reservadas a la semana. Anuncios al mes: ${lab('anuncios')}. ¿Puedo asumir la inversión?: ${lab('precio')}. Decide: ${lab('decide')}.`
+   : `Hi Alfonso, I'm ${d.nombre}. I just filled in the form. What holds me back: ${bl}. I sell: ${d.vende} (${lab('ticket')}). I sell with: ${lab('quien')}, ${lab('llamadas')} booked calls a week. Monthly ad spend: ${lab('anuncios')}. Can I take on the investment?: ${lab('precio')}. Decision: ${lab('decide')}.`;
+}
+function finishApply(){
+  if(FORM_ENDPOINT){
+    try{ fetch(FORM_ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(Object.assign({lang,source:'web-v5'},AP.data))}).catch(()=>{}); }catch(e){}
+  }
+  document.getElementById('apWa').href = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(summaryText())}`;
+  document.getElementById('apCal').href = CAL_URL;
+  document.getElementById('applyForm').hidden = true;
+  const done=document.getElementById('apDone'); done.hidden=false; applyI18n();
+  done.scrollIntoView({block:'center',behavior:reduce?'auto':'smooth'});
+}
+document.getElementById('apNext').addEventListener('click',()=>{
+  if(!validateStep()) return;
+  if(AP.step===APPLY.length-1){ finishApply(); return; }
+  AP.step++; renderApply();
+  const f=document.querySelector('#apBody input'); if(f && f.type!=='radio') f.focus();
+});
+document.getElementById('apBack').addEventListener('click',()=>{ if(AP.step>0){ AP.step--; document.getElementById('apErr').innerHTML=''; renderApply(); } });
 function openImage(src, alt){
   lbMedia.innerHTML = `<img class="st" src="${src}" alt="${esc(alt)}">`;
   lbCap.innerHTML = `<strong>${esc(alt)}</strong>`;
@@ -1017,7 +1264,7 @@ function init(){
         const split = new SplitText('#heroTitle',{type:'lines',mask:'lines'});
         gsap.from(split.lines,{yPercent:110,duration:1.2,stagger:.09,ease:'power4.out',delay:.15});
         gsap.from('.hero .eyebrow',{opacity:0,y:10,duration:.8,delay:.1});
-        gsap.from('.hero .lead, .strip, .hero-cta, .hero-sub',{opacity:0,y:20,duration:1,stagger:.1,delay:.55,ease:'power3.out'});
+        gsap.from('.hero .lead, .ui-hero, .hero-cta, .hero-sub, .hero-q',{opacity:0,y:20,duration:1,stagger:.1,delay:.55,ease:'power3.out'});
       });
     }
     setupReveal(false);
